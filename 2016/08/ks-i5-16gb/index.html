@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест Flashsale Core I5-16Gb RAM | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест серверов Core I5-16Gb RAM с распродажи">
+	
+	<meta name="keywords" content="kimsufi, dedicated, core i5, flashsale">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2016/08/ks-i5-16gb/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест Flashsale Core I5-16Gb RAM | CLSTR" />
+	<meta property="og:description" content="Тест серверов Core I5-16Gb RAM с распродажи" />
+	<meta property="og:url" content="https://clstr.ru/2016/08/ks-i5-16gb/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/ovh_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header style="background-image: url('/img/ovh.jpg')">
+    <h1 class="title">Тест Flashsale Core I5-16Gb RAM</h1>
+    <p class="meta">
+    August 15, 2016
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/kimsufiru"><img src="/uploads/2014/09/kimsufi.png" alt="ks_logo" class="alignnone size-full" /></a></p>
+
+<p>Привет!</p>
+
+<p>В прошлом месяце благодаря <a href="http://obzor.ly/">alice2k</a> мне удалось урвать сервер с распродажи Flashsale. Тогда предложение звучало так - Intel-i3 2130 / 8 озу / 2 ТБ за 700 рублей в месяц + 750 рублей установка. Всего на распродаже 600 серверов. Предложение более чем заманчивое =)</p>
+
+<p>В итоге мне достался сервер с этой распродажи. Но внезапно это оказался Core I5 3570S/16Gb RAM/2Tb. Вот уж немного обманули французы)
+Но есть пара моментов - на этих серверах нет RAID и конкретно эти сервера с канадского ДЦ и кажется с подключением только на 100мбит. Пинги длинные. Чуть подробнее под катом.</p>
+
+<!--more-->
+
+<h3 id="тест">Тест</h3>
+
+<p>Вот краткий тест.</p>
+
+<p><strong>Сервер на Debian 8 Jessie.</strong></p>
+
+<pre>
+root@ns504095:~# cat /etc/issue
+Linux ns504095.ip-198-27-xx.net 3.14.32-xxxx-grs-ipv6-64 #7 SMP Wed Jan 27 18:05:09 CET 2016 x86_64 GNU/Linux
+
+server    : 223247
+ip        : 198.27.xx.xx
+hostname  : ns504095.ip-198-27-xx.net
+</pre>
+
+<pre>
+root@ns504095:~# inxi -b
+System:    Host: ns504095.ip-198-27-xx.net Kernel: 3.14.32-xxxx-grs-ipv6-64 x86_64 (64 bit) Console: tty 0
+           Distro: Debian 8
+Machine:   Mobo: Intel model: DH61AG v: AAG23736-504 serial: BTAG230000A1
+           Bios: Intel v: AGH6110H.86A.0045.2013.0121.1756 date: 01/21/2013
+CPU:       Quad core Intel Core i5-3570S (-MCP-) clocked at 1777 MHz
+Graphics:  Card: Intel Xeon E3-1200 v2/3rd Gen Core processor Graphics Controller
+           Display Server: N/A driver: N/A tty size: 182x27 Advanced Data: N/A for root out of X
+Network:   Card: Intel 82579V Gigabit Network Connection driver: e1000e
+Drives:    HDD Total Size: 2000.4GB (0.1% used)
+Info:      Processes: 118 Uptime: 6 days Memory: 280.1/15939.0MB Init: systemd runlevel: 5
+           Client: Shell (bash) inxi: 2.1.28
+</pre>
+
+<p>Судя по модели материнской платы это небольшие коробочки похожие на вот эти:</p>
+
+<p><a href="http://www.g-alantic.com.tw/wp-content/uploads/Lightbox_GA6201-6.jpg">тыц</a></p>
+
+<p><a href="http://www.systium.com/sites/default/files/systium/images/130%20collage.png">тыц</a></p>
+
+<p><strong>Проц</strong></p>
+
+<pre>
+root@ns504095:~# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 58
+model name    : Intel(R) Core(TM) i5-3570S CPU @ 3.10GHz
+stepping    : 9
+microcode    : 0x12
+cpu MHz        : 1601.464
+cache size    : 6144 KB
+physical id    : 0
+siblings    : 4
+core id        : 0
+cpu cores    : 4
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 13
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips    : 6185.92
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 36 bits physical, 48 bits virtual
+power management:
+
+...
+
+processor    : 3
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 58
+model name    : Intel(R) Core(TM) i5-3570S CPU @ 3.10GHz
+stepping    : 9
+microcode    : 0x12
+cpu MHz        : 1598.316
+cache size    : 6144 KB
+physical id    : 0
+siblings    : 4
+core id        : 3
+cpu cores    : 4
+apicid        : 6
+initial apicid    : 6
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 13
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips    : 6185.92
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 36 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p>Это Core I5 третьего поколения. Процессор не новый, 2012 модельного года. Буква S в названии модели означает что это энергоэффективная версия с пониженой тактовой частотой.</p>
+
+<p><strong>Память</strong></p>
+
+<pre>
+root@ns504095:~# cat /proc/meminfo
+MemTotal:       16321536 kB
+MemFree:        15285292 kB
+MemAvailable:   16019024 kB
+Buffers:          140192 kB
+Cached:           614396 kB
+SwapCached:            0 kB
+Active:           465784 kB
+Inactive:         322604 kB
+Active(anon):      35300 kB
+Inactive(anon):    32788 kB
+Active(file):     430484 kB
+Inactive(file):   289816 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       2096124 kB
+SwapFree:        2096124 kB
+Dirty:               164 kB
+Writeback:             0 kB
+AnonPages:         33824 kB
+Mapped:            33648 kB
+Shmem:             34292 kB
+Slab:              96176 kB
+SReclaimable:      73972 kB
+SUnreclaim:        22204 kB
+KernelStack:        2048 kB
+PageTables:         1676 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    10256892 kB
+Committed_AS:     158196 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      104944 kB
+VmallocChunk:   34359477036 kB
+HardwareCorrupted:     0 kB
+DirectMap4k:        7868 kB
+DirectMap2M:    16666624 kB
+</pre>
+
+<p><strong>HDD</strong></p>
+
+<pre>
+root@ns504095:~# df -HT
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/root      ext4      2.0T  1.1G  1.9T   1% /
+devtmpfs       devtmpfs  8.4G     0  8.4G   0% /dev
+tmpfs          tmpfs     8.4G     0  8.4G   0% /dev/shm
+tmpfs          tmpfs     8.4G   36M  8.4G   1% /run
+tmpfs          tmpfs     5.3M     0  5.3M   0% /run/lock
+tmpfs          tmpfs     8.4G     0  8.4G   0% /sys/fs/cgroup
+</pre>
+
+<p>Скорость записи диска доволльно приличная</p>
+
+<pre>
+root@ns504095:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 7.09936 s, 151 MB/s
+root@ns504095:~# rm -rf test
+root@ns504095:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 7.07661 s, 152 MB/s
+root@ns504095:~# rm -f test
+root@ns504095:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 7.25962 s, 148 MB/s
+</pre>
+
+<p>Пинги из Ульяновска около 150 мс. Сразу чувствуется что сервер где-то за океаном.</p>
+
+<p><img src="https://i.hmdw.me/img/2016/08/montreal.png" alt="IP сервера" /></p>
+
+<pre>
+[rail@localhost ~]$ ping 198.27.xx.xx
+PING 198.27.xx.xx (198.27.xx.xx) 56(84) bytes of data.
+64 bytes from 198.27.xx.xx: icmp_seq=1 ttl=53 time=146 ms
+64 bytes from 198.27.xx.xx: icmp_seq=2 ttl=53 time=147 ms
+64 bytes from 198.27.xx.xx: icmp_seq=3 ttl=53 time=147 ms
+64 bytes from 198.27.xx.xx: icmp_seq=4 ttl=53 time=147 ms
+64 bytes from 198.27.xx.xx: icmp_seq=5 ttl=53 time=148 ms
+64 bytes from 198.27.xx.xx: icmp_seq=6 ttl=53 time=147 ms
+64 bytes from 198.27.xx.xx: icmp_seq=7 ttl=53 time=147 ms
+64 bytes from 198.27.xx.xx: icmp_seq=8 ttl=53 time=146 ms
+64 bytes from 198.27.xx.xx: icmp_seq=9 ttl=53 time=146 ms
+64 bytes from 198.27.xx.xx: icmp_seq=10 ttl=53 time=147 ms
+64 bytes from 198.27.xx.xx: icmp_seq=11 ttl=53 time=146 ms
+^C
+--- 198.27.xx.xx ping statistics ---
+11 packets transmitted, 11 received, 0% packet loss, time 10014ms
+rtt min/avg/max/mdev = 146.708/147.311/148.685/0.595 ms
+</pre>
+
+<p><strong>Тесты Sysbench</strong></p>
+
+<pre>
+root@ns504095:~# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          22.3303s
+    total number of events:              10000
+    total time taken by event execution: 22.3297
+    per-request statistics:
+         min:                                  2.22ms
+         avg:                                  2.23ms
+         max:                                  5.31ms
+         approx.  95 percentile:               2.28ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   22.3297/0.00
+
+root@ns504095:~# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.7847s
+    total number of events:              64
+    total time taken by event execution: 47.6003
+    per-request statistics:
+         min:                                709.08ms
+         avg:                                743.75ms
+         max:                                783.40ms
+         approx.  95 percentile:             782.56ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.7438/0.02
+</pre>
+
+<pre>
+root@ns504095:~# sysbench --test=memory --num-threads=4 --memory-total-size=16G run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 16384M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 16777216 (5767134.91 ops/sec)
+
+16384.00 MB transferred (5631.97 MB/sec)
+
+
+Test execution summary:
+    total time:                          2.9091s
+    total number of events:              16777216
+    total time taken by event execution: 7.5612
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                  0.04ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           4194304.0000/104917.06
+    execution time (avg/stddev):   1.8903/0.02
+</pre>
+
+<p><a href="http://serverbear.com/benchmark/2016/07/29/8mmmIO5DPSCHUpEl">Тесты Serverbear</a></p>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>Это выделенный сервер по цене VPS. Такого объема ресурсов на физическом железе вы нигде не найдете. Рад что взял )</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

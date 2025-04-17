@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест виртуального сервера от AdminVPS | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест VPS от adminvps">
+	
+	<meta name="keywords" content="adminvps, vps">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2016/05/adminvps/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест виртуального сервера от AdminVPS | CLSTR" />
+	<meta property="og:description" content="Тест VPS от adminvps" />
+	<meta property="og:url" content="https://clstr.ru/2016/05/adminvps/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест виртуального сервера от AdminVPS</h1>
+    <p class="meta">
+    May 2, 2016
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/adminvps"><img src="/uploads/2016/adminlogo.png" alt="adminvps_logo" class="alignnone size-full" /></a></p>
+
+<p>Приветствую!</p>
+
+<p>Сегодня очень короткий тест сервиса от AdminVPS. Сервис ощутимо дороже своих конкурентов, но этому есть ряд причин. Во-первых они позиционируют себя как сервис по программе <a href="https://adminvps.ru/about/diff.php">все включено</a>, а во-вторых размещаются в ДЦ Caravan и заявляют что совсем не оверселят.
+Публикую тест который делал в начале 2016 года.</p>
+
+<!--more-->
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- clstr banner -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3140541524320205" data-ad-slot="1616664118" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>По какой-то причине я выбрал не самый минимальный тариф - Start (1 ядро, 1Gb RAM, 10Gb SSD) на OpenVZ за 1000 рублей в месяц.
+ОС CentOS 7.0</p>
+
+<pre>
+[root@tst ~]# inxi -b
+System:    Host: tst.rhdev.ru Kernel: 2.6.32-042stab108.8 x86_64 (64 bit) Console: tty 0
+           Distro: CentOS Linux release 7.0.1406 (Core)
+Machine:   No /sys/class/dmi; using dmidecode: unknown error occured
+CPU:       Hexa core Intel Xeon E5-2630 v2 (-HT-MCP-) speed: 2599 MHz (max)
+Graphics:  Card: Failed to Detect Video Card!
+           Display Server: N/A driver: N/A tty size: 182x27 Advanced Data: N/A for root out of X
+Network:   Card: Failed to Detect Network Card!
+Drives:    HDD Total Size: NA (-)
+Info:      Processes: 23 Uptime: 2 min Memory: 40.8/1024.0MB Init: systemd runlevel: 5
+           Client: Shell (bash) inxi: 2.2.31
+</pre>
+
+<p>Итак, нам дают 1 ядро процессора E5-2630:</p>
+<pre>
+[root@tst ~]# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 62
+model name    : Intel(R) Xeon(R) CPU E5-2630 v2 @ 2.60GHz
+stepping    : 4
+microcode    : 1046
+cpu MHz        : 2599.969
+cache size    : 15360 KB
+physical id    : 0
+siblings    : 12
+core id        : 0
+cpu cores    : 6
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 13
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf cpuid_faulting pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms xsaveopt
+bogomips    : 5199.93
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 46 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p>И гигабайт памяти:</p>
+<pre>
+[root@tst ~]# cat /proc/meminfo
+MemTotal:        1048576 kB
+MemFree:         1012384 kB
+Cached:            19044 kB
+Buffers:               0 kB
+Active:            26408 kB
+Inactive:           2940 kB
+Active(anon):      12780 kB
+Inactive(anon):      180 kB
+Active(file):      13628 kB
+Inactive(file):     2760 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               264 kB
+Writeback:             0 kB
+AnonPages:         12960 kB
+Shmem:              2656 kB
+Slab:               6828 kB
+SReclaimable:       1840 kB
+SUnreclaim:         4988 kB
+</pre>
+
+<p>Дисковое пространство:</p>
+<pre>
+[root@tst ~]# df -H
+Файловая система Размер Использовано  Дост Использовано% Cмонтировано в
+/dev/simfs          13G         632M   13G            5% /
+devtmpfs           537M            0  537M            0% /dev
+tmpfs              537M            0  537M            0% /dev/shm
+tmpfs              537M          91k  537M            1% /run
+tmpfs              537M            0  537M            0% /sys/fs/cgroup
+</pre>
+
+<p>Пинги из Ульяновска:</p>
+<pre>
+[rail@localhost ~]$ ping 62.213.67.39
+PING 62.213.67.39 (62.213.67.39) 56(84) bytes of data.
+64 bytes from 62.213.67.39: icmp_seq=1 ttl=53 time=34.3 ms
+64 bytes from 62.213.67.39: icmp_seq=2 ttl=53 time=36.6 ms
+64 bytes from 62.213.67.39: icmp_seq=3 ttl=53 time=34.7 ms
+64 bytes from 62.213.67.39: icmp_seq=4 ttl=53 time=34.6 ms
+64 bytes from 62.213.67.39: icmp_seq=5 ttl=53 time=34.0 ms
+64 bytes from 62.213.67.39: icmp_seq=6 ttl=53 time=37.3 ms
+64 bytes from 62.213.67.39: icmp_seq=7 ttl=53 time=35.0 ms
+64 bytes from 62.213.67.39: icmp_seq=8 ttl=53 time=34.4 ms
+64 bytes from 62.213.67.39: icmp_seq=9 ttl=53 time=36.2 ms
+64 bytes from 62.213.67.39: icmp_seq=10 ttl=53 time=34.3 ms
+^C
+--- 62.213.67.39 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9013ms
+rtt min/avg/max/mdev = 34.084/35.189/37.331/1.074 ms
+</pre>
+
+<p>Стабильно около 35мс.</p>
+
+<p>Линейная скорость записи на диск впечатляет:</p>
+<pre>
+[root@tst ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 3,96932 c, 271 MB/c
+[root@tst ~]# rm -f test
+[root@tst ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 4,60327 c, 233 MB/c
+[root@tst ~]# rm -f test
+[root@tst ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 2,89124 c, 371 MB/c
+</pre>
+
+<p>Тесты Sysbench CPU:</p>
+
+<pre>
+[root@tst ~]#  sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          33.0982s
+    total number of events:              10000
+    total time taken by event execution: 33.0949
+    per-request statistics:
+         min:                                  3.24ms
+         avg:                                  3.31ms
+         max:                                  5.92ms
+         approx.  95 percentile:               3.40ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   33.0949/0.00
+</pre>
+
+<pre>
+[root@tst ~]# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.2081s
+    total number of events:              64
+    total time taken by event execution: 8.4426
+    per-request statistics:
+         min:                                 38.34ms
+         avg:                                131.92ms
+         max:                                166.08ms
+         approx.  95 percentile:             160.05ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.1319/0.02
+</pre>
+
+<p>Тесты Sysbench disk io:</p>
+<pre>
+[root@tst ~]# sysbench --test=fileio --file-total-size=2G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 16384Kb each, 2048Mb total
+Creating files for the test...
+
+[root@tst ~]# sysbench --test=fileio --file-total-size=2G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 16Mb each
+2Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  1969380 Read, 1312920 Write, 4201307 Other = 7483607 Total
+Read 30.05Gb  Written 20.034Gb  Total transferred 50.084Gb  (170.95Mb/sec)
+10940.99 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0004s
+    total number of events:              3282300
+    total time taken by event execution: 34.1012
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.01ms
+         max:                                 18.86ms
+         approx.  95 percentile:               0.02ms
+
+Threads fairness:
+    events (avg/stddev):           3282300.0000/0.00
+    execution time (avg/stddev):   34.1012/0.00
+</pre>
+
+<p>Вполне неплохо для SSD - <strong>170.95Mb/sec</strong></p>
+
+<h4 id="serverbear">Serverbear</h4>
+<p>Тесты <a href="http://serverbear.com/benchmark/2016/01/13/LPj0oTIUitUprl2w">Serverbear</a></p>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>Предложение больше подойдет для тех клиентов которые не хотят/не умеют администрировать свой сервер и хотят получить полный комплекс услуг с адекватной техподдержкой. В остальном же - предложение ощутимо дороже аналогов.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

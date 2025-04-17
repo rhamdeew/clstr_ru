@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Новый обзор VPS за 100 рублей от Ihor | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест виртуального сервера на тарифе с KVM HDD Minimus от Ihor спустя 2 года.">
+	
+	<meta name="keywords" content="vps, ihor, moscow">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2020/10/ihor-minimus/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Новый обзор VPS за 100 рублей от Ihor | CLSTR" />
+	<meta property="og:description" content="Тест виртуального сервера на тарифе с KVM HDD Minimus от Ihor спустя 2 года." />
+	<meta property="og:url" content="https://clstr.ru/2020/10/ihor-minimus/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Новый обзор VPS за 100 рублей от Ihor</h1>
+    <p class="meta">
+    October 2, 2020
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/ihor"><img src="/uploads/2016/ihorlogo.png" alt="Ihor Hosting logo" class="alignnone size-full" /></a></p>
+
+<p>Добрый день!</p>
+
+<p>Такой сервер я уже тестировал 2 года назад и теперь вот решил попробовать еще разок. В целом все без изменений кроме того что скорость чтения и записи на диск стала сильно выше.</p>
+
+<p>Есть ощущение что там SSD =)</p>
+
+<p>Опубликую только результаты связанные со скоростью записи на диск, остальное в пределах погрешности.</p>
+
+<!--more-->
+
+<h3 id="сведения-о-vm">Сведения о VM</h3>
+
+<p><strong>PT Summary</strong></p>
+<pre>
+pt-summary
+-----------
+# Percona Toolkit System Summary Report ######################
+        Date | 2020-09-04 10:40:50 UTC (local TZ: MSK +0300)
+    Hostname | vds1968051.my-ihor.ru
+      Uptime | 10 min,  1 user,  load average: 0.04, 0.13, 0.08
+      System | Red Hat; KVM; vRHEL 7.6.0 PC (i440FX + PIIX, 1996) (Other)
+ Service Tag | Not Specified
+    Platform | Linux
+     Release | CentOS Linux release 7.8.2003 (Core)
+      Kernel | 3.10.0-1127.19.1.el7.x86_64
+Architecture | CPU = 64-bit, OS = 64-bit
+   Threading | NPTL 2.17
+     SELinux | Disabled
+ Virtualized | VMWare
+# Processor ##################################################
+  Processors | physical = 1, cores = 1, virtual = 1, hyperthreading = no
+      Speeds | 1x2799.998
+      Models | 1xQEMU Virtual CPU version 2.5+
+      Caches | 1x16384 KB
+# Memory #####################################################
+       Total | 486.9M
+        Free | 69.2M
+        Used | physical = 95.6M, swap allocated = 0.0, swap used = 0.0, virtual = 95.6M
+      Shared | 4.4M
+     Buffers | 322.0M
+      Caches | 374.1M
+       Dirty | 92 kB
+     UsedRSS | 106.1M
+  Swappiness | 30
+ DirtyPolicy | 30, 10
+ DirtyStatus | 0, 0
+  Locator   Size     Speed             Form Factor   Type          Type Detail
+  ========= ======== ================= ============= ============= ===========
+  DIMM 0    512 MB   Unknown           DIMM          RAM           Other
+# Mounted Filesystems ########################################
+  Filesystem  Size Used Type     Opts                                            Mountpoint
+  devtmpfs    233M   0% devtmpfs rw,nosuid,size=237644k,nr_inodes=59411,mode=755 /dev
+  /dev/vda1   488M  23% ext4     rw,relatime,data=ordered                        /boot
+  /dev/vda2   9.5G  16% xfs      rw,relatime,attr2,inode64,noquota               /
+  tmpfs       244M   0% tmpfs    rw,nosuid,nodev                                 /dev/shm
+  tmpfs       244M   0% tmpfs    rw,nosuid,nodev,mode=755                        /dev/shm
+  tmpfs       244M   0% tmpfs    rw,nosuid,nodev,relatime,size=49864k,mode=700   /dev/shm
+  tmpfs       244M   0% tmpfs    ro,nosuid,nodev,noexec,mode=755                 /dev/shm
+  tmpfs       244M   0% tmpfs    rw,nosuid,nodev                                 /sys/fs/cgroup
+  tmpfs       244M   0% tmpfs    rw,nosuid,nodev,mode=755                        /sys/fs/cgroup
+  tmpfs       244M   0% tmpfs    rw,nosuid,nodev,relatime,size=49864k,mode=700   /sys/fs/cgroup
+  tmpfs       244M   0% tmpfs    ro,nosuid,nodev,noexec,mode=755                 /sys/fs/cgroup
+  tmpfs       244M   2% tmpfs    rw,nosuid,nodev                                 /run
+  tmpfs       244M   2% tmpfs    rw,nosuid,nodev,mode=755                        /run
+  tmpfs       244M   2% tmpfs    rw,nosuid,nodev,relatime,size=49864k,mode=700   /run
+  tmpfs       244M   2% tmpfs    ro,nosuid,nodev,noexec,mode=755                 /run
+  tmpfs        49M   0% tmpfs    rw,nosuid,nodev                                 /run/user/0
+  tmpfs        49M   0% tmpfs    rw,nosuid,nodev,mode=755                        /run/user/0
+  tmpfs        49M   0% tmpfs    rw,nosuid,nodev,relatime,size=49864k,mode=700   /run/user/0
+  tmpfs        49M   0% tmpfs    ro,nosuid,nodev,noexec,mode=755                 /run/user/0
+# Disk Schedulers And Queue Size #############################
+         vda | [mq-deadline] 256
+# Disk Partioning ############################################
+Device       Type      Start        End               Size
+============ ==== ========== ========== ==================
+/dev/vda     Disk                              10737418240
+/dev/vda1    Part       2048    1050623          536870400
+/dev/vda2    Part    1050624   20971519        10199498240
+# Kernel Inode State #########################################
+dentry-state | 30377	19674	45	0	9185	0
+     file-nr | 928	0	46628
+    inode-nr | 20189	102
+# LVM Volumes ################################################
+Unable to collect information
+# LVM Volume Groups ##########################################
+Unable to collect information
+# RAID Controller ############################################
+  Controller | No RAID controller detected
+# Network Config #############################################
+  Controller | Red Hat, Inc. Virtio network device
+ FIN Timeout | 60
+  Port Range | 60999
+# Interface Statistics #######################################
+  interface  rx_bytes rx_packets  rx_errors   tx_bytes tx_packets  tx_errors
+  ========= ========= ========== ========== ========== ========== ==========
+  lo                0          0          0          0          0          0
+  eth0       60000000      40000          0    2250000      22500          0
+# Network Devices ############################################
+  Device    Speed     Duplex
+  ========= ========= =========
+  eth0
+# Top Processes ##############################################
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+    1 root      20   0   43580   3776   2472 S  0.0  0.8   0:01.14 systemd
+    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd
+    4 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H
+    5 root      20   0       0      0      0 S  0.0  0.0   0:00.09 kworker/u2:0
+    6 root      20   0       0      0      0 S  0.0  0.0   0:00.05 ksoftirqd/0
+    7 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0
+    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 R  0.0  0.0   0:00.15 rcu_sched
+   10 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 lru-add-dra+
+# Notable Processes ##########################################
+  PID    OOM    COMMAND
+  810    -17    sshd
+# Memory mamagement ##########################################
+Transparent huge pages are currently disabled on the system.
+# The End ####################################################
+</pre>
+
+<h3 id="тесты">Тесты</h3>
+
+<p><strong>DD</strong></p>
+<pre>
+dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync 2&gt;&amp;1
+rm -f test
+-----------
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.1473 s, 500 MB/s
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 1.64194 s, 654 MB/s
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 1.71044 s, 628 MB/s
+</pre>
+
+<p>Это в 10 раз быстрее того что <a href="/2018/08/ihor-minimus/">было</a> до этого.</p>
+
+<p><strong>Sysbench тест диска</strong></p>
+<pre>
+sysbench fileio --file-total-size=1G prepare
+-----------
+sysbench 1.0.17 (using system LuaJIT 2.0.4)
+
+128 files, 8192Kb each, 1024Mb total
+Creating files for the test...
+Extra file open flags: (none)
+Creating file test_file.0
+...
+Creating file test_file.127
+1073741824 bytes written in 3.61 seconds (283.34 MiB/sec).
+sysbench fileio --file-total-size=1G --file-test-mode=rndrw --time=300 --max-requests=0 run
+-----------
+sysbench 1.0.17 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Extra file open flags: (none)
+128 files, 8MiB each
+1GiB total file size
+Block size 16KiB
+Number of IO requests: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Initializing worker threads...
+
+Threads started!
+
+
+File operations:
+    reads/s:                      1825.15
+    writes/s:                     1216.77
+    fsyncs/s:                     3893.78
+
+Throughput:
+    read, MiB/s:                  28.52
+    written, MiB/s:               19.01
+
+General statistics:
+    total time:                          300.0213s
+    total number of events:              2080799
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.14
+         max:                                  136.85
+         95th percentile:                        0.50
+         sum:                               296767.58
+
+Threads fairness:
+    events (avg/stddev):           2080799.0000/0.00
+    execution time (avg/stddev):   296.7676/0.00
+</pre>
+
+<h3 id="выводы">Выводы</h3>
+<p>Взял себе такой сервер чтобы запускать на нем автоматическую сборку веб-приложения. Работает все достаточно шустро для таких скромных показателей. С возросшей производительностью диска это очень хороший вариант за 100 рублей в месяц.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

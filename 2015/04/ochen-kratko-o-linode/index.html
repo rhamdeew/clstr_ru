@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Очень кратко о Linode | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Пост о том как я тестировал сервис от Linode">
+	
+	<meta name="keywords" content="Linode, VPS">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2015/04/ochen-kratko-o-linode/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Очень кратко о Linode | CLSTR" />
+	<meta property="og:description" content="Пост о том как я тестировал сервис от Linode" />
+	<meta property="og:url" content="https://clstr.ru/2015/04/ochen-kratko-o-linode/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Очень кратко о Linode</h1>
+    <p class="meta">
+    April 5, 2015
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/linode"><img src="/uploads/2015/04/linode_logo_black.png" alt="linode_logo" class="alignnone size-full" /></a></p>
+
+<p>Добрый вечер!<br />
+Сегодня вкратце пройдусь по довольно известному американскому хостинг-провайдеру Linode. Большое количество веб-разработчиков доверяют хостинг своих проектов именно этому сервису. Сейчас мы попытаемся разобраться в причинах =)</p>
+
+<p>В первую очередь отмечу то что компания с 2003 года на рынке хостинга, а это уже о многом говорит. Этим же можно объяснить и не самую привлекательную панель управления линодами (так в терминологии Linode называются виртуальные сервера) и далеко не низкие цены на сервис.</p>
+
+<p>Начнем с того что минимальный тариф у них начинается с $10 за линоду с 1 ядром CPU, 1Gb RAM и 24Gb HDD.<br />
+В принципе это нормальные цены, но отсутствие тарифа на 512Mb RAM немного огорчает)<br />
+<!--more--></p>
+
+<p>Пройдемся по панели управления.</p>
+
+<h3 id="панель-управления">Панель управления</h3>
+
+<p>Вот так выглядит форма создания новой линоды:<br />
+<a href="/uploads/2015/04/linode_add.png"><img src="/uploads/2015/04/linode_add-1024x675.png" alt="linode_add" width="625" height="412" class="alignnone size-large wp-image-266" /></a></p>
+
+<p>На выбор у нас 5 локаций 4 из который находятся в США и 1 в Англии (Лондон).<br />
+Кстати говоря выбор предустановленной ОС здесь делается уже после создания линоды. Здесь панель несколько отличается от очень простых как у DO и Vultr и более похожа на сервис от Amazon. То есть после выбора тарифа мы попадаем в панель управления сервером где можем дополнительно подключить к нему диски и накатить образ.<br />
+Список образов весьма стандартный и ограничивается популярными серверными дистрибутивами Linux. В качестве возможности автоматической установки приложений у Linode есть собственный репозиторий StackScripts с рецептами по автоматической установке.<br />
+Также виртальные сервера здесь комплектуются отдельным SWAP-разделом (128,256 и 512 мегабайт на выбор).</p>
+
+<p>А вот так выглядят продвинутые настройки сервера:<br />
+<a href="/uploads/2015/04/linode_settings.png"><img src="/uploads/2015/04/linode_settings-1024x668.png" alt="linode_settings" width="625" height="408" class="alignnone size-large wp-image-263" /></a><br />
+Например здесь есть очень крутая фишка – уведомления на e-mail о превышении указанных порогов нагрузки. Такую фичу хотелось бы видеть и у других хостеров. Также понравилась возможность указать временной интервал для создания автоматических бэкапов сервера. Эту фичу я также наблюдаю впервые.<br />
+Бэкапы кстати платные – $2.5 в месяц.</p>
+
+<p>Вот так выглядит дашборд у уже работающего сервера:<br />
+<a href="/uploads/2015/04/linode_dashboard.png"><img src="/uploads/2015/04/linode_dashboard-641x1024.png" alt="linode_dashboard" width="625" height="998" class="alignnone size-large wp-image-265" /></a><br />
+Если все хостить у Linode то не вижу смысла в установке отдельного приложения по мониторингу нагрузки (например Munin, Cacti или New Relic) ибо в панели хостера уже все есть.</p>
+
+<p>Генерация подробных графиков:<br />
+<a href="/uploads/2015/04/linode_longview.png"><img src="/uploads/2015/04/linode_longview-1024x456.png" alt="linode_longview" width="625" height="278" class="alignnone size-large wp-image-267" /></a><br />
+Вот это также однозначно must have! Агрегатор графиков с ваших серверов. Правда тут уже придется установить их собственный Longview Agent.</p>
+
+<p>Также стоит упомянуть что у Linode есть собственное API и СLI-интерфейс для продвинутых пользователей.<br />
+Ну и естественно у них есть собственный раздел Community со статьями по настройке серверного ПО.</p>
+
+<p>Ну а теперь собственно результаты замеров.</p>
+
+<h3 id="тесты">Тесты</h3>
+
+<pre>root@localhost:~# cat /etc/issue
+Ubuntu 14.04.1 LTS \n \l
+</pre>
+
+<pre>root@localhost:~# inxi -b
+System:    Host: localhost Kernel: 3.18.5-x86_64-linode52 x86_64 (64 bit) Console: tty 0 Distro: Ubuntu 14.04 trusty
+Machine:   No /sys/class/dmi, using dmidecode: no machine data available
+CPU:       Single core Intel Xeon CPU E5-2680 v2 (-MCP-) clocked at 2800.042 MHz
+Graphics:  Card: Failed to Detect Video Card!
+           X-Vendor: N/A driver: N/A tty size: 168x22 Advanced Data: N/A for root out of X
+Network:   Card: Failed to Detect Network Card!
+Drives:    HDD Total Size: 25.8GB (7.3% used)
+Info:      Processes: 68 Uptime: 18 min Memory: 114.2/990.9MB Runlevel: 2 Client: Shell (bash) inxi: 1.9.17
+</pre>
+
+<p>Процессор и память:</p>
+
+<pre>root@localhost:~# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 62
+model name    : Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+stepping    : 4
+microcode    : 0x416
+cpu MHz        : 2800.042
+cache size    : 25600 KB
+physical id    : 1
+siblings    : 1
+core id        : 8
+cpu cores    : 1
+apicid        : 48
+initial apicid    : 48
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 13
+wp        : yes
+flags        : fpu de tsc msr pae cx8 apic sep cmov pat clflush mmx fxsr sse sse2 ss ht syscall nx lm constant_tsc rep_good nopl nonstop_tsc eagerfpu pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm ida arat epb pln pts dtherm fsgsbase erms xsaveopt
+bugs        :
+bogomips    : 5602.42
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 46 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<pre>root@localhost:~# cat /proc/meminfo
+MemTotal:        1014660 kB
+MemFree:          615376 kB
+MemAvailable:     920456 kB
+Buffers:            9664 kB
+Cached:           298260 kB
+SwapCached:            0 kB
+Active:           222268 kB
+Inactive:          96128 kB
+Active(anon):      10492 kB
+Inactive(anon):      160 kB
+Active(file):     211776 kB
+Inactive(file):    95968 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:        262140 kB
+SwapFree:         262140 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         10468 kB
+Mapped:            10996 kB
+Shmem:               184 kB
+Slab:              23964 kB
+SReclaimable:      12396 kB
+SUnreclaim:        11568 kB
+KernelStack:        1104 kB
+PageTables:         1372 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      769468 kB
+Committed_AS:      42516 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       10688 kB
+VmallocChunk:   34359715764 kB
+DirectMap4k:     1048576 kB
+DirectMap2M:           0 kB
+</pre>
+
+<pre>root@localhost:~# df -H
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/xvda        26G  685M   25G   3% /
+none            4.1k     0  4.1k   0% /sys/fs/cgroup
+devtmpfs        519M  4.1k  519M   1% /dev
+none            104M  181k  104M   1% /run
+none            5.3M     0  5.3M   0% /run/lock
+none            520M     0  520M   0% /run/shm
+none            105M     0  105M   0% /run/user
+</pre>
+
+<p>Тест на линейную скорость записи на диск показал просто заоблачные результаты и почти догнал аномальные показатели <a href="https://clstr.ru/2014/08/obzor-servisa-vdsina-ru/">vdsina</a>.</p>
+
+<pre>root@localhost:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 1.16614 s, 921 MB/s
+</pre>
+
+<p>Пинги до Лондона из Ульяновска:</p>
+
+<pre>➜  ~  ping 178.79.xxx.xxx
+PING 178.79.xxx.xxx (178.79.xxx.xxx) 56(84) bytes of data.
+64 bytes from 178.79.xxx.xxx: icmp_seq=1 ttl=49 time=74.6 ms
+64 bytes from 178.79.xxx.xxx: icmp_seq=2 ttl=49 time=77.9 ms
+64 bytes from 178.79.xxx.xxx: icmp_seq=3 ttl=49 time=73.0 ms
+64 bytes from 178.79.xxx.xxx: icmp_seq=4 ttl=49 time=75.9 ms
+64 bytes from 178.79.xxx.xxx: icmp_seq=5 ttl=49 time=74.5 ms
+64 bytes from 178.79.xxx.xxx: icmp_seq=6 ttl=49 time=74.2 ms
+^C
+--- 178.79.xxx.xxx ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5007ms
+rtt min/avg/max/mdev = 73.076/75.046/77.932/1.531 ms
+</pre>
+
+<p>Скучные тесты sysbench и serverbear если кому интересно:</p>
+
+<pre>root@localhost:~# sysbench --test=fileio --file-total-size=4G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 32Mb each
+4Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+FATAL: Failed to read file! file: 3 pos: 0 errno = 0 ()
+Done.
+
+Operations performed:  0 Read, 0 Write, 0 Other = 0 Total
+Read 0b  Written 0b  Total transferred 0b  (0b/sec)
+    0.00 Requests/sec executed
+
+Test execution summary:
+    total time:                          0.0015s
+    total number of events:              0
+    total time taken by event execution: 0.0000
+    per-request statistics:
+         min:                            18446744073709.55ms
+         avg:                                  0.00ms
+         max:                                  0.00ms
+
+Threads fairness:
+    events (avg/stddev):           0.0000/0.00
+    execution time (avg/stddev):   0.0000/0.00
+</pre>
+
+<pre>root@localhost:~# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          24.6369s
+    total number of events:              10000
+    total time taken by event execution: 98.4659
+    per-request statistics:
+         min:                                  2.33ms
+         avg:                                  9.85ms
+         max:                                 23.87ms
+         approx.  95 percentile:              12.56ms
+
+Threads fairness:
+    events (avg/stddev):           2500.0000/0.71
+    execution time (avg/stddev):   24.6165/0.01
+</pre>
+
+<pre>root@localhost:~# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          30.1447s
+    total number of events:              10000
+    total time taken by event execution: 30.1323
+    per-request statistics:
+         min:                                  3.00ms
+         avg:                                  3.01ms
+         max:                                  3.70ms
+         approx.  95 percentile:               3.02ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   30.1323/0.00
+</pre>
+
+<pre>root@localhost:~# sysbench --test=threads --thread-locks=1 --max-time=20s run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing thread subsystem performance test
+Thread yields per test: 1000 Locks used: 1
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          11.8283s
+    total number of events:              10000
+    total time taken by event execution: 11.8075
+    per-request statistics:
+         min:                                  1.17ms
+         avg:                                  1.18ms
+         max:                                  1.40ms
+         approx.  95 percentile:               1.19ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   11.8075/0.00
+
+root@localhost:~# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.1561s
+    total number of events:              64
+    total time taken by event execution: 5.2660
+    per-request statistics:
+         min:                                  2.36ms
+         avg:                                 82.28ms
+         max:                                151.13ms
+         approx.  95 percentile:             137.68ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.0823/0.05
+</pre>
+
+<pre>root@localhost:~# sysbench --test=memory --memory-total-size=1G --num-threads=4 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 1024M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 1048576 (249645.30 ops/sec)
+
+1024.00 MB transferred (243.79 MB/sec)
+
+
+Test execution summary:
+    total time:                          4.2003s
+    total number of events:              1048576
+    total time taken by event execution: 12.3867
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.01ms
+         max:                                 13.36ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           262144.0000/180.80
+    execution time (avg/stddev):   3.0967/0.04
+</pre>
+
+<p><strong>Serverbear</strong><br />
+Тесты <a href="http://serverbear.com/benchmark/2015/02/14/TNW6FNHDbRUc5DKm">Serverbear</a></p>
+
+<p>Пока я всячески нагружал сервер мне успело прилететь письмо с алертом о превышении disk io. Выглядит письмо вот так:</p>
+
+<pre>Your Linode, linode868xxx, has exceeded the notification threshold (5000) for disk io rate by averaging 5549.92 for the last 2 hours. The dashboard for this specific Linode is located at: &lt;https://manager.linode.com/linodes/dashboard/linode868xxx&gt;
+
+This is an automated message, please do not respond to this email.  If you have questions, please open a support ticket.
+
+You can view or change your alert thresholds under the "Settings" tab of the Linode Manager.
+
+This is not meant as a warning or a representation that you are misusing your resources.  We encourage you to modify the thresholds based on your own individual needs.
+
+You may access the members' site at &lt;https://manager.linode.com/&gt;.
+</pre>
+
+<p><strong>Резюме</strong><br />
+Недешевый, но серьезный и стабильный сервис для хостинга ваших проектов. Для тестов и dev-серверов я бы конечно лучше посоветовал <a href="https://clstr.ru/2015/04/obzor-digitalocean/">DigitalOcean</a> как более дешевый аналог. Но вот для продакшна Linode могу смело советовать.</p>
+
+<p><a href="http://u.hmdw.me/linode">Попробовать самому!</a></p>
+
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

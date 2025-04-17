@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Что делать если сервер не загружается? | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Загрузка сервера в Rescue-mode">
+	
+	<meta name="keywords" content="SoYouStart, rescue-mode">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2016/05/sys-rescue/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Что делать если сервер не загружается? | CLSTR" />
+	<meta property="og:description" content="Загрузка сервера в Rescue-mode" />
+	<meta property="og:url" content="https://clstr.ru/2016/05/sys-rescue/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/ovh_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header style="background-image: url('/img/ovh.jpg')">
+    <h1 class="title">Что делать если сервер не загружается?</h1>
+    <p class="meta">
+    May 2, 2016
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/sys"><img src="/uploads/2015/11/logo-soyoustart.png" alt="sys_logo" class="alignnone size-full" /></a></p>
+
+<p>Добрый день!</p>
+
+<p>Вчера возникла интересная ситуация - я поправил /etc/fstab и глубокой ночью ребутнул сервер. К моему удивлению он не загрузился так как надо =)</p>
+
+<p>В тот же момент меня охватила паника - это production-сервер с довольно нагруженными сайтами.</p>
+
+<!--more-->
+
+<p>###Итак, что же делать если возникла такая ситуация?</p>
+
+<p>Первым делом возникают мысли о KVM, но мало того что он стоит 25€ за 1 день (практически равно стоимости серверов на минимальном тарифе), так еще и возникли мысли о том что его придется долго ждать.</p>
+
+<p>И тут я ткнул на кнопку «Netboot»</p>
+
+<p><img src="https://i.imgur.com/29cR8yF.png" alt="SouYouStart Netboot" /></p>
+
+<p>Ок, кажется то что нужно. Посмотрим что нам предлагают:</p>
+
+<p><em>Выбрать дефолтное ядро для загрузки</em>
+<img src="https://i.imgur.com/mZQeVFt.png" alt="SoYouStart select kernel" /></p>
+
+<p><em>Выбрать rescue-образ для восстановления системы</em>
+<img src="https://i.imgur.com/LdYxdpB.png" alt="SouYouStart select rescue image" /></p>
+
+<p>Выбираем rescue-pro и жмем кнопку «Restart». После того как сервер перезагрузится вам на почту упадет письмо с root-паролем для подключения по ssh и входа в rescue-панель:</p>
+
+<p><img src="https://i.imgur.com/uMDmJPY.png" alt="SouYouStart rescue-pro panel" /></p>
+
+<p>Панелька нужна для быстрого теста железа, а ssh для быстрого исправления настроек.</p>
+
+<p>Например в моем случае хватило этого:</p>
+<pre>
+mount /dev/md2 /mnt/
+cd /mnt/etc
+vi fstab
+</pre>
+
+<p>После того как все изменения сделаны снова открываем пункт меню Netboot в панели SYS и выставяем опцию загрузки с диска («Hard disk»).
+В консоли набираем:</p>
+<pre>
+shutdown -r now
+</pre>
+
+<p>Если вы все сделали правильно то через минуту ваш сервер загрузится.</p>
+
+<p>Вообще в OVH сделали очень правильную вещь - по максимуму автоматизировали все и минимизировали человеческое вмешательство. Так что если даже по вашей вине ваш дедик перестал грузиться то можете не расстраиваться - большинство проблем можно решить даже без тикета в ТП.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

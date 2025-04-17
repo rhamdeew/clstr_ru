@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Обзор VDS от Adman в Новосибирске | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест виртуального сервера на тарифе с 1 гигабайтом ОЗУ от Adman">
+	
+	<meta name="keywords" content="vds, adman, VMware, Россия">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2018/11/adman-vds-step1/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Обзор VDS от Adman в Новосибирске | CLSTR" />
+	<meta property="og:description" content="Тест виртуального сервера на тарифе с 1 гигабайтом ОЗУ от Adman" />
+	<meta property="og:url" content="https://clstr.ru/2018/11/adman-vds-step1/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Обзор VDS от Adman в Новосибирске</h1>
+    <p class="meta">
+    November 23, 2018
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/adman"><img src="/uploads/2018/logo_adman.png" alt="logo_adman" class="alignnone size-full" /></a></p>
+
+<p>Добрый день!</p>
+
+<p>Сегодня тестирую виртуальный сервер в Новосибирске на платформе VMware от Adman. Этих ребят я помню еще с тех времен когда
+у них был бесплатный тариф с виртуалкой) Я даже какое-то время им пользовался, но затем отменил услугу за ненадобностью.</p>
+
+<p>Теперь вот спустя несколько лет решил взять на тест их сервер на тарифе step1 за 300 рублей в месяц (1Gb ОЗУ, 1 ядром CPU, 10Gb SSD).
+Обещают также DDoS-защиту и ежедневные автоматические бэкапы. Сами бэкапы я кстати не видел в панели, видимо надо у техподдержки спрашивать.</p>
+
+<p>Итак, теперь посмотрим что же за виртуалку я заказал.</p>
+
+<!--more-->
+
+<h3 id="панель-услуг">Панель услуг</h3>
+
+<p>Тут на скрине видно какие дополнительные услуги можно приобрести при заказе сервера.</p>
+
+<p><img src="/uploads/2018/adman_step1.png" alt="Панель заказа сервера" /></p>
+
+<p>А вот так выглядит список заказанных услуг.</p>
+
+<p><img src="/uploads/2018/adman_step2.png" alt="Панель услуг" /></p>
+
+<h3 id="сведения-о-vm">Сведения о VM</h3>
+
+<p><strong>CentOS Linux release 7.5.1804 (Core)</strong></p>
+
+<pre>
+cat /etc/centos-release
+-----------
+CentOS Linux release 7.5.1804 (Core)
+</pre>
+
+<pre>
+uname -a
+-----------
+Linux localhost.localdomain 3.10.0-327.36.3.el7.x86_64 #1 SMP Mon Oct 24 16:09:20 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux
+</pre>
+
+<p><strong>Виртуализация KVM</strong></p>
+<pre>
+inxi -b
+-----------
+System:    Host: localhost.localdomain Kernel: 3.10.0-327.36.3.el7.x86_64 x86_64 bits: 64 Console: N/A
+           Distro: CentOS Linux release 7.5.1804 (Core)
+Machine:   Type: Vmware System: VMware product: VMware Virtual Platform v: N/A
+           serial: VMware-42 24 27 20 c0 a5 c2 a6-ee 9d 1f 10 55 a4 b9 25
+           Mobo: Intel model: 440BX Desktop Reference Platform serial: N/A BIOS: Phoenix v: 6.00
+           date: 04/05/2016
+CPU:       Single Core: Intel Xeon E5-2680 v2 type: MCP speed: 2793 MHz
+Graphics:  Device-1: VMware SVGA II Adapter driver: vmwgfx v: 2.6.1.0
+           Display: server: No display server data found. Headless machine? tty: 204x25
+           Message: Unable to show advanced data. Required tool glxinfo missing.
+Network:   Device-1: Intel 82371AB/EB/MB PIIX4 ACPI type: network bridge driver: N/A
+           Device-2: Intel 82545EM Gigabit Ethernet driver: e1000
+Drives:    Local Storage: total: 10.00 GiB used: 1.80 GiB (18.0%)
+Info:      Processes: 73 Uptime: 1h 51m Memory: 993.3 MiB used: 218.1 MiB (22.0%) Init: systemd runlevel: 3
+           Shell: test.sh inxi: 3.0.26
+</pre>
+
+<p><strong>CPU и ОЗУ</strong></p>
+
+<pre>
+cat /proc/cpuinfo
+-----------
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 62
+model name	: Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+stepping	: 4
+microcode	: 0x428
+cpu MHz		: 2793.269
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts nopl xtopology tsc_reliable nonstop_tsc pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm arat fsgsbase tsc_adjust smep
+bogomips	: 5586.53
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 42 bits physical, 48 bits virtual
+power management:
+
+
+Memory Info:
+====================================================
+cat /proc/meminfo
+-----------
+MemTotal:        1017168 kB
+MemFree:          150948 kB
+MemAvailable:     732724 kB
+Buffers:           48176 kB
+Cached:           610760 kB
+SwapCached:            0 kB
+Active:           346164 kB
+Inactive:         369800 kB
+Active(anon):      37268 kB
+Inactive(anon):    26452 kB
+Active(file):     308896 kB
+Inactive(file):   343348 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:        195580 kB
+SwapFree:         195536 kB
+Dirty:                36 kB
+Writeback:             0 kB
+AnonPages:         57016 kB
+Mapped:            26980 kB
+Shmem:              6732 kB
+Slab:             112608 kB
+SReclaimable:      84312 kB
+SUnreclaim:        28296 kB
+KernelStack:        1408 kB
+PageTables:         3400 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      704164 kB
+Committed_AS:     230500 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      153400 kB
+VmallocChunk:   34359574012 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:      4096 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       59328 kB
+DirectMap2M:      989184 kB
+</pre>
+
+<p><strong>Разметка диска</strong></p>
+<pre>
+df -HT
+-----------
+Файловая система Тип      Размер Использовано  Дост Использовано% Cмонтировано в
+/dev/sda1        ext4        11G         2,0G  7,8G           20% /
+devtmpfs         devtmpfs   512M            0  512M            0% /dev
+tmpfs            tmpfs      521M            0  521M            0% /dev/shm
+tmpfs            tmpfs      521M         7,0M  514M            2% /run
+tmpfs            tmpfs      521M            0  521M            0% /sys/fs/cgroup
+tmpfs            tmpfs      105M            0  105M            0% /run/user/0
+</pre>
+
+<p><strong>PT Summary</strong></p>
+<pre>
+pt-summary
+-----------
+# Percona Toolkit System Summary Report ######################
+        Date | 2018-10-26 03:48:55 UTC (local TZ: MSK +0300)
+    Hostname | localhost.localdomain
+      Uptime |  1:51,  1 user,  load average: 0,00, 0,01, 0,05
+      System | VMware, Inc.; VMware Virtual Platform; vNone (Other)
+ Service Tag | VMware-42 24 27 20 c0 a5 c2 a6-ee 9d 1f 10 55 a4 b9 25
+    Platform | Linux
+     Release | CentOS Linux release 7.5.1804 (Core)
+      Kernel | 3.10.0-327.36.3.el7.x86_64
+Architecture | CPU = 64-bit, OS = 64-bit
+   Threading | NPTL 2.17
+    Compiler | GNU CC version 4.8.5 20150623 (Red Hat 4.8.5-28).
+     SELinux | Enforcing
+ Virtualized | VMWare
+# Processor ##################################################
+  Processors | physical = 1, cores = 1, virtual = 1, hyperthreading = no
+      Speeds | 1x2793.269
+      Models | 1xIntel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz
+      Caches | 1x25600 KB
+# Memory #####################################################
+       Total | 993,3M
+        Free | 140,8M
+        Used | physical = 93,6M, swap allocated = 191,0M, swap used = 44,0k, virtual = 93,6M
+      Shared | 6,6M
+     Buffers | 759,0M
+      Caches | 713,9M
+       Dirty | 288 kB
+     UsedRSS | 116,5M
+  Swappiness | 30
+ DirtyPolicy | 30, 10
+ DirtyStatus | 0, 0
+  Locator   Size     Speed             Form Factor   Type          Type Detail
+  ========= ======== ================= ============= ============= ===========
+  RAM slot #0 1024 MB  Unknown           DIMM          DRAM          EDO
+  NVD #0    {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #10   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #11   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #12   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #13   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #14   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #15   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #16   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #17   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #18   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #19   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #1    {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #20   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #21   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #22   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #23   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #24   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #25   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #26   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #27   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #28   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #29   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #2    {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #30   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #31   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #32   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #33   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #34   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #35   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #36   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #37   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #38   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #39   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #3    {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #40   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #41   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #42   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #43   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #44   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #45   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #46   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #47   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #48   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #49   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #4    {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #50   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #51   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #52   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #53   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #54   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #55   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #56   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #57   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #58   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #59   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #5    {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #60   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #61   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #62   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #63   {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #6    {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #7    {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #8    {EMPTY}  Unknown           DIMM          Other         Unknown
+  NVD #9    {EMPTY}  Unknown           DIMM          Other         Unknown
+  RAM slot #10 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #11 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #12 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #13 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #14 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #15 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #16 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #17 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #18 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #19 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #1 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #20 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #21 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #22 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #23 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #24 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #25 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #26 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #27 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #28 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #29 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #2 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #30 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #31 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #32 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #33 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #34 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #35 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #36 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #37 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #38 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #39 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #3 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #40 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #41 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #42 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #43 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #44 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #45 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #46 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #47 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #48 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #49 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #4 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #50 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #51 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #52 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #53 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #54 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #55 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #56 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #57 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #58 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #59 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #5 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #60 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #61 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #62 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #63 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #6 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #7 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #8 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+  RAM slot #9 {EMPTY}  Unknown           DIMM          DRAM          Unknown
+# Mounted Filesystems ########################################
+  Filesystem  Size Used Type     Opts                                                      Mountpoint
+  /dev/sda1   9,6G  20% ext4     rw,relatime,seclabel,data=ordered                         /
+  devtmpfs    488M   0% devtmpfs rw,nosuid,seclabel,size=499428k,nr_inodes=124857,mode=755 /dev
+  tmpfs       100M   0% tmpfs    rw,nosuid,nodev,seclabel                                  /run/user/0
+  tmpfs       100M   0% tmpfs    rw,nosuid,nodev,seclabel,mode=755                         /run/user/0
+  tmpfs       100M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101720k,mode=700   /run/user/0
+  tmpfs       100M   0% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                  /run/user/0
+  tmpfs       497M   0% tmpfs    rw,nosuid,nodev,seclabel                                  /dev/shm
+  tmpfs       497M   0% tmpfs    rw,nosuid,nodev,seclabel,mode=755                         /dev/shm
+  tmpfs       497M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101720k,mode=700   /dev/shm
+  tmpfs       497M   0% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                  /dev/shm
+  tmpfs       497M   0% tmpfs    rw,nosuid,nodev,seclabel                                  /sys/fs/cgroup
+  tmpfs       497M   0% tmpfs    rw,nosuid,nodev,seclabel,mode=755                         /sys/fs/cgroup
+  tmpfs       497M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101720k,mode=700   /sys/fs/cgroup
+  tmpfs       497M   0% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                  /sys/fs/cgroup
+  tmpfs       497M   2% tmpfs    rw,nosuid,nodev,seclabel                                  /run
+  tmpfs       497M   2% tmpfs    rw,nosuid,nodev,seclabel,mode=755                         /run
+  tmpfs       497M   2% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101720k,mode=700   /run
+  tmpfs       497M   2% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                  /run
+# Disk Schedulers And Queue Size #############################
+         sda | [deadline] 128
+         sr0 | [cfq] 128
+# Disk Partioning ############################################
+Device       Type      Start        End               Size
+============ ==== ========== ========== ==================
+/dev/sda     Disk                              10737418240
+/dev/sda1    Part       2048   20578125        10534951424
+/dev/sda2    Part   20578304   20969471          200277504
+# Kernel Inode State #########################################
+dentry-state | 76409	65550	45	0	0	0
+     file-nr | 992	0	99201
+    inode-nr | 51876	27197
+# LVM Volumes ################################################
+Unable to collect information
+# LVM Volume Groups ##########################################
+Unable to collect information
+# RAID Controller ############################################
+  Controller | Fusion-MPT SAS
+# Network Config #############################################
+  Controller | Intel Corporation 82545EM Gigabit Ethernet Controller (Copper) (rev 01)
+ FIN Timeout | 60
+  Port Range | 60999
+# Interface Statistics #######################################
+  interface  rx_bytes rx_packets  rx_errors   tx_bytes tx_packets  tx_errors
+  ========= ========= ========== ========== ========== ========== ==========
+  lo                0          0          0          0          0          0
+  eno16777728  400000000    1000000          0    4500000      20000          0
+# Network Devices ############################################
+  Device    Speed     Duplex
+  ========= ========= =========
+  eno16777728 1000Mb/s   Full
+# Top Processes ##############################################
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+    1 root      20   0   45980   6308   3936 S  0,0  0,6   0:03.27 systemd
+    2 root      20   0       0      0      0 S  0,0  0,0   0:00.00 kthreadd
+    3 root      20   0       0      0      0 S  0,0  0,0   0:00.11 ksoftirqd/0
+    5 root       0 -20       0      0      0 S  0,0  0,0   0:00.00 kworker/0:0H
+    6 root      20   0       0      0      0 S  0,0  0,0   0:00.21 kworker/u2:0
+    7 root      rt   0       0      0      0 S  0,0  0,0   0:00.00 migration/0
+    8 root      20   0       0      0      0 S  0,0  0,0   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 S  0,0  0,0   0:00.00 rcuob/0
+   10 root      20   0       0      0      0 S  0,0  0,0   0:00.94 rcu_sched
+# Notable Processes ##########################################
+  PID    OOM    COMMAND
+23390    -17    sshd
+23456    -17    auditd
+# Memory mamagement ##########################################
+Transparent huge pages are enabled.
+# The End ####################################################
+</pre>
+
+<h3 id="тесты">Тесты</h3>
+
+<p><strong>DD</strong></p>
+
+<pre>
+dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync 2&gt;&amp;1
+rm -f test
+-----------
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 1,5642 c, 686 MB/c
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 1,89665 c, 566 MB/c
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 1,82965 c, 587 MB/c
+</pre>
+
+<p><strong>Sysbench тест CPU</strong></p>
+<pre>
+sysbench cpu --cpu-max-prime=20000 --num-threads=1 run
+-----------
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 20000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   349.62
+
+General statistics:
+    total time:                          10.0003s
+    total number of events:              3497
+
+Latency (ms):
+         min:                                    2.82
+         avg:                                    2.86
+         max:                                    7.21
+         95th percentile:                        2.86
+         sum:                                 9997.42
+
+Threads fairness:
+    events (avg/stddev):           3497.0000/0.00
+    execution time (avg/stddev):   9.9974/0.00
+</pre>
+
+<pre>
+sysbench mutex --threads=64 run
+-----------
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+General statistics:
+    total time:                          12.1056s
+    total number of events:              64
+
+Latency (ms):
+         min:                                11066.26
+         avg:                                11587.15
+         max:                                11987.62
+         95th percentile:                    11946.04
+         sum:                               741577.57
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   11.5871/0.24
+</pre>
+
+<p><strong>Sysbench тест ОЗУ</strong></p>
+<pre>
+sysbench memory --num-threads=4 --memory-total-size=1G run
+-----------
+WARNING: --num-threads is deprecated, use --threads instead
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 1024MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 1048576 (3907802.36 per second)
+
+1024.00 MiB transferred (3816.21 MiB/sec)
+
+
+General statistics:
+    total time:                          0.2663s
+    total number of events:              1048576
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                   32.00
+         95th percentile:                        0.00
+         sum:                                  391.12
+
+Threads fairness:
+    events (avg/stddev):           262144.0000/0.00
+    execution time (avg/stddev):   0.0978/0.03
+</pre>
+
+<p><strong>Sysbench тест диска</strong></p>
+<pre>
+sysbench fileio --file-total-size=2G prepare
+-----------
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+128 files, 16384Kb each, 2048Mb total
+Creating files for the test...
+Extra file open flags: (none)
+Creating file test_file.0
+Creating file test_file.1
+...
+Creating file test_file.127
+2147483648 bytes written in 7.43 seconds (275.60 MiB/sec).
+sysbench fileio --file-total-size=2G --file-test-mode=rndrw --time=300 --max-requests=0 run
+-----------
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Extra file open flags: (none)
+128 files, 16MiB each
+2GiB total file size
+Block size 16KiB
+Number of IO requests: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Initializing worker threads...
+
+Threads started!
+
+
+File operations:
+    reads/s:                      1468.51
+    writes/s:                     979.01
+    fsyncs/s:                     3132.87
+
+Throughput:
+    read, MiB/s:                  22.95
+    written, MiB/s:               15.30
+
+General statistics:
+    total time:                          300.0496s
+    total number of events:              1674294
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.18
+         max:                                  309.47
+         95th percentile:                        0.64
+         sum:                               297507.36
+
+Threads fairness:
+    events (avg/stddev):           1674294.0000/0.00
+    execution time (avg/stddev):   297.5074/0.00
+</pre>
+
+<p><strong>SpeedTest</strong></p>
+
+<pre>
+Speedtest cli:
+====================================================
+speedtest-cli
+-----------
+Retrieving speedtest.net configuration...
+Testing from ALFA TELECOM s.r.o. (95.47.156.107)...
+Retrieving speedtest.net server list...
+Selecting best server based on ping...
+Hosted by JM-Net z.s. (Prague) [0.43 km]: 165.592 ms
+Testing download speed................................................................................
+Download: 86.75 Mbit/s
+Testing upload speed....................................................................................................
+Upload: 52.85 Mbit/s
+</pre>
+
+<p><strong>IP</strong></p>
+
+<p>2ip почему то определяет айпишник как украинский.
+Но сервер точно в Новосибирске.</p>
+
+<p><img src="/uploads/2018/adman_step3.png" alt="Adman ip" /></p>
+
+<p><strong>7-zip benchmark</strong></p>
+<pre>
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=ru_RU.UTF-8,Utf16=on,HugeFiles=on,64 bits,1 CPU Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz (306E4),ASM,AES-NI)
+
+      Intel(R) Xeon(R) CPU E5-2680 v2 @ 2.80GHz (306E4)
+CPU Freq:  1166  1947  2701  2743  2749  2711  2711  2737  2747
+
+RAM size:     993 MB,  # CPU hardware threads:   1
+RAM usage:    435 MB,  # Benchmark threads:      1
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       2777    99   2716   2702  |      28730   100   2450   2453
+23:       2708    99   2776   2760  |      30558    99   2660   2645
+24:       2625   100   2821   2822  |      28591   100   2514   2510
+25:       2571   100   2938   2936  |      28759   100   2556   2560
+----------------------------------  | ------------------------------
+Avr:             100   2813   2805  |              100   2545   2542
+Tot:             100   2679   2673
+</pre>
+
+<h3 id="выводы">Выводы</h3>
+<p>Интересная локация, неплохой SSD и невысокая цена. Я пока использую тот сервер который тестировал.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Обзор сервиса Packet.net | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Выделенные серверы с почасовым доступом">
+	
+	<meta name="keywords" content="dedicated, windows, cloud, hourly">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2018/06/packet/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Обзор сервиса Packet.net | CLSTR" />
+	<meta property="og:description" content="Выделенные серверы с почасовым доступом" />
+	<meta property="og:url" content="https://clstr.ru/2018/06/packet/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Обзор сервиса Packet.net</h1>
+    <p class="meta">
+    June 6, 2018
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/packetnet"><img src="/uploads/2018/packet_logo.png" alt="packet_logo" class="alignnone size-full" /></a></p>
+
+<p>Доброй ночи!</p>
+
+<p>Тут будет довольно краткий обзор так как я никаких замеров производительности не проводил. Просто недавно по работе мне понадобилось срочно где-то
+завести Windows-сервер в котором можно без проблем запустить Hyper-V. Вариант с разворачиваем KVM с вложенной виртуализацией и нудной установкой
+дистрибутива Windows отпадал поэтому я начал искать варианты. И я вспомнил про packet.net.</p>
+
+<!--more-->
+
+<h3 id="описание-сервиса">Описание сервиса</h3>
+
+<p>Судя по прайсу если брать у них сервера на постоянку то можно без штанов остаться, но вот Win-сервер на Intel Xeon E3-1240 32Gb RAM 2x120Gb SSD и 2 гигабитной сеткой (2 сетевушки по 1 гигабит) за 0.44$ в час вполне нормально =) 0.40 за железку и 0.04 за лицензию Windows Server 2012 R2.</p>
+
+<p>При создании сервера есть возможность выбрать ОС из списка где есть дистрибутивы Linux, FreeBSD и Windows, а также vmWare ESXi.</p>
+
+<p>Там есть еще какая-то плата за трафик, но меня это мало интересовало так как мне надо было всего пару-тройку гигабайт трафа.</p>
+
+<p>Сервис предлагает сервера в 15 локациях, но на момент написания заметки больше 1 конфигурации было доступно только в 4 локациях, а в Сингапуре вообще
+ничего не было доступно. При этом практически везде доступен конфиг x1.small.x86 который отличается от выбранного мной отсутствием RAID (один SSD на 240 гигабайт), наличием GPU (Intel® Iris™ Pro Graphics P580) и 10-гигабитной сетью (также 2 сетевые карты).</p>
+
+<p>Есть возможность резервировать ресурсы (дороже) и брать спотовые инстансы (дешевле). Правда я не разобрался как =)</p>
+
+<p>Оплата в конце месяца по счету.</p>
+
+<h3 id="процесс-регистрации">Процесс регистрации</h3>
+
+<p>Зарегался я очень быстро, но мне пришло письмо о том что я не прошел автоматическую активацию и мне написал сотрудник данной компании поинтересовавшись
+для каких целей я хочу юзать их сервис и зачем-то спросив один из моих профилей в соцсетях (при этом я уже подтвердил e-mail и номер телефона).
+В итоге я скинул им ссылку на GitHub и описал цели использования. И мой акк сразу же активировали.</p>
+
+<h3 id="панель-управления">Панель управления</h3>
+
+<p>Процесс развертывания сервера (длится минут 10):
+<img src="https://i.imgur.com/bLLiYsd.png" alt="" /></p>
+
+<p>Панель управления сервером:
+<img src="https://i.imgur.com/BWQ2ZhN.png" alt="" />
+<img src="https://i.imgur.com/BDPqVur.png" alt="" /></p>
+
+<p>Разернутый Windows Server 2012 R2:
+<img src="https://i.imgur.com/lWJs7sf.jpg" alt="" />
+<img src="https://i.imgur.com/rYGEjr4.png" alt="" /></p>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>Очень удобный сервис для тех слуаев когда вам нужно некоторое количество мощных выделенных серверов на непродолжительное время. Выделенные сервера развертываются и грохаются также легко как виртуальные на других хостингах. Надо заметить что на Scaleway тоже есть Bare metal сервера и они стоят довольно дешево, но сравнивать их я бы не стал - тут железки выглядят более надежно и энтерпрайзно.</p>
+
+<p>Буду юзать для таких вот крайних случаев когда нужен мощный сервер на пару часов.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

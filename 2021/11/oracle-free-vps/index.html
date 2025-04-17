@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Обзор бесплатной VPS от Oracle | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест бесплатного виртуального сервера от Oracle">
+	
+	<meta name="keywords" content="vps, amsterdam, oracle, amd">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2021/11/oracle-free-vps/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Обзор бесплатной VPS от Oracle | CLSTR" />
+	<meta property="og:description" content="Тест бесплатного виртуального сервера от Oracle" />
+	<meta property="og:url" content="https://clstr.ru/2021/11/oracle-free-vps/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Обзор бесплатной VPS от Oracle</h1>
+    <p class="meta">
+    November 11, 2021
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p>Привет!</p>
+
+<blockquote>
+  <p>Честно говоря этот пост должен был выйти еще в прошлом году, но тогда я не нашел время чтобы опубликовать результаты замеров, а потом просто забыл об этом)</p>
+</blockquote>
+
+<p>С прошлого года компания <a href="https://www.oracle.com/ru/cloud/free/">Oracle предоставляет Free Tier</a> с довольно приятными условиями.</p>
+
+<!--more-->
+
+<p><strong>Вкратце:</strong></p>
+
+<ul>
+  <li>для регистрации нужно привязать свою кредитку</li>
+  <li>бесплатно можно запустить до 2-х виртуалок на x86 и до 4-х виртуалок на ARM</li>
+  <li>панель управления в Oracle Cloud достаточно развесистая, с кучей настроек</li>
+  <li>на виртуалки дают белые ipv4-адреса</li>
+  <li>по-умолчанию включен фаервол и поэтому нужно не забыть открыть нужные порты</li>
+</ul>
+
+<p><strong>Ограничение только одно</strong> - OpenVPN сходу не завелся. Возможно есть какие-то способы завести VPN на этих виртуалках, но я не нашел времени и желания этим заниматься =)</p>
+
+<p>Тут результаты теста сервера на процессоре AMD Epyc:.</p>
+
+<h3 id="сведения-о-vm">Сведения о VM</h3>
+
+<p>На сервере установлена CentOS 7.9</p>
+
+<pre>
+cat /etc/centos-release
+-----------
+CentOS Linux release 7.9.2009 (Core)
+
+Kernel info:
+====================================================
+uname -a
+-----------
+Linux clstr 3.10.0-1160.11.1.el7.x86_64 #1 SMP Fri Dec 18 16:34:56 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+</pre>
+
+<p><strong>Inxi</strong></p>
+
+<pre>
+inxi -b
+-----------
+System:    Host: clstr Kernel: 3.10.0-1160.11.1.el7.x86_64 x86_64 bits: 64 Console: N/A 
+           Distro: CentOS Linux release 7.9.2009 (Core) 
+Machine:   Type: Kvm System: QEMU product: Standard PC (i440FX + PIIX, 1996) v: pc-i440fx-2.9 serial: N/A 
+           Mobo: N/A model: N/A serial: N/A UEFI: EFI Development Kit II / OVMF v: 0.0.0 date: 02/06/2015 
+CPU:       Info: Single Core (4-Die) AMD EPYC 7551 [MT MCM] speed: 1996 MHz 
+Graphics:  Device-1: driver: bochs-drm v: N/A 
+           Display: server: No display server data found. Headless machine? tty: 223x60 
+           Message: Unable to show advanced data. Required tool glxinfo missing. 
+Network:   Device-1: Intel 82371AB/EB/MB PIIX4 ACPI type: network bridge driver: piix4_smbus 
+           Device-2: Red Hat Virtio network driver: virtio-pci 
+Drives:    Local Storage: total: 46.58 GiB used: 2.28 GiB (4.9%) 
+Info:      Processes: 118 Uptime: 4m Memory: 987.7 MiB used: 334.9 MiB (33.9%) Init: systemd runlevel: 3 Shell: Bash 
+           inxi: 3.1.08 
+</pre>
+
+<p><strong>PT Summary</strong></p>
+
+<pre>
+pt-summary
+-----------
+# Percona Toolkit System Summary Report ######################
+        Date | 2021-01-28 13:13:30 UTC (local TZ: GMT +0000)
+    Hostname | clstr
+      Uptime | 4 min,  1 user,  load average: 0.28, 0.46, 0.23
+      System | QEMU; Standard PC (i440FX + PIIX, 1996); vpc-i440fx-2.9 (Other)
+ Service Tag | Not Specified
+    Platform | Linux
+     Release | CentOS Linux release 7.9.2009 (Core)
+      Kernel | 3.10.0-1160.11.1.el7.x86_64
+Architecture | CPU = 64-bit, OS = 64-bit
+   Threading | NPTL 2.17
+     SELinux | Enforcing
+ Virtualized | VMWare
+# Processor ##################################################
+  Processors | physical = 1, cores = 1, virtual = 2, hyperthreading = yes
+      Speeds | 2x1996.246
+      Models | 2xAMD EPYC 7551 32-Core Processor
+      Caches | 2x512 KB
+# Memory #####################################################
+       Total | 987.7M
+        Free | 99.9M
+        Used | physical = 279.2M, swap allocated = 8.0G, swap used = 0.0, virtual = 279.2M
+      Shared | 6.8M
+     Buffers | 608.5M
+      Caches | 682.2M
+       Dirty | 12524 kB
+     UsedRSS | 300.5M
+  Swappiness | 30
+ DirtyPolicy | 30, 10
+ DirtyStatus | 0, 0
+  Locator   Size     Speed             Form Factor   Type          Type Detail
+  ========= ======== ================= ============= ============= ===========
+  DIMM 0    1024 MB  Unknown           DIMM          RAM           Other   
+# Mounted Filesystems ########################################
+  Filesystem  Size Used Type     Opts                                                                                             Mountpoint
+  /dev/sda1   512M   3% vfat     rw,relatime,fmask=0077,dmask=0077,codepage=437,iocharset=ascii,shortname=winnt,errors=remount-ro /boot/efi
+  /dev/sda3    39G   6% xfs      rw,relatime,seclabel,attr2,inode64,noquota                                                       /
+  devtmpfs    461M   0% devtmpfs rw,nosuid,seclabel,size=471668k,nr_inodes=117917,mode=755                                        /dev
+  tmpfs       494M   0% tmpfs    rw,nosuid,nodev,seclabel                                                                         /dev/shm
+  tmpfs       494M   0% tmpfs    rw,nosuid,nodev,seclabel,mode=755                                                                /dev/shm
+  tmpfs       494M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101140k,mode=700,uid=1000,gid=1000                        /dev/shm
+  tmpfs       494M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101140k,mode=700,uid=994,gid=993                          /dev/shm
+  tmpfs       494M   0% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                                                         /dev/shm
+  tmpfs       494M   0% tmpfs    rw,nosuid,nodev,seclabel                                                                         /sys/fs/cgroup
+  tmpfs       494M   0% tmpfs    rw,nosuid,nodev,seclabel,mode=755                                                                /sys/fs/cgroup
+  tmpfs       494M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101140k,mode=700,uid=1000,gid=1000                        /sys/fs/cgroup
+  tmpfs       494M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101140k,mode=700,uid=994,gid=993                          /sys/fs/cgroup
+  tmpfs       494M   0% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                                                         /sys/fs/cgroup
+  tmpfs       494M   2% tmpfs    rw,nosuid,nodev,seclabel                                                                         /run
+  tmpfs       494M   2% tmpfs    rw,nosuid,nodev,seclabel,mode=755                                                                /run
+  tmpfs       494M   2% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101140k,mode=700,uid=1000,gid=1000                        /run
+  tmpfs       494M   2% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101140k,mode=700,uid=994,gid=993                          /run
+  tmpfs       494M   2% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                                                         /run
+  tmpfs        99M   0% tmpfs    rw,nosuid,nodev,seclabel                                                                         /run/user/1000
+  tmpfs        99M   0% tmpfs    rw,nosuid,nodev,seclabel,mode=755                                                                /run/user/1000
+  tmpfs        99M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101140k,mode=700,uid=1000,gid=1000                        /run/user/1000
+  tmpfs        99M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101140k,mode=700,uid=994,gid=993                          /run/user/1000
+  tmpfs        99M   0% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                                                         /run/user/1000
+  tmpfs        99M   0% tmpfs    rw,nosuid,nodev,seclabel                                                                         /run/user/994
+  tmpfs        99M   0% tmpfs    rw,nosuid,nodev,seclabel,mode=755                                                                /run/user/994
+  tmpfs        99M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101140k,mode=700,uid=1000,gid=1000                        /run/user/994
+  tmpfs        99M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101140k,mode=700,uid=994,gid=993                          /run/user/994
+  tmpfs        99M   0% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                                                         /run/user/994
+# Disk Schedulers And Queue Size #############################
+         sda | [deadline] 128
+# Disk Partioning ############################################
+Device       Type      Start        End               Size
+============ ==== ========== ========== ==================
+/dev/sda     Disk                              50010783744
+# Kernel Inode State #########################################
+dentry-state | 42568	28116	45	0	10548	0
+     file-nr | 1664	0	89482
+    inode-nr | 30345	411
+# LVM Volumes ################################################
+Unable to collect information
+# LVM Volume Groups ##########################################
+Unable to collect information
+# RAID Controller ############################################
+  Controller | No RAID controller detected
+# Network Config #############################################
+  Controller | Red Hat, Inc. Virtio network device
+ FIN Timeout | 60
+  Port Range | 60999
+# Interface Statistics #######################################
+  interface  rx_bytes rx_packets  rx_errors   tx_bytes tx_packets  tx_errors
+  ========= ========= ========== ========== ========== ========== ==========
+  lo              400          6          0        400          6          0
+  ens3       60000000      12500          0    1250000       8000          0
+# Network Devices ############################################
+  Device    Speed     Duplex
+  ========= ========= =========
+  ens3                            
+# Network Connections ########################################
+  Connections from remote IP addresses
+    78.142.1xx.1xx      2
+    140.204.36.1xx      1
+    140.204.36.1xx      1
+    157.245.1xx.xx      3
+    167.71.1xx.3        3
+    167.99.2xx.2xx      3
+    169.254.169.2xx     3
+    176.116.1xx.2xx     1
+  Connections to local IP addresses
+    10.0.0.4           15
+  Connections to top 10 local ports
+    38278               1
+    42640               1
+    42646               1
+    42652               1
+    49220               1
+    49222               1
+    49408               1
+    50566               1
+    50568               1
+    58060               1
+  States of connections
+    CLOSE_WAIT          3
+    ESTABLISHED         3
+    LISTEN              6
+    TIME_WAIT          10
+# Top Processes ##############################################
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+    1 root      20   0  128432   7028   4188 S   0.0  0.7   0:02.07 systemd
+    2 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kthreadd
+    3 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kworker/0:0
+    4 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+
+    5 root      20   0       0      0      0 S   0.0  0.0   0:00.10 kworker/u4+
+    6 root      20   0       0      0      0 S   0.0  0.0   0:00.03 ksoftirqd/0
+    7 root      rt   0       0      0      0 S   0.0  0.0   0:00.17 migration/0
+    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 S   0.0  0.0   0:00.50 rcu_sched
+# Notable Processes ##########################################
+  PID    OOM    COMMAND
+ 1876    -17    sshd
+# Simplified and fuzzy rounded vmstat (wait please) ##########
+  procs  ---swap-- -----io---- ---system---- --------cpu--------
+   r  b    si   so    bi    bo     ir     cs  us  sy  il  wa  st
+   1  0     0    0   700   600    350    300   9   3  62   2  24
+   0  0     0    0   125     0   1000   1500   1   5  75   0  18
+   0  0     0    0     0     0     40     70   0   0 100   0   0
+   0  0     0    0     0     0     60     90   0   0  93   0   7
+   0  0     0    0     0     0     40     70   0   0 100   0   0
+# Memory mamagement ##########################################
+Transparent huge pages are currently disabled on the system.
+# The End ####################################################
+</pre>
+
+<p>Как вы можете видеть процессоры здесь AMD Epyc.</p>
+
+<h3 id="тесты">Тесты</h3>
+
+<h4 id="диск">Диск</h4>
+
+<p><strong>DD</strong></p>
+<pre>
+dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync 2&gt;&amp;1
+rm -f test
+-----------
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 20.0942 s, 53.4 MB/s
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 20.9356 s, 51.3 MB/s
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 21.0376 s, 51.0 MB/s
+</pre>
+
+<p>Скорость линейной записи на диск тут раз в 10-12 ниже чем у платных аналогов - <a href="/2020/10/vdsina-amd-epyc/">VDSina</a> и <a href="/2020/10/ihor-minimus/">Ihor</a></p>
+
+<p><strong>Sysbench тест диска</strong></p>
+
+<p>Подготавливаем тестовые файлы.</p>
+
+<pre>
+sysbench fileio --file-total-size=2G prepare
+-----------
+sysbench 1.0.17 (using system LuaJIT 2.0.4)
+
+128 files, 16384Kb each, 2048Mb total
+Creating files for the test...
+Extra file open flags: (none)
+Creating file test_file.0
+...
+Creating file test_file.127
+2147483648 bytes written in 40.75 seconds (50.26 MiB/sec).
+</pre>
+
+<p>Запускаем тест</p>
+
+<pre>
+sysbench fileio --file-total-size=2G --file-test-mode=rndrw --time=300 --max-requests=0 run
+-----------
+sysbench 1.0.17 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Extra file open flags: (none)
+128 files, 16MiB each
+2GiB total file size
+Block size 16KiB
+Number of IO requests: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Initializing worker threads...
+
+Threads started!
+
+
+File operations:
+    reads/s:                      648.89
+    writes/s:                     432.59
+    fsyncs/s:                     1384.47
+
+Throughput:
+    read, MiB/s:                  10.14
+    written, MiB/s:               6.76
+
+General statistics:
+    total time:                          300.0496s
+    total number of events:              740148
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.40
+         max:                                  136.29
+         95th percentile:                        0.86
+         sum:                               299644.68
+
+Threads fairness:
+    events (avg/stddev):           740148.0000/0.00
+    execution time (avg/stddev):   299.6447/0.00
+</pre>
+
+<p>А вот по результатам sysbench производительность диска вполне себе неплохая.</p>
+
+<hr />
+
+<h4 id="процессор">Процессор</h4>
+
+<pre>
+Sysbench CPU:
+====================================================
+sysbench cpu --cpu-max-prime=20000 --num-threads=1 run
+-----------
+sysbench 1.0.17 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 20000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   232.42
+
+General statistics:
+    total time:                          10.0020s
+    total number of events:              2325
+
+Latency (ms):
+         min:                                    2.10
+         avg:                                    4.30
+         max:                                   65.16
+         95th percentile:                        2.18
+         sum:                                10000.00
+
+Threads fairness:
+    events (avg/stddev):           2325.0000/0.00
+    execution time (avg/stddev):   10.0000/0.00
+</pre>
+
+<p>Тут результаты также вдвое хуже аналогов.</p>
+
+<pre>
+Sysbench CPU Mutex 64:
+====================================================
+sysbench mutex --threads=64 run
+-----------
+sysbench 1.0.17 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+General statistics:
+    total time:                          27.1709s
+    total number of events:              64
+
+Latency (ms):
+         min:                                20065.59
+         avg:                                25083.49
+         max:                                26413.37
+         95th percentile:                    25911.33
+         sum:                              1605343.26
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   25.0835/0.85
+</pre>
+
+<p>Производительность процессора получилась вдвое ниже чем у вдсины.</p>
+
+<p><strong>7-zip benchmark</strong></p>
+
+<pre>
+7-zip benchmark:
+====================================================
+7za b
+-----------
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,2 CPUs AMD EPYC 7551 32-Core Processor                 (800F12),ASM,AES-NI)
+
+AMD EPYC 7551 32-Core Processor                 (800F12)
+CPU Freq:  2512  1855   847  2515  1268  1261  1257  1182  1258
+
+RAM size:     987 MB,  # CPU hardware threads:   2
+RAM usage:    441 MB,  # Benchmark threads:      2
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       1710    51   3237   1664  |      14237    49   2462   1216
+23:       1651    51   3312   1683  |      14298    50   2476   1238
+24:       1608    49   3502   1729  |      14114    50   2475   1239
+25:       1577    50   3611   1801  |      13699    50   2435   1219
+----------------------------------  | ------------------------------
+Avr:              50   3416   1719  |               50   2462   1228
+Tot:              50   2939   1474
+</pre>
+
+<p>Тут опять же сравниваю с вдсиной так как там тоже процессор AMD Epyc. Скорость компрессии примерно такая же, а вот декомпрессия в два раза медленее чем на той виртуалке.</p>
+
+<hr />
+
+<h4 id="озу">ОЗУ</h4>
+
+<pre>
+Memory size for Sysbench Memory test: 1G
+Disk space for Sysbench Disk test: 2G
+Sysbench Memory test:
+====================================================
+sysbench memory --num-threads=4 --memory-total-size=1G run
+-----------
+WARNING: --num-threads is deprecated, use --threads instead
+sysbench 1.0.17 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 1024MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 1048576 (959008.22 per second)
+
+1024.00 MiB transferred (936.53 MiB/sec)
+
+
+General statistics:
+    total time:                          1.0916s
+    total number of events:              1048576
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                   95.01
+         95th percentile:                        0.00
+         sum:                                 2064.30
+
+Threads fairness:
+    events (avg/stddev):           262144.0000/0.00
+    execution time (avg/stddev):   0.5161/0.14
+</pre>
+
+<p>IO по ОЗУ тут в 4 раза хуже вдсины.</p>
+
+<hr />
+
+<h3 id="выводы">Выводы</h3>
+
+<p>В качестве бесплатного варианта это очень даже неплохой сервер. На данный момент я использую один такой сервер в качестве стейджинга. Производительности сервера для этого хватает и можно не бояться что потеряются какие-то данные если вдруг бесплатный сервер отберут)</p>
+
+<p>Для меня главное что тут без проблем заводится докер =)</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

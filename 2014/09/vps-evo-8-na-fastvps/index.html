@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>VPS EVO-8 на FastVPS | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Обзор сервера на тарифе EVO-8 от FastVPS">
+	
+	<meta name="keywords" content="FastVPS, OpenVZ">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2014/09/vps-evo-8-na-fastvps/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="VPS EVO-8 на FastVPS | CLSTR" />
+	<meta property="og:description" content="Обзор сервера на тарифе EVO-8 от FastVPS" />
+	<meta property="og:url" content="https://clstr.ru/2014/09/vps-evo-8-na-fastvps/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">VPS EVO-8 на FastVPS</h1>
+    <p class="meta">
+    September 15, 2014
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/fastvps"><img src="/uploads/2014/09/fastvps_logo.png" alt="fastvps_logo" width="220" height="119" class="alignnone size-full wp-image-83" /></a></p>
+
+<p>Всем доброго дня!<br />
+На сей раз мне на тест достался сервер из новой линейки виртуальных серверов EVO, а конкретно EVO-8.<br />
+На сайте фастов для тарифа указаны вот такие параметры -** 1 core CPU Intex Xeon, 8Gb RAM, 25Gb HDD, 1 ip + 10 ipv6 и неограниченный трафик**. Все это за 600 рублей (10.9€).</p>
+
+<p>Все вроде бы понятно, но тут есть пара неочевидных моментов. К примеру мне достался сервер на SSD вместо HDD SAS xD.<br />
+Ну и еще стоит отметить что хоть трафик и не лимитирован, но скорость соединения на сервере отличается от привычных 100 мегабит. Так у максимального тарифа EVO-8 <strong>ограничение скорости в 20 Мбит/с</strong>, а у самого дешевого EVO-4 10 Мбит/с. Для хостинга сайтов этого более чем достаточно, но нужно помнить о том что выкладывать какие то тяжелые файлы на сервер для раздачи не стоит – он не для качалова, да и малый объем на жестком диске при большом количестве RAM и мощном процессоре как бы намекает =).<br />
+Железо здесь кстати самое настоящее серверное – от компании Dell.<br />
+<!--more--></p>
+
+<h3 id="первые-впечатления">Первые впечатления</h3>
+
+<p>Сразу же после регистрации нас встречает новая версия биллинга о которой я писал подробно в этом <a href="http://clstr.ru/2014/08/vps-ovz-1-na-fastvps/">посте</a>. Расскажу лишь про то что с ходу не заметил – виртуальные сервера имеют свои резервные копии:<br />
+<a href="http:/uploads/2014/09/fastvps_incremental_backup.png"><img src="/uploads/2014/09/fastvps_incremental_backup-300x168.png" alt="FastVPS incerment backup" width="300" height="168" class="alignnone size-medium wp-image-93" /></a><br />
+Честно говоря восстанавливать подобным образом сервер из резервных копий я не пробовал, но думаю что все работает =)</p>
+
+<p>Кстати говоря поставил изначально собственную разработку FastVPS «FastPanel» ибо очень уж было интересно что это за штука. Как оказалось это пока еще довольно сырое решение с ограниченным функционалом (все сайты крутятся под пользователем admin и mod_fcgid). Настроек минимум, но при этом почти все работает. В техподдержке порекомендовали подождать новую версию панели и не возлагать большие надежы на эту версию (текущая 0.7.118).<br />
+Выглядит оно примерно так:<br />
+<a href="http:/uploads/2014/09/evo8-fastpanel2.png"><img src="/uploads/2014/09/evo8-fastpanel2-300x161.png" alt="FastPanel" width="300" height="161" class="alignnone size-medium wp-image-94" /></a></p>
+
+<p>Вывод – вполне юзабельно если у вас будет крутиться 2-3 сайта. Вот <a href="http://kb.bill2fast.com/10322394.html">тут</a> можно подробнее почитать о панели.</p>
+
+<p>Также есть ограничение по ОС – установить можно только Linux т.к. используется немного допиленная технология контейнерной виртуализации OpenVZ.</p>
+
+<h3 id="тесты">Тесты</h3>
+
+<p>Ну а теперь сухие тесты.</p>
+
+<pre>root@clstr:~# cat /etc/issue
+Debian GNU/Linux 7 \n \l
+</pre>
+
+<p>Intex Xeon E5-2670</p>
+
+<pre>root@clstr:~# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 62
+model name    : Intel(R) Xeon(R) CPU E5-2670 v2 @ 2.50GHz
+stepping    : 4
+cpu MHz        : 2499.976
+cache size    : 25600 KB
+physical id    : 0
+siblings    : 20
+core id        : 0
+cpu cores    : 10
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 13
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm ida arat xsaveopt pln pts dts tpr_shadow vnmi flexpriority ept vpid fsgsbase smep erms
+bogomips    : 4999.95
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 46 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p>И 8Gb RAM:</p>
+
+<pre>root@clstr:~# cat /proc/meminfo
+MemTotal:        8388608 kB
+MemFree:         8035952 kB
+Cached:           165252 kB
+Buffers:               0 kB
+Active:           163728 kB
+Inactive:         123956 kB
+Active(anon):     100400 kB
+Inactive(anon):    22032 kB
+Active(file):      63328 kB
+Inactive(file):   101924 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       4194304 kB
+SwapFree:        4194304 kB
+Dirty:                20 kB
+Writeback:             0 kB
+AnonPages:        122432 kB
+Shmem:              4884 kB
+Slab:              64956 kB
+SReclaimable:      55228 kB
+SUnreclaim:         9728 kB
+</pre>
+
+<p>Диск размечен вот так:</p>
+
+<pre>Файловая система  Размер Использовано  Дост Использовано% Cмонтировано в
+/dev/ploop42096p1    27G         1,5G   24G            6% /
+none                4,3G         4,1k  4,3G            1% /dev
+none                859M         1,1M  858M            1% /run
+none                5,3M            0  5,3M            0% /run/lock
+none                2,6G            0  2,6G            0% /run/shm
+none                105M            0  105M            0% /run/user
+</pre>
+
+<p>Тест на линейную скорость записи:</p>
+
+<pre>root@clstr:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей считано
+16384+0 записей написано
+ скопировано 1073741824 байта (1,1 GB), 1,58283 c, 678 MB/c
+</pre>
+
+<p>Сразу видно что перед нами SSD. Весьма недурно =)</p>
+
+<p>Результаты подробных тестов <a href="http://serverbear.com/benchmark/2014/08/27/67tu5rJupjlAmK5b">serverbear</a>.<br />
+Краткий вывод: диски очень хорошие, сеть могла бы быть чуть побыстрее.</p>
+
+<p>Что радует, так это то что сразу выставлена по умолчанию локаль ru_RU.UTF-8. Поправить локаль на сервере конечно дело секундное, но радует когда уже все настроено =)</p>
+
+<h3 id="выводы">Выводы:</h3>
+
+<p>Сервер хорошо подойдет для запуска на нем требовательного к производительности одного сайта (например какой-нибудь интернет-магазин на Битрикс) либо же для десятка-двух своих нетяжелых сайтов. Мощности тут с запасом, но места маловато.</p>
+
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Обзор локации DO в Бангалоре | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="DigitalOcean и новая локация в Бангалоре">
+	
+	<meta name="keywords" content="vps, digitalocean, bangalore">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2018/08/bangalore/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Обзор локации DO в Бангалоре | CLSTR" />
+	<meta property="og:description" content="DigitalOcean и новая локация в Бангалоре" />
+	<meta property="og:url" content="https://clstr.ru/2018/08/bangalore/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Обзор локации DO в Бангалоре</h1>
+    <p class="meta">
+    August 5, 2018
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/digitalocean"><img src="/uploads/2015/04/do_logo.png" alt="digitalocean_logo" class="alignnone size-full" /></a></p>
+
+<p>Добрый день!</p>
+
+<blockquote>
+  <p><strong>UPD 2021:</strong>
+Если зарегистрируетесь по моей ссылке то <a href="http://u.hmdw.me/digitalocean">получите 100$ на 60 дней для тестирования сервисов DigitalOcean</a>.</p>
+</blockquote>
+
+<p>На днях мне прилетели реферальные бонусы (аж 25$, еее!) и я заглянул в свой аккаунт на DO. Недавно они серьезно перепилили свою панельку и теперь она выглядит “более энтерпрайзно”,
+но данный пост не об этом. Меня привлекла новая локация в Бангалоре. Мне нравятся такие вот экзотические вещи. Поэтому я просто развернул виртуалку на минимальном тарифе в данной
+локации и провел замеры.</p>
+
+<p>Результаты публикую сюда.</p>
+
+<!--more-->
+
+<h3 id="сведения-о-vm">Сведения о VM</h3>
+
+<p><strong>CentOS 7.4</strong></p>
+<pre>
+[root@silicon ~]# uname -a
+Linux silicon 3.10.0-862.2.3.el7.x86_64 #1 SMP Wed May 9 18:05:47 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+</pre>
+
+<p><strong>Виртуализация KVM</strong></p>
+<pre>
+[root@silicon ~]# inxi -b
+System:    Host: silicon Kernel: 3.10.0-862.2.3.el7.x86_64 x86_64 bits: 64 Console: tty 0
+           Distro: CentOS Linux release 7.5.1804 (Core)
+Machine:   Type: Kvm System: DigitalOcean product: Droplet v: 20171212 serial: 104361532
+           Mobo: N/A model: N/A serial: N/A BIOS: DigitalOcean v: 20171212 date: 12/12/2017
+CPU:       Single Core: Intel Xeon E5-2650L v3 type: MCP speed: 1800 MHz
+Graphics:  Card-1: Red Hat QXL paravirtual graphic card driver: qxl v: kernel
+           Display: server: No display server data found. Headless machine? tty: 202x25
+           Message: Unable to show advanced data. Required tool glxinfo missing.
+Network:   Card-1: Intel 82371AB/EB/MB PIIX4 ACPI type: network bridge driver: piix4_smbus
+           Card-2: Red Hat Virtio network driver: virtio-pci
+Drives:    Local Storage: total: 25.00 GiB used: 1.07 GiB (4.3%)
+Info:      Processes: 79 Uptime: 9m Memory: 991.7 MiB used: 149.3 MiB (15.1%) Init: systemd runlevel: 3
+           Shell: bash inxi: 3.0.17
+</pre>
+
+<p><strong>CPU и ОЗУ</strong></p>
+<pre>
+[root@silicon ~]# cat /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2650L v3 @ 1.80GHz
+stepping	: 2
+microcode	: 0x1
+cpu MHz		: 1799.998
+cache size	: 30720 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl eagerfpu pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bogomips	: 3599.99
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+[root@silicon ~]# cat /proc/meminfo
+MemTotal:        1015544 kB
+MemFree:          488584 kB
+MemAvailable:     752100 kB
+Buffers:            2600 kB
+Cached:           385448 kB
+SwapCached:            0 kB
+Active:           252804 kB
+Inactive:         173880 kB
+Active(anon):      38984 kB
+Inactive(anon):    12756 kB
+Active(file):     213820 kB
+Inactive(file):   161124 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         38672 kB
+Mapped:            19496 kB
+Shmem:             13104 kB
+Slab:              61780 kB
+SReclaimable:      32696 kB
+SUnreclaim:        29084 kB
+KernelStack:        1536 kB
+PageTables:         3184 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      507772 kB
+Committed_AS:     234880 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       90248 kB
+VmallocChunk:   34359537660 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     10240 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       73700 kB
+DirectMap2M:      974848 kB
+DirectMap1G:           0 kB
+</pre>
+
+<p><strong>Разметка диска</strong></p>
+<pre>
+[root@silicon ~]# df -HT
+Файловая система Тип      Размер Использовано  Дост Использовано% Cмонтировано в
+/dev/vda1        xfs         27G         1,2G   26G            5% /
+devtmpfs         devtmpfs   497M            0  497M            0% /dev
+tmpfs            tmpfs      520M            0  520M            0% /dev/shm
+tmpfs            tmpfs      520M          14M  507M            3% /run
+tmpfs            tmpfs      520M            0  520M            0% /sys/fs/cgroup
+tmpfs            tmpfs      104M            0  104M            0% /run/user/0
+</pre>
+
+<p><strong>PT Summary</strong></p>
+<pre>
+[root@silicon ~]# pt-summary
+# Percona Toolkit System Summary Report ######################
+        Date | 2018-08-02 08:56:38 UTC (local TZ: UTC +0000)
+    Hostname | silicon
+      Uptime | 20 min,  1 user,  load average: 0,24, 0,76, 0,46
+      System | DigitalOcean; Droplet; v20171212 (Other)
+ Service Tag | 104361532
+    Platform | Linux
+     Release | CentOS Linux release 7.5.1804 (Core)
+      Kernel | 3.10.0-862.2.3.el7.x86_64
+Architecture | CPU = 64-bit, OS = 64-bit
+   Threading | NPTL 2.17
+     SELinux | Enforcing
+ Virtualized | VMWare
+# Processor ##################################################
+  Processors | physical = 1, cores = 1, virtual = 1, hyperthreading = no
+      Speeds | 1x1799.998
+      Models | 1xIntel(R) Xeon(R) CPU E5-2650L v3 @ 1.80GHz
+      Caches | 1x30720 KB
+# Memory #####################################################
+       Total | 991,7M
+        Free | 292,5M
+        Used | physical = 76,9M, swap allocated = 0,0, swap used = 0,0, virtual = 76,9M
+      Shared | 12,8M
+     Buffers | 622,3M
+      Caches | 719,0M
+       Dirty | 31836 kB
+     UsedRSS | 96,1M
+  Swappiness | 30
+ DirtyPolicy | 30, 10
+ DirtyStatus | 0, 0
+  Locator   Size     Speed             Form Factor   Type          Type Detail
+  ========= ======== ================= ============= ============= ===========
+  DIMM 0    1024 MB                    DIMM          RAM           None
+# Mounted Filesystems ########################################
+  Filesystem  Size Used Type     Opts                                                      Mountpoint
+  devtmpfs    474M   0% devtmpfs rw,nosuid,seclabel,size=485216k,nr_inodes=121304,mode=755 /dev
+  /dev/vda1    25G   7% xfs      rw,relatime,seclabel,attr2,inode64,noquota                /
+  tmpfs       100M   0% tmpfs    rw,nosuid,nodev,seclabel                                  /run/user/0
+  tmpfs       100M   0% tmpfs    rw,nosuid,nodev,seclabel,mode=755                         /run/user/0
+  tmpfs       100M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101556k,mode=700   /run/user/0
+  tmpfs       100M   0% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                  /run/user/0
+  tmpfs       496M   0% tmpfs    rw,nosuid,nodev,seclabel                                  /dev/shm
+  tmpfs       496M   0% tmpfs    rw,nosuid,nodev,seclabel,mode=755                         /dev/shm
+  tmpfs       496M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101556k,mode=700   /dev/shm
+  tmpfs       496M   0% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                  /dev/shm
+  tmpfs       496M   0% tmpfs    rw,nosuid,nodev,seclabel                                  /sys/fs/cgroup
+  tmpfs       496M   0% tmpfs    rw,nosuid,nodev,seclabel,mode=755                         /sys/fs/cgroup
+  tmpfs       496M   0% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101556k,mode=700   /sys/fs/cgroup
+  tmpfs       496M   0% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                  /sys/fs/cgroup
+  tmpfs       496M   3% tmpfs    rw,nosuid,nodev,seclabel                                  /run
+  tmpfs       496M   3% tmpfs    rw,nosuid,nodev,seclabel,mode=755                         /run
+  tmpfs       496M   3% tmpfs    rw,nosuid,nodev,relatime,seclabel,size=101556k,mode=700   /run
+  tmpfs       496M   3% tmpfs    ro,nosuid,nodev,noexec,seclabel,mode=755                  /run
+# Disk Schedulers And Queue Size #############################
+         vda | [mq-deadline] 256
+         vdb | [mq-deadline] 256
+# Disk Partioning ############################################
+Device       Type      Start        End               Size
+============ ==== ========== ========== ==================
+/dev/vda     Disk                              26843545600
+/dev/vda1    Part       2048   52428766        26842479616
+/dev/vdb     Disk                                   444416
+# Kernel Inode State #########################################
+dentry-state | 28202	14800	45	0	0	0
+     file-nr | 928	0	95726
+    inode-nr | 32173	10859
+# LVM Volumes ################################################
+Unable to collect information
+# LVM Volume Groups ##########################################
+Unable to collect information
+# RAID Controller ############################################
+  Controller | No RAID controller detected
+# Network Config #############################################
+  Controller | Red Hat, Inc. Virtio network device
+ FIN Timeout | 60
+  Port Range | 60999
+# Interface Statistics #######################################
+  interface  rx_bytes rx_packets  rx_errors   tx_bytes tx_packets  tx_errors
+  ========= ========= ========== ========== ========== ========== ==========
+  lo              400          6          0        400          6          0
+  eth0      225000000      90000          0    6000000      60000          0
+# Network Devices ############################################
+  Device    Speed     Duplex
+  ========= ========= =========
+  eth0
+# Network Connections ########################################
+  Connections from remote IP addresses
+    23.92.92.94         1
+    38.229.66.100       1
+    46.8.117.33         1
+    50.224.157.174      1
+    65.175.128.102      1
+    71.19.232.234       1
+    72.5.72.15          1
+    74.121.199.234      1
+    103.25.61.44        1
+    128.8.207.141       1
+    128.112.18.21       1
+    128.112.136.119     1
+    128.135.158.201     1
+    128.138.184.3       1
+    128.171.104.147     1
+    128.172.15.65       1
+    128.206.116.77      1
+    129.7.128.189       1
+    129.7.128.190       1
+    129.15.2.43         1
+    129.97.134.71       1
+    136.142.23.206      1
+    136.145.1.223       1
+    140.247.173.13      1
+    141.219.188.21      1
+    147.75.69.165       1
+    147.75.197.195      1
+    152.19.134.145      1
+    160.10.5.26         1
+    163.178.174.25      1
+    192.75.96.254       1
+    192.101.102.2       1
+    192.175.120.180     1
+    198.129.224.35      1
+    199.120.31.252      1
+    199.223.246.113     2
+    204.99.128.20       1
+    204.157.3.70        1
+    204.246.0.135       1
+    207.171.7.91        1
+    207.244.94.80       1
+    208.69.120.125      1
+    208.81.1.244        1
+    208.100.4.53        1
+    209.132.181.25      1
+    209.208.0.134       1
+    216.36.128.35       1
+  Connections to local IP addresses
+    206.189.129.51     50
+  Connections to top 10 local ports
+    53346               1
+    55156               1
+    55158               1
+    55782               1
+    57180               1
+    57370               1
+    57414               1
+    58116               1
+    59266               1
+    59956               1
+  States of connections
+    ESTABLISHED         1
+    LISTEN              6
+    TIME_WAIT          45
+# Top Processes ##############################################
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+    1 root      20   0  127980   6572   4120 S  0,0  0,6   0:03.21 systemd
+    2 root      20   0       0      0      0 S  0,0  0,0   0:00.00 kthreadd
+    3 root      20   0       0      0      0 S  0,0  0,0   0:00.06 ksoftirqd/0
+    5 root       0 -20       0      0      0 S  0,0  0,0   0:00.00 kworker/0:0H
+    7 root      rt   0       0      0      0 S  0,0  0,0   0:00.00 migration/0
+    8 root      20   0       0      0      0 S  0,0  0,0   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 S  0,0  0,0   0:00.64 rcu_sched
+   10 root       0 -20       0      0      0 S  0,0  0,0   0:00.00 lru-add-dra+
+   11 root      rt   0       0      0      0 S  0,0  0,0   0:00.00 watchdog/0
+# Notable Processes ##########################################
+  PID    OOM    COMMAND
+ 1110    -17    sshd
+# Memory mamagement ##########################################
+Transparent huge pages are enabled.
+# The End ####################################################
+</pre>
+
+<p><img src="/uploads/2018/2018-08-02_12-58-16.png" alt="" /></p>
+
+<p>IP-адрес отображается американский.</p>
+
+<h3 id="тесты">Тесты</h3>
+
+<p><strong>Пинг из Ульяновска</strong></p>
+<pre>
+rail$ ping 206.189.129.51
+PING 206.189.129.51 (206.189.129.51): 56 data bytes
+64 bytes from 206.189.129.51: icmp_seq=0 ttl=52 time=222.144 ms
+64 bytes from 206.189.129.51: icmp_seq=1 ttl=52 time=219.260 ms
+64 bytes from 206.189.129.51: icmp_seq=2 ttl=52 time=220.387 ms
+64 bytes from 206.189.129.51: icmp_seq=3 ttl=52 time=219.251 ms
+64 bytes from 206.189.129.51: icmp_seq=4 ttl=52 time=219.283 ms
+64 bytes from 206.189.129.51: icmp_seq=5 ttl=52 time=218.883 ms
+64 bytes from 206.189.129.51: icmp_seq=6 ttl=52 time=221.446 ms
+64 bytes from 206.189.129.51: icmp_seq=7 ttl=52 time=219.769 ms
+64 bytes from 206.189.129.51: icmp_seq=8 ttl=52 time=219.646 ms
+64 bytes from 206.189.129.51: icmp_seq=9 ttl=52 time=220.270 ms
+64 bytes from 206.189.129.51: icmp_seq=10 ttl=52 time=219.171 ms
+^C
+--- 206.189.129.51 ping statistics ---
+11 packets transmitted, 11 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 218.883/219.955/222.144/0.983 ms
+</pre>
+
+<p><strong>DD</strong></p>
+<pre>
+[root@silicon ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 1,21092 c, 887 MB/c
+[root@silicon ~]# rm -f test
+[root@silicon ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 1,28477 c, 836 MB/c
+[root@silicon ~]# rm -f test
+[root@silicon ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 1,03878 c, 1,0 GB/c
+[root@silicon ~]# rm -f test
+</pre>
+
+<p><strong>Sysbench тест CPU</strong></p>
+<pre>
+[root@silicon ~]# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 20000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   227.19
+
+General statistics:
+    total time:                          10.0016s
+    total number of events:              2273
+
+Latency (ms):
+         min:                                    4.30
+         avg:                                    4.40
+         max:                                    5.64
+         95th percentile:                        4.65
+         sum:                                 9996.39
+
+Threads fairness:
+    events (avg/stddev):           2273.0000/0.00
+    execution time (avg/stddev):   9.9964/0.00
+</pre>
+
+<pre>
+[root@silicon ~]# sysbench --test=mutex --num-threads=64 run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: --num-threads is deprecated, use --threads instead
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+General statistics:
+    total time:                          16.8122s
+    total number of events:              64
+
+Latency (ms):
+         min:                                15679.80
+         avg:                                16294.43
+         max:                                16723.65
+         95th percentile:                    16819.24
+         sum:                              1042843.30
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   16.2944/0.25
+</pre>
+
+<p><strong>Sysbench тест ОЗУ</strong></p>
+<pre>
+[root@silicon ~]# sysbench --test=memory --num-threads=4 --memory-total-size=1G run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: --num-threads is deprecated, use --threads instead
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 1024MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 1048576 (2737792.58 per second)
+
+1024.00 MiB transferred (2673.63 MiB/sec)
+
+
+General statistics:
+    total time:                          0.3801s
+    total number of events:              1048576
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                   43.02
+         95th percentile:                        0.00
+         sum:                                  453.45
+
+Threads fairness:
+    events (avg/stddev):           262144.0000/0.00
+    execution time (avg/stddev):   0.1134/0.02
+</pre>
+
+<p><strong>Sysbench тест диска</strong></p>
+<pre>
+[root@silicon ~]# sysbench --test=fileio --file-total-size=2G prepare
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+128 files, 16384Kb each, 2048Mb total
+Creating files for the test...
+Extra file open flags: (none)
+Creating file test_file.0
+...
+Creating file test_file.127
+2147483648 bytes written in 3.37 seconds (607.42 MiB/sec).
+[root@silicon ~]# sysbench --test=fileio --file-total-size=2G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: --max-time is deprecated, use --time instead
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Extra file open flags: (none)
+128 files, 16MiB each
+2GiB total file size
+Block size 16KiB
+Number of IO requests: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Initializing worker threads...
+
+Threads started!
+
+
+File operations:
+    reads/s:                      2421.28
+    writes/s:                     1614.19
+    fsyncs/s:                     5165.57
+
+Throughput:
+    read, MiB/s:                  37.83
+    written, MiB/s:               25.22
+
+General statistics:
+    total time:                          300.0268s
+    total number of events:              2760457
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.11
+         max:                                   29.97
+         95th percentile:                        0.36
+         sum:                               297664.61
+
+Threads fairness:
+    events (avg/stddev):           2760457.0000/0.00
+    execution time (avg/stddev):   297.6646/0.00
+</pre>
+
+<p><strong>SpeedTest</strong></p>
+
+<p>Видимо из-за ip из американской подсети speedtest неверно определил местоположение сервера и протесил скорость до сервера в штате Огайо.
+Естественно результаты получились вообще никакие.</p>
+
+<pre>
+[root@silicon ~]# speedtest-cli
+Retrieving speedtest.net configuration...
+Testing from DigitalOcean, LLC (206.189.129.51)...
+Retrieving speedtest.net server list...
+Selecting best server based on ping...
+Hosted by BrescoBroadBand (Columbus, OH) [5.79 km]: 332.381 ms
+Testing download speed................................................................................
+Download: 27.21 Mbit/s
+Testing upload speed....................................................................................................
+Upload: 11.57 Mbit/s
+</pre>
+
+<p><strong>7-zip benchmark</strong></p>
+<pre>
+[root@silicon ~]# 7za b
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=ru_RU.UTF-8,Utf16=on,HugeFiles=on,64 bits,1 CPU Intel(R) Xeon(R) CPU E5-2650L v3 @ 1.80GHz (306F2),ASM,AES-NI)
+
+Intel(R) Xeon(R) CPU E5-2650L v3 @ 1.80GHz (306F2)
+CPU Freq:  2028  2035  2032  2036  2029  2035  2042  2039  2034
+
+RAM size:     991 MB,  # CPU hardware threads:   1
+RAM usage:    435 MB,  # Benchmark threads:      1
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       2132    99   2086   2074  |      21992   100   1878   1878
+23:       1897   100   1938   1933  |      23434   100   2031   2028
+24:       1932   100   2085   2078  |      23121   100   2040   2030
+25:       1975   100   2264   2255  |      20997   100   1873   1869
+----------------------------------  | ------------------------------
+Avr:             100   2093   2085  |              100   1956   1951
+Tot:             100   2024   2018
+</pre>
+
+<h3 id="выводы">Выводы</h3>
+<p>Было бы интереснее если бы ip-адрес определялся как индийский. В остальном все вполне нормально. Стоимость виртуалок тоже неплохая.</p>
+
+<blockquote>
+  <p><strong>UPD 2021:</strong>
+Если зарегистрируетесь по моей ссылке то <a href="http://u.hmdw.me/digitalocean">получите 100$ на 60 дней для тестирования сервисов DigitalOcean</a>.</p>
+</blockquote>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

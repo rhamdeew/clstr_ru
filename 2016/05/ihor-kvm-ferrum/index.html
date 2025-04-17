@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест Ihor VPS KVM Ferrum | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест Ihor VPS KVM Ferrum">
+	
+	<meta name="keywords" content="vps,ihor">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2016/05/ihor-kvm-ferrum/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест Ihor VPS KVM Ferrum | CLSTR" />
+	<meta property="og:description" content="Тест Ihor VPS KVM Ferrum" />
+	<meta property="og:url" content="https://clstr.ru/2016/05/ihor-kvm-ferrum/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест Ihor VPS KVM Ferrum</h1>
+    <p class="meta">
+    May 2, 2016
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/ihor"><img src="/uploads/2016/ihorlogo.png" alt="Ihor Hosting logo" class="alignnone size-full" /></a></p>
+
+<p>Привет!</p>
+
+<p>Тут почти все то же что и в <a href="/2016/05/ihor-ssd-ferrum/">первом посте</a> за исключением того что вместо SSD тут стоит обычный HDD.</p>
+
+<!--more-->
+
+<p>Железо:</p>
+<pre>
+[root@ks ~]# inxi -b
+System:    Host: ks.ru Kernel: 3.10.0-327.4.5.el7.x86_64 x86_64 (64 bit) Console: tty 0
+           Distro: CentOS Linux release 7.2.1511 (Core)
+Machine:   System: Red Hat product: KVM v: RHEL 7.0.0 PC (i440FX + PIIX 1996)
+           Mobo: N/A model: N/A Bios: Sea v: 0.5.1 date: 01/01/2011
+CPU:       Single core Intel Xeon E5620 (-MCP-) speed: 2400 MHz (max)
+Graphics:  Card: Cirrus Logic GD 5446
+           Display Server: N/A driver: N/A tty size: 182x27 Advanced Data: N/A for root out of X
+Network:   Card: Red Hat Virtio network device driver: virtio-pci
+Drives:    HDD Total Size: 21.5GB (12.6% used)
+Info:      Processes: 88 Uptime: 1 day Memory: 277.4/993.1MB Init: systemd runlevel: 3
+           Client: Shell (bash) inxi: 2.2.35
+</pre>
+
+<pre>
+[root@ks ~]# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 44
+model name    : Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping    : 2
+microcode    : 0x1
+cpu MHz        : 2400.084
+cache size    : 4096 KB
+physical id    : 0
+siblings    : 1
+core id        : 0
+cpu cores    : 1
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 11
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes hypervisor lahf_lm tsc_adjust
+bogomips    : 4800.16
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 40 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<pre>
+[root@ks ~]# cat /proc/meminfo
+MemTotal:        1016916 kB
+MemFree:          138628 kB
+MemAvailable:     590228 kB
+Buffers:           63644 kB
+Cached:           533920 kB
+SwapCached:            0 kB
+Active:           494888 kB
+Inactive:         295392 kB
+Active(anon):     213784 kB
+Inactive(anon):    36832 kB
+Active(file):     281104 kB
+Inactive(file):   258560 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:              1628 kB
+Writeback:             0 kB
+AnonPages:        192748 kB
+Mapped:            31200 kB
+Shmem:             57900 kB
+Slab:              60812 kB
+SReclaimable:      49120 kB
+SUnreclaim:        11692 kB
+KernelStack:        2192 kB
+PageTables:         9280 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      508456 kB
+Committed_AS:    1094576 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:        8692 kB
+VmallocChunk:   34359724796 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     86016 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       45048 kB
+DirectMap2M:     1003520 kB
+DirectMap1G:           0 kB
+</pre>
+
+<p>20 гигабайт HDD:</p>
+<pre>
+[root@ks ~]# df -H
+Файловая система Размер Использовано  Дост Использовано% Cмонтировано в
+/dev/vda1           22G         2,8G   18G           14% /
+devtmpfs           512M            0  512M            0% /dev
+tmpfs              521M          58k  521M            1% /tmp
+tmpfs              521M          60M  462M           12% /run
+tmpfs              521M            0  521M            0% /sys/fs/cgroup
+tmpfs              105M            0  105M            0% /run/user/0
+</pre>
+
+<p>Скорость линейной записи тут в 2.5 раза ниже чем в <a href="/2016/05/ihor-ssd-ferrum/">варианте с SSD</a>:</p>
+<pre>
+[root@ks ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 9,39692 c, 114 MB/c
+[root@ks ~]# rm -f test
+[root@ks ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 9,99311 c, 107 MB/c
+[root@ks ~]# rm -f test
+[root@ks ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 10,0778 c, 107 MB/c
+[root@ks ~]# rm -f test
+</pre>
+
+<p>Sysbenc CPU показал аналогичные результаты:</p>
+<pre>
+[root@ks ~]# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          28.8436s
+    total number of events:              10000
+    total time taken by event execution: 28.8413
+    per-request statistics:
+         min:                                  2.75ms
+         avg:                                  2.88ms
+         max:                                 15.31ms
+         approx.  95 percentile:               3.11ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   28.8413/0.00
+</pre>
+
+<pre>
+[root@ks ~]# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.1677s
+    total number of events:              64
+    total time taken by event execution: 7.7219
+    per-request statistics:
+         min:                                 31.41ms
+         avg:                                120.65ms
+         max:                                156.77ms
+         approx.  95 percentile:             154.26ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.1207/0.03
+</pre>
+
+<pre>
+[root@ks ~]# sysbench --test=memory --num-threads=4 --memory-total-size=1G run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 1024M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 1048576 (1469059.04 ops/sec)
+
+1024.00 MB transferred (1434.63 MB/sec)
+
+
+Test execution summary:
+    total time:                          0.7138s
+    total number of events:              1048576
+    total time taken by event execution: 2.2101
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                 13.01ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           262144.0000/1181.62
+    execution time (avg/stddev):   0.5525/0.03
+</pre>
+
+<p>А вот с диском снова какая-то фигня =) <strong>1.6088Mb/sec</strong></p>
+<pre>
+[root@ks ~]# sysbench --test=fileio --file-total-size=2G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 16384Kb each, 2048Mb total
+Creating files for the test...
+[root@ks ~]# sysbench --test=fileio --file-total-size=2G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 16Mb each
+2Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  18540 Read, 12360 Write, 39447 Other = 70347 Total
+Read 289.69Mb  Written 193.12Mb  Total transferred 482.81Mb  (1.6088Mb/sec)
+  102.96 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.1022s
+    total number of events:              30900
+    total time taken by event execution: 5.0399
+    per-request statistics:
+         min:                                  0.01ms
+         avg:                                  0.16ms
+         max:                                  6.67ms
+         approx.  95 percentile:               0.37ms
+
+Threads fairness:
+    events (avg/stddev):           30900.0000/0.00
+    execution time (avg/stddev):   5.0399/0.00
+</pre>
+
+<p>Пинги из Ульяновска почему то в 2 раза длиннее стали, но в целом нормально:</p>
+
+<pre>
+[rail@localhost ~]$ ping 185.125.218.xx
+PING 185.125.218.xx (185.125.218.xx) 56(84) bytes of data.
+64 bytes from 185.125.218.xx: icmp_seq=1 ttl=56 time=37.7 ms
+64 bytes from 185.125.218.xx: icmp_seq=2 ttl=56 time=37.7 ms
+64 bytes from 185.125.218.xx: icmp_seq=3 ttl=56 time=37.7 ms
+64 bytes from 185.125.218.xx: icmp_seq=4 ttl=56 time=37.7 ms
+64 bytes from 185.125.218.xx: icmp_seq=5 ttl=56 time=37.4 ms
+64 bytes from 185.125.218.xx: icmp_seq=6 ttl=56 time=37.6 ms
+64 bytes from 185.125.218.xx: icmp_seq=7 ttl=56 time=37.7 ms
+64 bytes from 185.125.218.xx: icmp_seq=8 ttl=56 time=37.8 ms
+64 bytes from 185.125.218.xx: icmp_seq=9 ttl=56 time=37.6 ms
+64 bytes from 185.125.218.xx: icmp_seq=10 ttl=56 time=37.4 ms
+^C
+--- 185.125.218.xx ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9006ms
+rtt min/avg/max/mdev = 37.419/37.679/37.869/0.160 ms
+</pre>
+
+<p>Вот собственно и вся разница. А выводы читайте лучше в <a href="/2016/05/ihor-ssd-ferrum/">предыдущем посте</a>.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

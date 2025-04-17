@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест VPS от Racktech | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест виртуального сервера от Racktech">
+	
+	<meta name="keywords" content="racktech, vps">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2016/11/racktech-openvz-512mb/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест VPS от Racktech | CLSTR" />
+	<meta property="og:description" content="Тест виртуального сервера от Racktech" />
+	<meta property="og:url" content="https://clstr.ru/2016/11/racktech-openvz-512mb/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест VPS от Racktech</h1>
+    <p class="meta">
+    November 8, 2016
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/racktech"><img src="/uploads/2016/racktech.png" alt="racktech_logo" class="alignnone size-full" /></a></p>
+
+<p>Приветствую!</p>
+
+<p>А вот тут тест обратной стороны VPS Village - Racktech. Тут виртуалки в Москве, но уже есть OpenVZ, очень низкие цены и отсутствие поддержки. Сервер можно арендовать даже за 55 руб./месяц. Тут для более-менее подходящего теста я взял Cloud OpenVZ 1 vCore CPU 2.6GHz за 99 руб./месяц.
+За эти деньги нам дают канал 10-30 мегабит, 5 гигабайт SAS и 512 мегабайт ОЗУ. Прямо скажем негусто, но это низкая цена и Москва.</p>
+
+<!--more-->
+
+<h3 id="железо">Железо</h3>
+
+<pre>
+root@rt:~# cat /etc/issue
+Debian GNU/Linux 8 \n \l
+
+
+System:    Host: rt Kernel: 2.6.32-042stab108.8 x86_64 (64 bit) Console: tty 0 Distro: Debian GNU/Linux 8
+Machine:   No /sys/class/dmi machine data: try newer kernel, or install dmidecode
+CPU:       Quad core Intel Xeon E5620 (-HT-MCP-) clocked at 693 MHz
+Graphics:  Card: Failed to Detect Video Card!
+           Display Server: N/A driver: N/A tty size: 182x27 Advanced Data: N/A for root out of X
+Network:   Card: Failed to Detect Network Card!
+Drives:    HDD Total Size: NA (-)
+Info:      Processes: 19 Uptime: 10:45 Memory: 67.3/512.0MB Init: systemd runlevel: 3
+           Client: Shell (bash) inxi: 2.1.28
+root@rt:~#
+</pre>
+
+<p><strong>CPU</strong></p>
+
+<pre>
+[root@rt ~]# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 44
+model name    : Intel(R) Xeon(R) CPU           E5620  @ 2.40GHz
+stepping    : 2
+microcode    : 16
+cpu MHz        : 693.778
+cache size    : 12288 KB
+physical id    : 0
+siblings    : 8
+core id        : 0
+cpu cores    : 4
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 11
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 cx16 xtpr pdcm pcid dca sse4_1 sse4_2 popcnt aes lahf_lm ida arat epb dtherm tpr_shadow vnmi flexpriority ept vpid
+bogomips    : 4800.19
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 40 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p><strong>ОЗУ</strong></p>
+
+<pre>
+[root@rt ~]# cat /proc/meminfo
+MemTotal:         524288 kB
+MemFree:          284508 kB
+Cached:           157164 kB
+Buffers:               0 kB
+Active:            92172 kB
+Inactive:         129284 kB
+Active(anon):      62488 kB
+Inactive(anon):     6628 kB
+Active(file):      29684 kB
+Inactive(file):   122656 kB
+Unevictable:          32 kB
+Mlocked:              32 kB
+SwapTotal:       1048576 kB
+SwapFree:        1048576 kB
+Dirty:                12 kB
+Writeback:             0 kB
+AnonPages:         69116 kB
+Shmem:              4824 kB
+Slab:              18272 kB
+SReclaimable:       7108 kB
+SUnreclaim:        11164 kB
+</pre>
+
+<p><strong>SAS</strong></p>
+
+<pre>
+[root@rt ~]# df -H
+Filesystem         Size  Used Avail Use% Mounted on
+/dev/ploop42953p1  5,1G  1,6G  3,4G  33% /
+none               269M  4,1k  269M   1% /dev
+none               269M     0  269M   0% /dev/shm
+</pre>
+
+<p>Скорость записи на диск просто никакая.</p>
+
+<pre>
+root@rt:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 203.056 s, 5.3 MB/s
+root@rt:~/kirpich/bin# cd /root/
+root@rt:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 191.327 s, 5.6 MB/s
+root@rt:~# rm -f test
+root@rt:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 199.83 s, 5.4 MB/s
+</pre>
+
+<p><strong>Тест CPU</strong></p>
+
+<p>Тестим проц sysbench’ем. Все очень грустно.</p>
+
+<pre>
+root@rt:~# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+
+Running the test with following options:
+Number of threads: 1
+
+
+Doing CPU performance benchmark
+
+
+Threads started!
+Done.
+
+
+Maximum prime number checked in CPU test: 20000
+
+
+
+
+Test execution summary:
+    total time:                          109.7698s
+    total number of events:              10000
+    total time taken by event execution: 109.6953
+    per-request statistics:
+         min:                                  3.03ms
+         avg:                                 10.97ms
+         max:                                 86.71ms
+         approx.  95 percentile:              74.09ms
+
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   109.6953/0.00
+</pre>
+
+<pre>
+root@rt:~/kirpich/bin# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+
+Running the test with following options:
+Number of threads: 64
+
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+
+
+Test execution summary:
+    total time:                          0.5250s
+    total number of events:              64
+    total time taken by event execution: 11.8325
+    per-request statistics:
+         min:                                  9.53ms
+         avg:                                184.88ms
+         max:                                296.44ms
+         approx.  95 percentile:             295.81ms
+
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.1849/0.08
+</pre>
+
+<pre>
+root@rt:~/kirpich/bin# sysbench --test=memory --num-threads=4 --memory-total-size=512M run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+
+Running the test with following options:
+Number of threads: 4
+
+
+Doing memory operations speed test
+Memory block size: 1K
+
+
+Memory transfer size: 512M
+
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+
+Operations performed: 524288 (518105.36 ops/sec)
+
+
+512.00 MB transferred (505.96 MB/sec)
+
+
+
+
+Test execution summary:
+    total time:                          1.0119s
+    total number of events:              524288
+    total time taken by event execution: 3.2145
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.01ms
+         max:                                 97.01ms
+         approx.  95 percentile:               0.00ms
+
+
+Threads fairness:
+    events (avg/stddev):           131072.0000/2351.15
+    execution time (avg/stddev):   0.8036/0.07
+</pre>
+
+<pre>
+root@rt:~# sysbench --test=fileio --file-total-size=1G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+
+128 files, 8192Kb each, 1024Mb total
+Creating files for the test...
+root@rt:~# sysbench --test=fileio --file-total-size=1G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+
+Running the test with following options:
+Number of threads: 1
+
+
+Extra file open flags: 0
+128 files, 8Mb each
+1Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+
+Operations performed:  85500 Read, 57000 Write, 182303 Other = 324803 Total
+Read 1.3046Gb  Written 890.62Mb  Total transferred 2.1744Gb  (7.4196Mb/sec)
+  474.86 Requests/sec executed
+
+
+Test execution summary:
+    total time:                          300.0905s
+    total number of events:              142500
+    total time taken by event execution: 3.8047
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.03ms
+         max:                                526.82ms
+         approx.  95 percentile:               0.02ms
+
+
+Threads fairness:
+    events (avg/stddev):           142500.0000/0.00
+    execution time (avg/stddev):   3.8047/0.00
+</pre>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>Ресурсы выделены минимальные. Но за такую цену и в РФ. Для каких-то совсем небольших вещей (например бота и т.д.) ресурсов вполне хватит.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

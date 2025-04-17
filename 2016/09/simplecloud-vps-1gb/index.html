@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест VPS от Simplecloud | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест виртуального сервера от simplecloud">
+	
+	<meta name="keywords" content="simplecloud, vps">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2016/09/simplecloud-vps-1gb/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест VPS от Simplecloud | CLSTR" />
+	<meta property="og:description" content="Тест виртуального сервера от simplecloud" />
+	<meta property="og:url" content="https://clstr.ru/2016/09/simplecloud-vps-1gb/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест VPS от Simplecloud</h1>
+    <p class="meta">
+    September 27, 2016
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/simplecloudru"><img src="/uploads/2016/simplecloud.png" alt="simplecloud_logo" class="alignnone size-full" /></a></p>
+
+<p>Привет!</p>
+
+<p>Этот тест был проведен в августе одним из пользователей услуг данного хостера (спасибо <a href="mailto:andy.evil@gmail.com">Андрей</a>!) и передан мне на публикацию.
+Итак, по тарифу это VPS с 1Gb RAM, одним доступным ядром и 20Gb SSD. Все это за 250 руб. в месяц. Цена приемлимая, на уровне конкурентов.</p>
+
+<!--more-->
+
+<h3 id="железо">“Железо”</h3>
+
+<p>Виртуальное ядро QEMU</p>
+
+<pre>
+cat /proc/cpuinfo
+processor          : 0
+vendor_id          : GenuineIntel
+cpu family         : 6
+model          : 6
+model name         : QEMU Virtual CPU version 1.7.0
+stepping           : 3
+microcode          : 0x1
+cpu MHz        : 2599.998
+cache size         : 4096 KB
+physical id        : 0
+siblings           : 1
+core id        : 0
+cpu cores          : 1
+apicid         : 0
+initial apicid     : 0
+fpu            : yes
+fpu_exception      : yes
+cpuid level        : 4
+wp             : yes
+flags          : fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 syscall nx lm rep_good nopl pni cx16 popcnt hypervisor lahf_lm abm
+bugs           :
+bogomips           : 5199.99
+clflush size       : 64
+cache_alignment    : 64
+address sizes      : 40 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p>Гигабайт памяти</p>
+
+<pre>
+cat /proc/meminfo
+MemTotal:        1016900 kB
+MemFree:           83068 kB
+MemAvailable:     446080 kB
+Buffers:          143720 kB
+Cached:           347392 kB
+SwapCached:            0 kB
+Active:           691180 kB
+Inactive:         160860 kB
+Active(anon):     361280 kB
+Inactive(anon):    34336 kB
+Active(file):     329900 kB
+Inactive(file):   126524 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                16 kB
+Writeback:             0 kB
+AnonPages:        360928 kB
+Mapped:            68756 kB
+Shmem:             34688 kB
+Slab:              54380 kB
+SReclaimable:      38424 kB
+SUnreclaim:        15956 kB
+KernelStack:        3072 kB
+PageTables:        15244 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      508448 kB
+Committed_AS:    1043616 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:        5680 kB
+VmallocChunk:   34359699560 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    284672 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       77808 kB
+DirectMap2M:      970752 kB
+</pre>
+
+<h3 id="тест">Тест</h3>
+
+<p>Тут очень краткий тест. Замеряли только sysbench’ем и dd.</p>
+
+<p>Скорость записи на диск очень хорошая. Сразу видно что SSD.</p>
+
+<pre>
+root@tst:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.90535 s, 370 MB/s
+root@tst:~# rm -rf test
+root@tst:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.80374 s, 383 MB/s
+root@tst:~# rm -rf test
+root@tst:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.718 s, 395 MB/s
+</pre>
+
+<p>Тестим проц sysbench’ем.
+Тут получилось чуть медленнее чем у <a href="/2016/05/ihor-ssd-ferrum/">Ihor VPS SSD Ferrum</a>, но на уровне погрешности. Тем более как я понимаю на тестируемой VPS в момент теста также крутились сайты.</p>
+
+<pre>
+sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          31.3019s
+    total number of events:              10000
+    total time taken by event execution: 31.3000
+    per-request statistics:
+         min:                                  3.06ms
+         avg:                                  3.13ms
+         max:                                  6.46ms
+         approx.  95 percentile:               3.46ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   31.3000/0.00
+</pre>
+
+<p>Тут такая же картина.</p>
+
+<p>Разница в результатах на уровне погрешности.</p>
+
+<pre>
+sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.1740s
+    total number of events:              64
+    total time taken by event execution: 6.7301
+    per-request statistics:
+         min:                                  3.21ms
+         avg:                                105.16ms
+         max:                                158.31ms
+         approx.  95 percentile:             156.21ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.1052/0.04
+</pre>
+
+<p>Тест ОЗУ.</p>
+
+<p>А вот тут практически двухкратный прирост кол-ва выполненных операций в сравнении с VPS от Ihor.
+Память тут работает быстрей.</p>
+
+<pre>
+sysbench --test=memory --num-threads=4 --memory-total-size=1G run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 1024M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 1048576 (2305045.47 ops/sec)
+
+1024.00 MB transferred (2251.02 MB/sec)
+
+
+Test execution summary:
+    total time:                          0.4549s
+    total number of events:              1048576
+    total time taken by event execution: 1.3531
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                 16.02ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           262144.0000/541.62
+    execution time (avg/stddev):   0.3383/0.01
+</pre>
+
+<p>А вот тут получились и вовсе странные результаты.</p>
+
+<p>Более чем десятикратный прирост скорости чтения и записи судя по тесту! =)</p>
+
+<pre>
+sysbench --test=fileio --file-total-size=2G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 16384Kb each, 2048Mb total
+Creating files for the test...
+root@radiopolarniki:~# sysbench --test=fileio --file-total-size=2G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 16Mb each
+2Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  338520 Read, 225680 Write, 722062 Other = 1286262 Total
+Read 5.1654Gb  Written 3.4436Gb  Total transferred 8.609Gb  (29.385Mb/sec)
+ 1880.65 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0026s
+    total number of events:              564200
+    total time taken by event execution: 78.0836
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.14ms
+         max:                                101.20ms
+         approx.  95 percentile:               0.29ms
+
+Threads fairness:
+    events (avg/stddev):           564200.0000/0.00
+    execution time (avg/stddev):   78.0836/0.00
+</pre>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>Жаль не было возможности потестить сеть, но кол-во выделяемых ресурсов и их качество на уровне =) Рекомендую!</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

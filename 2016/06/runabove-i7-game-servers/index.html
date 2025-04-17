@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест RunAbove I7-6700K | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест Runabove I7-6700K">
+	
+	<meta name="keywords" content="vps, runabove, core i7">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2016/06/runabove-i7-game-servers/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест RunAbove I7-6700K | CLSTR" />
+	<meta property="og:description" content="Тест Runabove I7-6700K" />
+	<meta property="og:url" content="https://clstr.ru/2016/06/runabove-i7-game-servers/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/ovh_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header style="background-image: url('/img/ovh.jpg')">
+    <h1 class="title">Тест RunAbove I7-6700K</h1>
+    <p class="meta">
+    June 28, 2016
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/runabove"><img src="/uploads/2014/10/runabove-logo.png" alt="runabove_logo" class="alignnone size-full" /></a></p>
+
+<p>Привет!</p>
+
+<p>Недавно посчастливилось потестить сервер на новом процессоре Intel Core I7-6700. Остальная начинка тоже соответствует уровню - 64Gb RAM и 240Gb SSD. Все это можно заказать на тестовой площадке OVH - Runabove. Цены от 50 евро. Как уже можно догадаться из названия это сервера игровой линейки OVH.</p>
+
+<p>Отличаются они оптимизированным под игровые сервера AntiDDoS.</p>
+
+<!--more-->
+
+<h3 id="тест">Тест</h3>
+
+<p>Расписывать много не буду. Вот краткий тест.</p>
+
+<p><strong>Сервер на Debian 8 Jessie.</strong></p>
+
+<pre>
+root@ns3037510:~# cat /etc/issue
+Linux ns3037510.ip-151-80-226.eu 3.14.32-xxxx-grs-ipv6-64 #7 SMP Wed Jan 27 18:05:09 CET 2016 x86_64 GNU/Linux
+
+server    : 654800
+ip        : 151.80.226.224
+hostname  : ns3037510.ip-151-80-226.eu
+</pre>
+
+<pre>
+root@ns3037510:~# inxi -b
+System:    Host: ns3037510.ip-151-80-226.eu Kernel: 3.14.32-xxxx-grs-ipv6-64 x86_64 (64 bit) Console: tty 1
+           Distro: Debian 8
+Machine:   Mobo: ASUSTeK model: H170M-PLUS v: Rev X.0x serial: 151056350900109
+           Bios: American Megatrends v: 0701 date: 01/13/2016
+CPU:       Quad core Intel Core i7-6700K (-HT-MCP-) clocked at 800 MHz
+Graphics:  Card: Intel HD Graphics 530
+           Display Server: N/A driver: N/A tty size: 182x27 Advanced Data: N/A for root out of X
+Network:   Card: Intel Ethernet Connection (2) I219-V driver: e1000e
+Drives:    HDD Total Size: 240.1GB (1.7% used)
+Info:      Processes: 149 Uptime: 1 day Memory: 593.3/64365.2MB Init: systemd runlevel: 5
+           Client: Shell (bash) inxi: 2.1.28
+</pre>
+
+<p><strong>Проц</strong></p>
+
+<pre>
+root@ns3037510:~# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 94
+model name    : Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+stepping    : 3
+microcode    : 0x39
+cpu MHz        : 800.000
+cache size    : 8192 KB
+physical id    : 0
+siblings    : 8
+core id        : 0
+cpu cores    : 4
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 22
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap
+bogomips    : 8016.72
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 39 bits physical, 48 bits virtual
+power management:
+
+...
+
+processor    : 7
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 94
+model name    : Intel(R) Core(TM) i7-6700K CPU @ 4.00GHz
+stepping    : 3
+microcode    : 0x39
+cpu MHz        : 800.000
+cache size    : 8192 KB
+physical id    : 0
+siblings    : 8
+core id        : 1
+cpu cores    : 4
+apicid        : 2
+initial apicid    : 2
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 22
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap
+bogomips    : 8016.72
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 39 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p><strong>Память</strong></p>
+
+<pre>
+root@ns3037510:~# cat /proc/meminfo
+MemTotal:       65909956 kB
+MemFree:        64790708 kB
+MemAvailable:   65223676 kB
+Buffers:          117252 kB
+Cached:           400056 kB
+SwapCached:            0 kB
+Active:           429836 kB
+Inactive:         190680 kB
+Active(anon):     104560 kB
+Inactive(anon):    16676 kB
+Active(file):     325276 kB
+Inactive(file):   174004 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       4193276 kB
+SwapFree:        4193276 kB
+Dirty:                 0 kB
+Writeback:            40 kB
+AnonPages:        103224 kB
+Mapped:            53832 kB
+Shmem:             18032 kB
+Slab:              63780 kB
+SReclaimable:      29676 kB
+SUnreclaim:        34104 kB
+KernelStack:        2800 kB
+PageTables:         1964 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    37148252 kB
+Committed_AS:     293668 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      186796 kB
+VmallocChunk:   34359375660 kB
+HardwareCorrupted:     0 kB
+DirectMap4k:       14104 kB
+DirectMap2M:     4055040 kB
+DirectMap1G:    62914560 kB
+</pre>
+
+<p><strong>SSD</strong></p>
+
+<pre>
+root@ns3037510:~# df -HT
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/root      ext4      232G  1.1G  220G   1% /
+devtmpfs       devtmpfs   34G     0   34G   0% /dev
+tmpfs          tmpfs      34G     0   34G   0% /dev/shm
+tmpfs          tmpfs      34G   19M   34G   1% /run
+tmpfs          tmpfs     5.3M     0  5.3M   0% /run/lock
+tmpfs          tmpfs      34G     0   34G   0% /sys/fs/cgroup
+</pre>
+
+<p>Скорость записи диска довольно приличная</p>
+
+<pre>
+root@ns3037510:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 4.3695 s, 246 MB/s
+root@ns3037510:~# rm test
+root@ns3037510:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 4.38027 s, 245 MB/s
+root@ns3037510:~# rm test
+root@ns3037510:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 4.37415 s, 245 MB/s
+</pre>
+
+<p>Пинги из Ульяновска на уровне 70мс</p>
+
+<p><img src="https://i.hmdw.me/img/2016/06/_001_2016_06_07.png" alt="IP сервера" /></p>
+
+<pre>
+[rail@localhost ~]$ ping 151.80.226.224
+PING 151.80.226.224 (151.80.226.224) 56(84) bytes of data.
+64 bytes from 151.80.226.224: icmp_seq=1 ttl=54 time=69.0 ms
+64 bytes from 151.80.226.224: icmp_seq=2 ttl=54 time=69.6 ms
+64 bytes from 151.80.226.224: icmp_seq=3 ttl=54 time=68.0 ms
+64 bytes from 151.80.226.224: icmp_seq=4 ttl=54 time=68.0 ms
+64 bytes from 151.80.226.224: icmp_seq=5 ttl=54 time=72.6 ms
+64 bytes from 151.80.226.224: icmp_seq=6 ttl=54 time=69.9 ms
+64 bytes from 151.80.226.224: icmp_seq=7 ttl=54 time=69.7 ms
+64 bytes from 151.80.226.224: icmp_seq=8 ttl=54 time=69.7 ms
+64 bytes from 151.80.226.224: icmp_seq=9 ttl=54 time=68.4 ms
+64 bytes from 151.80.226.224: icmp_seq=10 ttl=54 time=68.4 ms
+64 bytes from 151.80.226.224: icmp_seq=11 ttl=54 time=68.1 ms
+^C
+--- 151.80.226.224 ping statistics ---
+11 packets transmitted, 11 received, 0% packet loss, time 10010ms
+rtt min/avg/max/mdev = 68.030/69.266/72.670/1.333 ms
+</pre>
+
+<p><strong>Тесты Sysbench</strong></p>
+
+<p>Скучные тесты:</p>
+
+<pre>
+root@ns3037510:~# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          17.8826s
+    total number of events:              10000
+    total time taken by event execution: 17.8820
+    per-request statistics:
+         min:                                  1.78ms
+         avg:                                  1.79ms
+         max:                                  5.25ms
+         approx.  95 percentile:               1.82ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   17.8820/0.00
+
+root@ns3037510:~# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.5315s
+    total number of events:              64
+    total time taken by event execution: 31.6485
+    per-request statistics:
+         min:                                456.90ms
+         avg:                                494.51ms
+         max:                                529.44ms
+         approx.  95 percentile:             525.55ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.4945/0.03
+
+root@ns3037510:~# sysbench --test=memory --num-threads=4 --memory-total-size=64G run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 65536M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 67108864 (9507072.36 ops/sec)
+
+65536.00 MB transferred (9284.25 MB/sec)
+
+
+Test execution summary:
+    total time:                          7.0588s
+    total number of events:              67108864
+    total time taken by event execution: 19.3321
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                  0.18ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           16777216.0000/685359.93
+    execution time (avg/stddev):   4.8330/0.12
+</pre>
+
+<p>Приятно наблюдать в htop за свободными 64 гигабайтами ОЗУ =)</p>
+
+<p><img src="https://i.hmdw.me/img/2016/06/_002_2016_06_07.png" alt="" /></p>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>За эти деньги такого количества ресурсов просто не найти на рынке. Предложение реально крутое.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

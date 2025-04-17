@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест HOST-32L от OVH. | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест сервера хостинг-линейки OVH">
+	
+	<meta name="keywords" content="OVH, выделенные сервера, Xeon D-1520">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2015/12/host-32l/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест HOST-32L от OVH. | CLSTR" />
+	<meta property="og:description" content="Тест сервера хостинг-линейки OVH" />
+	<meta property="og:url" content="https://clstr.ru/2015/12/host-32l/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/ovh_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header style="background-image: url('/img/ovh.jpg')">
+    <h1 class="title">Тест HOST-32L от OVH.</h1>
+    <p class="meta">
+    December 2, 2015
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/ovh"><img src="/uploads/2014/09/ovh_logo.png" alt="ovh_logo" class="alignnone size-full" /></a></p>
+
+<p>Всем привет!
+Публикую тесты нескольких серверов от OVH которые я провел в ноябре 2015 года. Все серверы для теста любезно предоставил <a href="http://obzor.ly/">alice2k</a></p>
+
+<p>На сей раз у нас на тесте сервер линейки Hosting: <a href="https://www.ovh.ie/dedicated_servers/hosting/">https://www.ovh.ie/dedicated_servers/hosting/</a></p>
+
+<p>Сегодня у нас на тесте младший сервер из хостинг-линейки OVH с Intel Xeon D-1520, 32Gb RAM и RAID-массивом из трех SSD по 300 гигабайт.</p>
+
+<p>Как мы видим тут новый однокристальный процессор третьего поколения разработанный для микро-серверов, хранилищ, сетей и интернета вещей.
+Процессор поддерживает максимум 128Gb RAM на сервере.</p>
+
+<p>А еще в этой линейке используются гигабитные сетевые карточки подключенные через <a href="https://www.ovh.ie/solutions/vrack/">vRack</a> что дает возможность создавать свои виртуальные локальные сети и общаться между своими серверами по гигабитному каналу. Подробнее со схемами применения по ссылке.</p>
+
+<p>Сервер находится в дата-центре GRA 1 (Гравлин).</p>
+
+<p>Начнем тест.</p>
+
+<!--more-->
+
+<h3 id="информация-о-сервере">Информация о сервере</h3>
+
+<p>Тут мы имеем все плюшки OVH как AntiDDoS и простое управление дополнительными ip.</p>
+
+<p>На тесте сервер с CentOS 7.1</p>
+
+<pre>
+[root@ns30180xx ~]# cat /etc/issue
+CentOS Linux release 7.1.1503 (Core)
+
+Linux ns30180xx.ip-149-202-80.eu 3.14.32-xxxx-grs-ipv6-64 #5 SMP Wed Sep 9 17:24:34 CEST 2015 x86_64 x86_64 x86_64 GNU/Linux
+
+server    : 616121
+hostname  : ns30180xx.ip-149-202-80.eu
+eth0 IPv4 : 149.202.xx.xxx
+eth0 IPv6 : 2001:41d0:10xx:49a::/64
+</pre>
+
+<p>INXI говорит о сервере вот что:</p>
+
+<pre>
+[root@ns30180xx ~]# inxi -b
+System:    Host: ns30180xx.ip-149-202-80.eu Kernel: 3.14.32-xxxx-grs-ipv6-64 x86_64 (64 bit) Console: tty 0
+           Distro: CentOS Linux release 7.1.1503 (Core)
+Machine:   System: Supermicro product: Super Server v: 0123456789 serial: 0123456789
+           Mobo: Supermicro model: X10SDV-4C-TLN2F v: 1.02 serial: ZM159S027251
+           Bios: American Megatrends v: 1.0b date: 09/09/2015
+CPU:       Quad core Intel Xeon D-1520 (-HT-MCP-) speed/max: 1293/2600 MHz
+Graphics:  Card: ASPEED ASPEED Graphics Family
+           Display Server: N/A driver: N/A tty size: 182x27 Advanced Data: N/A for root out of X
+Network:   Card-1: Intel Ethernet Connection X552/X557-AT 10GBASE-T driver: ixgbe
+           Card-2: Intel Ethernet Connection X552/X557-AT 10GBASE-T driver: ixgbe
+Drives:    HDD Total Size: 900.2GB (0.2% used)
+RAID:      Device: 1: /dev/md1
+Info:      Processes: 146 Uptime: 2:13 Memory: 396.0/32129.3MB Init: systemd runlevel: 3
+           Client: Shell (bash) inxi: 2.2.28
+</pre>
+
+<p>CPU и RAM</p>
+
+<pre>
+[root@ns30180xx ~]# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 86
+model name    : Intel(R) Xeon(R) CPU D-1520 @ 2.20GHz
+stepping    : 2
+microcode    : 0xa
+cpu MHz        : 1940.898
+cache size    : 6144 KB
+physical id    : 0
+siblings    : 8
+core id        : 0
+cpu cores    : 4
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 20
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap
+bogomips    : 4399.50
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 46 bits physical, 48 bits virtual
+power management:
+
+...
+
+processor    : 7
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 86
+model name    : Intel(R) Xeon(R) CPU D-1520 @ 2.20GHz
+stepping    : 2
+microcode    : 0xa
+cpu MHz        : 1567.843
+cache size    : 6144 KB
+physical id    : 0
+siblings    : 8
+core id        : 3
+cpu cores    : 4
+apicid        : 7
+initial apicid    : 7
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 20
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap
+bogomips    : 4399.50
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 46 bits physical, 48 bits virtual
+power management:
+
+[root@ns30180xx ~]# cat /proc/meminfo
+MemTotal:       32900444 kB
+MemFree:        32142208 kB
+MemAvailable:   32468888 kB
+Buffers:           22832 kB
+Cached:           350728 kB
+SwapCached:            0 kB
+Active:           166216 kB
+Inactive:         255088 kB
+Active(anon):      49416 kB
+Inactive(anon):     8280 kB
+Active(file):     116800 kB
+Inactive(file):   246808 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       1569780 kB
+SwapFree:        1569780 kB
+Dirty:               116 kB
+Writeback:             0 kB
+AnonPages:         47764 kB
+Mapped:            20624 kB
+Shmem:              9944 kB
+Slab:              72604 kB
+SReclaimable:      40812 kB
+SUnreclaim:        31792 kB
+KernelStack:        2656 kB
+PageTables:         2124 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    18020000 kB
+Committed_AS:     249648 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      333532 kB
+VmallocChunk:   34359257356 kB
+HardwareCorrupted:     0 kB
+DirectMap4k:       10088 kB
+DirectMap2M:     1982464 kB
+DirectMap1G:    33554432 kB
+</pre>
+
+<p>Диск примонтирован по-умолчанию вот так:</p>
+
+<pre>
+Файловая система Размер Использовано  Дост Использовано% Cмонтировано в
+/dev/root          295G         923M  279G            1% /
+devtmpfs            17G            0   17G            0% /dev
+tmpfs               17G            0   17G            0% /dev/shm
+tmpfs               17G          11M   17G            1% /run
+tmpfs               17G            0   17G            0% /sys/fs/cgroup
+</pre>
+
+<h3 id="тесты-и-замеры-производительности">Тесты и замеры производительности</h3>
+
+<p>Пинг из Ульяновска:</p>
+
+<pre>
+[rail@localhost ~]$ ping 149.202.xx.xxx
+PING 149.202.xx.xxx (149.202.xx.xxx) 56(84) bytes of data.
+64 bytes from 149.202.xx.xxx: icmp_seq=1 ttl=48 time=69.6 ms
+64 bytes from 149.202.xx.xxx: icmp_seq=2 ttl=48 time=75.6 ms
+64 bytes from 149.202.xx.xxx: icmp_seq=3 ttl=48 time=69.4 ms
+64 bytes from 149.202.xx.xxx: icmp_seq=4 ttl=48 time=70.3 ms
+64 bytes from 149.202.xx.xxx: icmp_seq=5 ttl=48 time=71.4 ms
+64 bytes from 149.202.xx.xxx: icmp_seq=6 ttl=48 time=70.4 ms
+64 bytes from 149.202.xx.xxx: icmp_seq=7 ttl=48 time=69.7 ms
+64 bytes from 149.202.xx.xxx: icmp_seq=8 ttl=48 time=69.5 ms
+64 bytes from 149.202.xx.xxx: icmp_seq=9 ttl=48 time=72.6 ms
+64 bytes from 149.202.xx.xxx: icmp_seq=10 ttl=48 time=69.5 ms
+^C
+--- 149.202.xx.xxx ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9013ms
+rtt min/avg/max/mdev = 69.441/70.836/75.641/1.878 ms
+</pre>
+
+<p>SSD тут очень даже неплохие:</p>
+
+<pre>
+[root@ns30180xx ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 3,97037 c, 270 MB/c
+[root@ns30180xx ~]# rm test
+rm: удалить обычный файл «test»? y
+[root@ns30180xx ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 4,24184 c, 253 MB/c
+[root@ns30180xx ~]# rm test
+rm: удалить обычный файл «test»? y
+[root@ns30180xx ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 3,98108 c, 270 MB/c
+</pre>
+
+<h4 id="тесты-sysbench">Тесты Sysbench</h4>
+
+<p>Замеряем производительность процессора нагружая его вычислениями 64-разрядных чисел. Попробуем запустить вычисление в один поток.</p>
+
+<pre>
+[root@ns30180xx ~]# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          29.1082s
+    total number of events:              10000
+    total time taken by event execution: 29.1070
+    per-request statistics:
+         min:                                  2.87ms
+         avg:                                  2.91ms
+         max:                                  3.81ms
+         approx.  95 percentile:               3.29ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   29.1070/0.00
+</pre>
+
+<pre>
+[root@ns30180xx ~]# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          1.1769s
+    total number of events:              64
+    total time taken by event execution: 73.0044
+    per-request statistics:
+         min:                               1054.40ms
+         avg:                               1140.69ms
+         max:                               1175.76ms
+         approx.  95 percentile:            1172.95ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   1.1407/0.03
+</pre>
+
+<p>Теперь замерим производительность оперативной памяти:</p>
+
+<pre>
+[root@ns30180xx ~]# sysbench --test=memory --num-threads=4 --memory-total-size=32G run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 32768M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 33554432 (3193012.41 ops/sec)
+
+32768.00 MB transferred (3118.18 MB/sec)
+
+
+Test execution summary:
+    total time:                          10.5087s
+    total number of events:              33554432
+    total time taken by event execution: 21.0985
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                  0.05ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           8388608.0000/146814.75
+    execution time (avg/stddev):   5.2746/0.04
+</pre>
+
+<p>Тест скорости чтения и записи на диск. Чтобы на тест не влиял кэш в ОЗУ зададим общий объем тестовых чуть больше чем установлено на сервере RAM.</p>
+
+<pre>
+[root@ns30180xx ~]# sysbench --test=fileio --file-total-size=36G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 294912Kb each, 36864Mb total
+Creating files for the test...
+[root@ns30180xx ~]# sysbench --test=fileio --file-total-size=36G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 288Mb each
+36Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  1216320 Read, 810880 Write, 2594755 Other = 4621955 Total
+Read 18.56Gb  Written 12.373Gb  Total transferred 30.933Gb  (105.58Mb/sec)
+ 6757.33 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0001s
+    total number of events:              2027200
+    total time taken by event execution: 68.0225
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.03ms
+         max:                                 12.55ms
+         approx.  95 percentile:               0.20ms
+
+Threads fairness:
+    events (avg/stddev):           2027200.0000/0.00
+    execution time (avg/stddev):   68.0225/0.00
+</pre>
+
+<h4 id="serverbear">Serverbear</h4>
+<p>Тесты <a href="http://serverbear.com/benchmark/2015/11/23/uQdsDpdbIfYhBJxb">Serverbear</a></p>
+
+<p>По субъективным ощущениям это очень быстрый сервер. Наверное сказывается использование RAID-массива из SSD. Процессор тут попроще и подешевле чем Xeon серии E. Это дальнейшее развитие Intel Atom.</p>
+
+<p>Для шаред-хостинга это прекрасный выбор.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

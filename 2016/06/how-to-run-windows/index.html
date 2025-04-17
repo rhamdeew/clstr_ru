@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Как запустить Windows-сервер в OVH | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Как запустить Windows-сервер в OVH">
+	
+	<meta name="keywords" content="vps, ovh, windows">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2016/06/how-to-run-windows/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Как запустить Windows-сервер в OVH | CLSTR" />
+	<meta property="og:description" content="Как запустить Windows-сервер в OVH" />
+	<meta property="og:url" content="https://clstr.ru/2016/06/how-to-run-windows/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Как запустить Windows-сервер в OVH</h1>
+    <p class="meta">
+    June 28, 2016
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/ovh"><img src="/uploads/2014/09/ovh_logo.png" alt="ovh_logo" class="alignnone size-full" /></a></p>
+
+<p>Приветствую!</p>
+
+<p>Часто возникает желание запустить Windows Server на сервере в OVH, но при этом в панели управления сервером по-умолчанию можно накатить только Linux-дистрибутивы. И это в целом правильно. С нынешним уровнем производительности процессоров можно спокойно запускать ОС в виртуальной машине и практически не иметь просадок производительности.</p>
+
+<p>При этом у нас появляются дополнительные плюшки - возможность поднять несколько VM на одном сервере, снапшоты, клонирование виртуалок и прочие радости.</p>
+
+<p>Так как же накатить винду на сервере в OVH?</p>
+
+<!--more-->
+
+<p>Можно конечно накатить один из популярных Linux-дистрибутивов, поставить Virsh и запустить с консоли VM, но этот путь не самый удобный.
+Мы воспользуемся Proxmox 4. Тем более его можно накатить прямо из панели управления сервером.</p>
+
+<p>Далее получаем письмо из OVH с рутовым паролем и реквизитами для входа в панель управления Proxmox.</p>
+
+<p><strong>Краткий список шагов:</strong></p>
+
+<p>1) Заходим на сервер по SSH и скачиваем в /var/lib/vz/template/iso образ с виндой (например win2k8.iso)</p>
+
+<p>2) Редактируем файл /etc/network/interfaces</p>
+
+<p>Закомменчиваем</p>
+
+<pre>
+# for Routing
+#auto vmbr1
+#iface vmbr1 inet manual
+#       post-up /etc/pve/kvm-networking.sh
+#       bridge_ports dummy0
+#       bridge_stp off
+#       bridge_fd 0
+</pre>
+
+<p>Вставляем</p>
+
+<pre>
+auto vmbr1
+iface vmbr1 inet static
+        address  192.168.1.1
+        netmask  255.255.255.0
+        bridge_ports none
+        bridge_stp off
+        bridge_fd 0
+
+post-up echo 1 &gt; /proc/sys/net/ipv4/ip_forward
+post-up iptables -t nat -A POSTROUTING -s '192.168.1.0/24' -o vmbr0 -j MASQUERADE
+post-down iptables -t nat -D POSTROUTING -s '192.168.1.0/24' -o vmbr0 -j MASQUERADE
+</pre>
+
+<p>И включам форвардинг</p>
+
+<pre>
+echo 1 &gt; /proc/sys/net/ipv4/ip_forward
+</pre>
+
+<p>3) Перезагружаем сервер командой reboot</p>
+
+<p>4) Заходим в панель управления Proxmox и жмем там «Create VM» и выбираем ранее загруженный на сервер iso-файл, в настройках сети указываем bridge vmbr1, ip выбираем любой понравившийся из подсети 192.168.1.*
+Стартуем виртуалку и в меню «Console» выбираем noVNC.</p>
+
+<p>5) Устанавливаем винду.</p>
+
+<p><em>Опционально можно выбрать видеодрайвер SPICE (qxl) и подключаться к серверу через более производительный SPICE-протокол.</em></p>
+
+<p><strong>Немного скриншотов:</strong></p>
+
+<p><a href="https://i.hmdw.me/img/2016/06/1.png"><img src="https://i.hmdw.me/img/2016/06/1024_1.png" /></a></p>
+
+<p><a href="https://i.hmdw.me/img/2016/06/2.png"><img src="https://i.hmdw.me/img/2016/06/1024_2.png" /></a></p>
+
+<p><a href="https://i.hmdw.me/img/2016/06/3.png"><img src="https://i.hmdw.me/img/2016/06/1024_3.png" /></a></p>
+
+<p><a href="https://i.hmdw.me/img/2016/06/4.png"><img src="https://i.hmdw.me/img/2016/06/1024_4.png" /></a></p>
+
+<p><a href="https://i.hmdw.me/img/2016/06/5.png"><img src="https://i.hmdw.me/img/2016/06/1024_5.png" /></a></p>
+
+<p><a href="https://i.hmdw.me/img/2016/06/6.png"><img src="https://i.hmdw.me/img/2016/06/1024_6.png" /></a></p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

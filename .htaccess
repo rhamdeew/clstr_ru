@@ -1,0 +1,6 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www\.clstr\.ru [NC]
+RewriteRule ^(.*)$ https://clstr.ru/$1 [L,R=301]
+
+RewriteCond %{SERVER_PORT} !^443$
+RewriteRule ^(.*)$ https://clstr.ru/$1 [L,R=301]

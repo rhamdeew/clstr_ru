@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест облака от Hetzner | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест виртуального сервера на тарифе с 2 гигабайтами ОЗУ от Hetzner">
+	
+	<meta name="keywords" content="vps, hetzner, germany">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2018/01/hetzner-cloud/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест облака от Hetzner | CLSTR" />
+	<meta property="og:description" content="Тест виртуального сервера на тарифе с 2 гигабайтами ОЗУ от Hetzner" />
+	<meta property="og:url" content="https://clstr.ru/2018/01/hetzner-cloud/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест облака от Hetzner</h1>
+    <p class="meta">
+    January 24, 2018
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/hetznercloud"><img src="/uploads/2018/logo-hetzner-online.svg" alt="hetzner_logo" class="alignnone size-full" style="width:200px;" /></a></p>
+
+<p>Доброй ночи!</p>
+
+<blockquote>
+  <p>На сайте появился новый обзор облачного хостинга Hetzner - <a href="/2021/11/hetzner-cloud-de-usa/">Hetzner ноябрь 2021</a></p>
+</blockquote>
+
+<p>Внезапно (по крайней мере для меня) Hetzner выкатил свое новое облако на модном домене hetzner.cloud. Ну что ж, рад что они идут в ногу со временем! =)</p>
+
+<p>Лично я начал знакомство с серверами Hetzner в 2011 году. Тогда у нас в компании был небольшой продакшн-сервер арендуемый в компании FastVPS где в то время предлагались сервера из дата-центров Хетцнера.</p>
+
+<p>Читал про много случаев когда сервера выходили из строя, но наш продакшн-сервер проработал без сбоев около трех лет и радовал невысокой стоимостью аренды.</p>
+
+<p>До недавнего времени на Hetzner.de можно было арендовать только выделенные сервера, место под бэкапы и если не ошибаюсь какие-то странные виртуалки. Старый сайт у них был довольно неприглядный и к покупкам совершенно не располагал.</p>
+
+<p>Теперь вот выкатили модный клауд с почасовой и помесячной тарификацией и приятным сайтом. Судя по описанию на сайте железо в облаке используется серверное (указано что используется Intel Skylake Xeon).</p>
+
+<p>Итак, начнем.</p>
+
+<!--more-->
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- clstr banner -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3140541524320205" data-ad-slot="1616664118" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="панель-управления">Панель управления</h3>
+
+<p>Очень порадовала быстрая регистрация с подтверждением по e-mail и отсутствием каких-либо платежей для подтверждения способа оплаты или подтверждения номера телефона. Я просто указал адрес электронной почты и выбрал что хочу платить Paypal’ом. В панели открылась возможность запускать виртуальные машины.</p>
+
+<p>Этот момент скорее всего исправят так как с такой простой регой сюда мигом набегут школомайнеры с левыми аккаунтами.</p>
+
+<p>Сервера в панели управления можно группировать в проекты - все управление сетью и виртуалками в рамках конкретного проекта. По-умолчанию проект называется Default.</p>
+
+<p><img src="/uploads/2018/2018-01-24_01-41-01.png" alt="" /></p>
+
+<p><img src="/uploads/2018/2018-01-24_01-41-23.png" alt="" /></p>
+
+<p>Для теста я выбрал самый минимальный тариф за 2,94 евро в месяц. Как я понял в цену вкючен VAT - на всякий случай написал в техподдержку и попросил его убрать.
+За эту цену мне досталась виртуалка в такой конфигурации - 1 vCPU, 2Gb RAM, 20Gb SSD NVME (тут можно выбрать диск подключенный напрямую или сетевой, который можно будет использовать на других виртуальных машинах).
+Разрешают до 20Тб трафика в месяц, но как я понял это общая цифра на аккаунт.</p>
+
+<p>При установке можно выбрать один из 4 шаблонов с Linux. Тут пока только самые популярные дистрибутивы - Ubuntu 16.04, Debian 9.3, Centos 7.4 и Fedora 27.
+Пока выбор скудный - надеюсь позже подвезут еще шаблонов.</p>
+
+<p><em>Есть возможность установки из образа ISO, об этом ниже.</em></p>
+
+<p>И две локации на выбор - DC8 Falkenstein и DC3 Nuremberg.</p>
+
+<h3 id="сведения-о-vm">Сведения о VM</h3>
+
+<p><strong>CentOS 7.4</strong></p>
+<pre>
+[root@centos-2gb-nbg1-dc3-1 ~]# uname -a
+Linux centos-2gb-nbg1-dc3-1 3.10.0-693.11.6.el7.x86_64 #1 SMP Thu Jan 4 01:06:37 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+[root@centos-2gb-nbg1-dc3-1 ~]# cat /etc/centos-release
+CentOS Linux release 7.4.1708 (Core)
+</pre>
+
+<p><strong>Виртуализация KVM</strong></p>
+<pre>
+[root@centos-2gb-nbg1-dc3-1 ~]# inxi -b
+System:    Host: centos-2gb-nbg1-dc3-1 Kernel: 3.10.0-693.11.6.el7.x86_64 x86_64 bits: 64 Console: tty 0
+           Distro: CentOS Linux release 7.4.1708 (Core)
+Machine:   Device: kvm System: Hetzner product: vServer v: 20171111 serial: 488941
+           Mobo: N/A model: N/A serial: N/A BIOS: Hetzner v: 20171111 date: 11/11/2017
+CPU:       Single core Intel Xeon (Skylake IBRS) (-MCP-) speed: 2100 MHz (max)
+Graphics:  Card: Device 1234:1111
+           Display Server: N/A driver: bochs-drm tty size: 204x25 Advanced Data: N/A for root out of X
+Network:   Card: Red Hat Virtio network device driver: virtio-pci
+Drives:    HDD Total Size: 20.5GB (4.8% used)
+Info:      Processes: 69 Uptime: 4 min Memory: 108.8/1791.3MB Init: systemd runlevel: 3
+           Client: Shell (bash) inxi: 2.3.53
+
+</pre>
+
+<p><strong>CPU и ОЗУ</strong></p>
+<pre>
+[root@centos-2gb-nbg1-dc3-1 ~]# cat /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 85
+model name	: Intel Xeon Processor (Skylake, IBRS)
+stepping	: 4
+microcode	: 0x1
+cpu MHz		: 2100.000
+cache size	: 16384 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 syscall nx pdpe1gb rdtscp lm constant_tsc rep_good nopl xtopology eagerfpu pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch invpcid_single spec_ctrl ibpb_support fsgsbase bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx avx512f rdseed adx smap clwb avx512cd xsaveopt xsavec xgetbv1 arat
+bogomips	: 4200.00
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+
+[root@centos-2gb-nbg1-dc3-1 ~]# cat /proc/meminfo
+MemTotal:        1834284 kB
+MemFree:         1341592 kB
+MemAvailable:    1595728 kB
+Buffers:           21588 kB
+Cached:           362880 kB
+SwapCached:            0 kB
+Active:           240620 kB
+Inactive:         183192 kB
+Active(anon):      39556 kB
+Inactive(anon):    16488 kB
+Active(file):     201064 kB
+Inactive(file):   166704 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               792 kB
+Writeback:             0 kB
+AnonPages:         39360 kB
+Mapped:            17540 kB
+Shmem:             16704 kB
+Slab:              45036 kB
+SReclaimable:      34700 kB
+SUnreclaim:        10336 kB
+KernelStack:        1168 kB
+PageTables:         2480 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      917140 kB
+Committed_AS:     193680 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       25504 kB
+VmallocChunk:   34359685116 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:      6144 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       49008 kB
+DirectMap2M:     1998848 kB
+DirectMap1G:           0 kB
+</pre>
+
+<p><strong>Разметка диска</strong></p>
+<pre>
+[root@centos-2gb-nbg1-dc3-1 ~]# df -HT
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/sda1      ext4       21G  988M   19G   6% /
+devtmpfs       devtmpfs  919M     0  919M   0% /dev
+tmpfs          tmpfs     940M     0  940M   0% /dev/shm
+tmpfs          tmpfs     940M   18M  923M   2% /run
+tmpfs          tmpfs     940M     0  940M   0% /sys/fs/cgroup
+tmpfs          tmpfs     188M     0  188M   0% /run/user/0
+</pre>
+
+<p><strong>PT Summary</strong></p>
+<pre>
+[root@centos-2gb-nbg1-dc3-1 ~]# ./pt-summary
+# Percona Toolkit System Summary Report ######################
+        Date | 2018-01-23 12:41:01 UTC (local TZ: CET +0100)
+    Hostname | centos-2gb-nbg1-dc3-1
+      Uptime | 6 min,  1 user,  load average: 0.09, 0.11, 0.06
+      System | Hetzner; vServer; v20171111 (Other)
+ Service Tag | 488941
+    Platform | Linux
+     Release | CentOS Linux release 7.4.1708 (Core)
+      Kernel | 3.10.0-693.11.6.el7.x86_64
+Architecture | CPU = 64-bit, OS = 64-bit
+   Threading | NPTL 2.17
+     SELinux | Disabled
+ Virtualized | VMWare
+# Processor ##################################################
+  Processors | physical = 1, cores = 1, virtual = 1, hyperthreading = no
+      Speeds | 1x2100.000
+      Models | 1xIntel Xeon Processor (Skylake, IBRS)
+      Caches | 1x16384 KB
+# Memory #####################################################
+       Total | 1.7G
+        Free | 1.2G
+        Used | physical = 63.1M, swap allocated = 0.0, swap used = 0.0, virtual = 63.1M
+      Shared | 16.3M
+     Buffers | 485.9M
+      Caches | 1.5G
+       Dirty | 60104 kB
+     UsedRSS | 80.9M
+  Swappiness | 30
+ DirtyPolicy | 30, 10
+ DirtyStatus | 0, 0
+  Locator   Size     Speed             Form Factor   Type          Type Detail
+  ========= ======== ================= ============= ============= ===========
+  DIMM 0    2000 MB  Unknown           DIMM          RAM           Other
+# Mounted Filesystems ########################################
+  Filesystem  Size Used Type     Opts                                             Mountpoint
+  /dev/sda1    19G   6% ext4     rw,relatime,data=ordered                         /
+  devtmpfs    876M   0% devtmpfs rw,nosuid,size=896748k,nr_inodes=224187,mode=755 /dev
+  tmpfs       180M   0% tmpfs    rw,nosuid,nodev                                  /run/user/0
+  tmpfs       180M   0% tmpfs    rw,nosuid,nodev,mode=755                         /run/user/0
+  tmpfs       180M   0% tmpfs    rw,nosuid,nodev,relatime,size=183432k,mode=700   /run/user/0
+  tmpfs       180M   0% tmpfs    ro,nosuid,nodev,noexec,mode=755                  /run/user/0
+  tmpfs       896M   0% tmpfs    rw,nosuid,nodev                                  /dev/shm
+  tmpfs       896M   0% tmpfs    rw,nosuid,nodev,mode=755                         /dev/shm
+  tmpfs       896M   0% tmpfs    rw,nosuid,nodev,relatime,size=183432k,mode=700   /dev/shm
+  tmpfs       896M   0% tmpfs    ro,nosuid,nodev,noexec,mode=755                  /dev/shm
+  tmpfs       896M   0% tmpfs    rw,nosuid,nodev                                  /sys/fs/cgroup
+  tmpfs       896M   0% tmpfs    rw,nosuid,nodev,mode=755                         /sys/fs/cgroup
+  tmpfs       896M   0% tmpfs    rw,nosuid,nodev,relatime,size=183432k,mode=700   /sys/fs/cgroup
+  tmpfs       896M   0% tmpfs    ro,nosuid,nodev,noexec,mode=755                  /sys/fs/cgroup
+  tmpfs       896M   2% tmpfs    rw,nosuid,nodev                                  /run
+  tmpfs       896M   2% tmpfs    rw,nosuid,nodev,mode=755                         /run
+  tmpfs       896M   2% tmpfs    rw,nosuid,nodev,relatime,size=183432k,mode=700   /run
+  tmpfs       896M   2% tmpfs    ro,nosuid,nodev,noexec,mode=755                  /run
+# Disk Schedulers And Queue Size #############################
+         sda | [noop] 128
+         sr0 | [noop] 128
+# Disk Partioning ############################################
+Device       Type      Start        End               Size
+============ ==== ========== ========== ==================
+/dev/sda     Disk                              20480786432
+/dev/sda1    Part       2048   40001502        20479720448
+# Kernel Inode State #########################################
+dentry-state | 63517	55128	45	0	0	0
+     file-nr | 672	0	177159
+    inode-nr | 23536	280
+# LVM Volumes ################################################
+Unable to collect information
+# LVM Volume Groups ##########################################
+Unable to collect information
+# RAID Controller ############################################
+  Controller | No RAID controller detected
+# Network Config #############################################
+  Controller | Red Hat, Inc Virtio network device
+ FIN Timeout | 60
+  Port Range | 60999
+# Interface Statistics #######################################
+  interface  rx_bytes rx_packets  rx_errors   tx_bytes tx_packets  tx_errors
+  ========= ========= ========== ========== ========== ========== ==========
+  lo                0          0          0          0          0          0
+  eth0       45000000      12500          0    1250000      10000          0
+# Network Devices ############################################
+  Device    Speed     Duplex
+  ========= ========= =========
+  eth0
+# Network Connections ########################################
+  Connections from remote IP addresses
+    2a01                4
+    5.10.144.130        2
+	 ...
+    217.243.224.144     2
+  Connections to local IP addresses
+    2a01                4
+    94.130.181.200    175
+  Connections to top 10 local ports
+    59554               1
+    59570               1
+    59686               1
+    59754               1
+    59766               1
+    59950               1
+    60204               1
+    60388               2
+    60572               1
+    60894               1
+  States of connections
+    ESTABLISHED         1
+    LISTEN              2
+    TIME_WAIT         200
+# Top Processes ##############################################
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+    1 root      20   0  125164   3672   2504 S  0.0  0.2   0:01.95 systemd
+    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd
+    3 root      20   0       0      0      0 S  0.0  0.0   0:00.02 ksoftirqd/0
+    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H
+    7 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0
+    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 R  0.0  0.0   0:00.25 rcu_sched
+   10 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 watchdog/0
+   12 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kdevtmpfs
+# Notable Processes ##########################################
+  PID    OOM    COMMAND
+ 1024    -17    sshd
+# Memory mamagement ##########################################
+Transparent huge pages are enabled.
+# The End ####################################################
+</pre>
+
+<p><img src="/uploads/2018/2018-01-23_16-38-21.png" alt="" /></p>
+
+<h3 id="тесты">Тесты</h3>
+
+<p><strong>Пинг из Ульяновска</strong></p>
+<pre>
+$ ping 94.130.181.200
+PING 94.130.181.200 (94.130.181.200): 56 data bytes
+64 bytes from 94.130.181.200: icmp_seq=0 ttl=52 time=64.880 ms
+64 bytes from 94.130.181.200: icmp_seq=1 ttl=52 time=68.145 ms
+64 bytes from 94.130.181.200: icmp_seq=2 ttl=52 time=67.108 ms
+64 bytes from 94.130.181.200: icmp_seq=3 ttl=52 time=66.852 ms
+64 bytes from 94.130.181.200: icmp_seq=4 ttl=52 time=66.429 ms
+64 bytes from 94.130.181.200: icmp_seq=5 ttl=52 time=64.869 ms
+64 bytes from 94.130.181.200: icmp_seq=6 ttl=52 time=65.903 ms
+64 bytes from 94.130.181.200: icmp_seq=7 ttl=52 time=64.429 ms
+64 bytes from 94.130.181.200: icmp_seq=8 ttl=52 time=65.521 ms
+64 bytes from 94.130.181.200: icmp_seq=9 ttl=52 time=63.983 ms
+^C
+--- 94.130.181.200 ping statistics ---
+10 packets transmitted, 10 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 63.983/65.812/68.145/1.253 ms
+</pre>
+
+<p><strong>DD</strong></p>
+<pre>
+[root@centos-2gb-nbg1-dc3-1 ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.58268 s, 416 MB/s
+[root@centos-2gb-nbg1-dc3-1 ~]# rm -f test
+[root@centos-2gb-nbg1-dc3-1 ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.41117 s, 445 MB/s
+[root@centos-2gb-nbg1-dc3-1 ~]# rm -f test
+[root@centos-2gb-nbg1-dc3-1 ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.38695 s, 450 MB/s
+[root@centos-2gb-nbg1-dc3-1 ~]# rm -f test
+</pre>
+
+<p><strong>Sysbench тест CPU</strong></p>
+<pre>
+[root@centos-2gb-nbg1-dc3-1 ~]# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 20000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   365.59
+
+General statistics:
+    total time:                          10.0013s
+    total number of events:              3657
+
+Latency (ms):
+         min:                                  2.45
+         avg:                                  2.73
+         max:                                  6.14
+         95th percentile:                      2.76
+         sum:                               9997.32
+
+Threads fairness:
+    events (avg/stddev):           3657.0000/0.00
+    execution time (avg/stddev):   9.9973/0.00
+</pre>
+
+<pre>
+[root@centos-2gb-nbg1-dc3-1 ~]# sysbench --test=mutex --num-threads=64 run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: --num-threads is deprecated, use --threads instead
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+General statistics:
+    total time:                          11.6644s
+    total number of events:              64
+
+Latency (ms):
+         min:                              10573.00
+         avg:                              11158.80
+         max:                              11607.93
+         95th percentile:                  11523.48
+         sum:                             714163.00
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   11.1588/0.25
+</pre>
+
+<p><strong>Sysbench тест ОЗУ</strong></p>
+<pre>
+[root@centos-2gb-nbg1-dc3-1 ~]# sysbench --test=memory --num-threads=4 --memory-total-size=2G run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: --num-threads is deprecated, use --threads instead
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 2048MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 2097152 (2673538.13 per second)
+
+2048.00 MiB transferred (2610.88 MiB/sec)
+
+
+General statistics:
+    total time:                          0.7827s
+    total number of events:              2097152
+
+Latency (ms):
+         min:                                  0.00
+         avg:                                  0.00
+         max:                                 44.01
+         95th percentile:                      0.00
+         sum:                               1562.09
+
+Threads fairness:
+    events (avg/stddev):           524288.0000/0.00
+    execution time (avg/stddev):   0.3905/0.04
+</pre>
+
+<p><strong>Sysbench тест диска</strong></p>
+
+<pre>
+[root@centos-2gb-nbg1-dc3-1 ~]# sysbench --test=fileio --file-total-size=4G prepare
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+128 files, 32768Kb each, 4096Mb total
+Creating files for the test...
+Extra file open flags: 0
+Creating file test_file.0
+...
+Creating file test_file.127
+4294967296 bytes written in 16.92 seconds (242.11 MiB/sec).
+[root@centos-2gb-nbg1-dc3-1 ~]# sysbench --test=fileio --file-total-size=4G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: --max-time is deprecated, use --time instead
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Extra file open flags: 0
+128 files, 32MiB each
+4GiB total file size
+Block size 16KiB
+Number of IO requests: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Initializing worker threads...
+
+Threads started!
+
+
+File operations:
+    reads/s:                      1876.90
+    writes/s:                     1251.27
+    fsyncs/s:                     4004.04
+
+Throughput:
+    read, MiB/s:                  29.33
+    written, MiB/s:               19.55
+
+General statistics:
+    total time:                          300.0131s
+    total number of events:              2139777
+
+Latency (ms):
+         min:                                  0.00
+         avg:                                  0.14
+         max:                                 29.78
+         95th percentile:                      0.50
+         sum:                             298827.21
+
+Threads fairness:
+    events (avg/stddev):           2139777.0000/0.00
+    execution time (avg/stddev):   298.8272/0.00
+</pre>
+
+<p><strong>SpeedTest</strong></p>
+<pre>
+[root@centos-2gb-nbg1-dc3-1 ~]# speedtest-cli
+Retrieving speedtest.net configuration...
+Testing from Hetzner Online GmbH (94.130.181.200)...
+Retrieving speedtest.net server list...
+Selecting best server based on ping...
+Hosted by Hanne &amp; Fomenko GbR (Salzgitter) [111.93 km]: 6.361 ms
+Testing download speed................................................................................
+Download: 854.36 Mbit/s
+Testing upload speed....................................................................................................
+Upload: 387.26 Mbit/s
+</pre>
+
+<p><strong>7-zip benchmark</strong></p>
+<pre>
+[root@centos-2gb-nbg1-dc3-1 ~]# 7za b
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,1 CPU Intel Xeon Processor (Skylake, IBRS) (50654),ASM,AES-NI)
+
+Intel Xeon Processor (Skylake, IBRS) (50654)
+CPU Freq:  2927  3137  3119  3235  3326  3307  3377  3386  3394
+
+RAM size:    1791 MB,  # CPU hardware threads:   1
+RAM usage:    435 MB,  # Benchmark threads:      1
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       4598   100   4472   4473  |      39926   100   3417   3409
+23:       4012   100   4103   4089  |      38764   100   3359   3355
+24:       3658   100   3930   3933  |      39126    99   3456   3435
+25:       3397   100   3889   3879  |      38560   100   3438   3432
+----------------------------------  | ------------------------------
+Avr:             100   4098   4094  |              100   3417   3408
+Tot:             100   3758   3751
+</pre>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>Объективные выводы согласно приведенным цифрам пока сделать не могу - нет времени. Как сделаю так заменю этот абзац.</p>
+
+<p>Но субъективно все работает очень шустро и приятно. Также порадовала постоплатная система (как в AWS и Scaleway).</p>
+
+<p>Возможностей пока не так много, но ключевые есть:</p>
+
+<ul>
+  <li>Автобэкапы</li>
+  <li>Снапшоты</li>
+  <li>Плавающие IP</li>
+  <li>Возможность подключить ISO из списка доступных в панельке</li>
+  <li>Доступ к консоли сервера из панели управления</li>
+  <li>Графики нагрузки</li>
+</ul>
+
+<p>Прикладываю скрины с ISO’шками и с графиками</p>
+
+<p><img src="/uploads/2018/2018-01-23_17-21-42.png" alt="" /></p>
+
+<p><img src="/uploads/2018/2018-01-23_17-21-17.png" alt="" /></p>
+
+<p>Думаю использовать этот сервис для веб-разработки (временно разворачивать тестовые веб-приложения). Стоимость и возможности устраивают.</p>
+
+<h3 id="upd-июнь-2018">UPD: июнь 2018</h3>
+
+<p>Сервис сам довольно крутой. Вот alice2k даже майнить на данных виртуалках предлагает. Но напишу тут о довольно неприятном случае - после теста виртуалки я забыл оплатить счет, а привязанная карта просрочилась. В итоге я сам того не зная задолжал данному хостунгу аж 2 евроцента. Спустя три месяца пришло письмо с содержанием “сорян, вы не оплатили и мы вас баним”. В тот же момент я зашел в панельку и оплатил эти несчастные копейки. Но меня забанили =)</p>
+
+<p>В итоге попробовал регнуться заново на другую почту и привязав другую почту. К этому времени они уже начали спрашивать сканы паспортов. И я даже скинул им скан своего паспорта. Но в итоге мой аккаунт не заапрувили. На вопрос “почему” ответили “потому”. Больше пытаться регаться я там не стал. Благо мне есть где брать сервера.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

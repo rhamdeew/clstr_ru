@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест Dedicated server EG-32 от OVH | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест выделенного сервера на процессоре Intel Xeon E3-1270v6">
+	
+	<meta name="keywords" content="ovh, dedicated, intel, sata, kingston, 256ip">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2017/05/ovh-eg-32/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест Dedicated server EG-32 от OVH | CLSTR" />
+	<meta property="og:description" content="Тест выделенного сервера на процессоре Intel Xeon E3-1270v6" />
+	<meta property="og:url" content="https://clstr.ru/2017/05/ovh-eg-32/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/ovh_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header style="background-image: url('/img/ovh.jpg')">
+    <h1 class="title">Тест Dedicated server EG-32 от OVH</h1>
+    <p class="meta">
+    May 1, 2017
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/ovh"><img src="/uploads/2014/09/ovh_logo.png" alt="ovh_logo" class="alignnone size-full" /></a></p>
+
+<p>Добрый вечер!</p>
+
+<p>Снова мне на тест выделили 2 сервера из новой линейки OVH. На сей раз поделился Vova1234. За что ему большое спасибо!</p>
+
+<p>В данном посте рассматривается <a href="https://www.ovh.com/us/dedicated-servers/infrastructure/173eg1.xml">вот этот</a> сервер. Судя по ссылке эти сервера предназначены для построения большой инфраструктуры. Вообще OVH предлагает 6 линеек серверов - хостинг, инфраструктура, энтерпрайз, сторадж, GPU и игровые.
+Данный сервер как раз из инфраструктурной линейки.</p>
+
+<p>Спеки:</p>
+
+<pre>
+    Intel  Xeon E3-1270v6 - 4c/8t - 3.8 GHz/4.2 GHz
+    32GB DDR4 ECC 2400 MHz
+    500 Mbps  bandwidth up to   1 Gbps
+    SoftRaid 2X4Tb
+</pre>
+
+<p>Как мы видим это настоящий Xeon с ECC-памятью, гигабитной карточкой и софтовым рэйд-массивом из двух дисков по 4 терабайта.
+Также из особенностей можно отметить отсутствие платы за установку и возможность арендовать такой сервер на 1 неделю. И еще стоит отметить возможность докупить на него до 256 дополнительных ip без ежемесячной оплаты. Платить придется только один раз по 3$ за ip.</p>
+
+<p>Стоит такая конфигурация $34.99 за неделю или $104.99 за месяц.</p>
+
+<p>Также есть возможность поменять SATA-диски на разные варианты:</p>
+
+<p><img src="https://puu.sh/vCig5/7f28b73c4a.png" alt="Варианты HDD" /></p>
+
+<!--more-->
+
+<p>На сервер накатили Debian Jessie и предоставили его мне на тест.</p>
+
+<p>Ну а теперь посмотрим что нам скажут об этом сервере разнообразные утилиты:</p>
+
+<h3 id="железо">Железо</h3>
+
+<pre>
+root@ns3072798:~# inxi -b
+System:    Host: ns3072798.ip-217-182-138.eu Kernel: 3.14.32-xxxx-grs-ipv6-64 x86_64 (64 bit) Console: tty 0
+           Distro: Debian 8
+Machine:   System: Intel product: S1200SP v: .................... serial: ............
+           Mobo: Intel model: S1200SP v: H57532-250 serial: QSSA70400536
+           Bios: Intel v: S1200SP.86B.02.01.0055.022420171601 date: 02/24/2017
+CPU:       Quad core Intel Xeon E3-1270 v6 (-HT-MCP-) clocked at 800 MHz
+Graphics:  Card: Matrox Systems MGA G200e [Pilot] ServerEngines (SEP1)
+           Display Server: N/A driver: N/A tty size: 182x27 Advanced Data: N/A for root out of X
+Network:   Card-1: Intel I210 Gigabit Network Connection driver: igb
+           Card-2: Intel I210 Gigabit Network Connection driver: igb
+Drives:    HDD Total Size: 8001.6GB (0.0% used)
+RAID:      Device: 1: /dev/md2
+Info:      Processes: 156 Uptime: 22:54 Memory: 376.6/31912.4MB Init: systemd runlevel: 5
+           Client: Shell (bash) inxi: 2.1.28
+</pre>
+
+<p>Более подробный отчет по железу можно посмотреть тут - <a href="https://gist.github.com/rhamdeew/1ad83f730e090b49e4f1413dbf002af7">pt-summary</a></p>
+
+<p>Отсюда можно узнать что на сервере установлены 2 планки ОЗУ по 16Gb и что на момент тестов сервер никак не был нагружен.</p>
+
+<p><strong>CPU</strong></p>
+
+<pre>
+root@ns3072798:~# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 158
+model name    : Intel(R) Xeon(R) CPU E3-1270 v6 @ 3.80GHz
+stepping    : 9
+microcode    : 0x48
+cpu MHz        : 800.000
+cache size    : 8192 KB
+physical id    : 0
+siblings    : 8
+core id        : 0
+cpu cores    : 4
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 22
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap
+bogomips    : 7583.91
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 39 bits physical, 48 bits virtual
+power management:
+
+...
+
+processor    : 7
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 158
+model name    : Intel(R) Xeon(R) CPU E3-1270 v6 @ 3.80GHz
+stepping    : 9
+microcode    : 0x48
+cpu MHz        : 800.000
+cache size    : 8192 KB
+physical id    : 0
+siblings    : 8
+core id        : 3
+cpu cores    : 4
+apicid        : 7
+initial apicid    : 7
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 22
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap
+bogomips    : 7583.91
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 39 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p><strong>Гигабайт памяти</strong></p>
+
+<pre>
+root@ns3072798:~# cat /proc/meminfo
+MemTotal:       32678280 kB
+MemFree:        31572256 kB
+MemAvailable:   32251348 kB
+Buffers:           84116 kB
+Cached:           640880 kB
+SwapCached:            0 kB
+Active:           361256 kB
+Inactive:         401028 kB
+Active(anon):      38852 kB
+Inactive(anon):    16584 kB
+Active(file):     322404 kB
+Inactive(file):   384444 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       1046520 kB
+SwapFree:        1046520 kB
+Dirty:                 4 kB
+Writeback:             0 kB
+AnonPages:         37308 kB
+Mapped:            20304 kB
+Shmem:             18148 kB
+Slab:              92264 kB
+SReclaimable:      57936 kB
+SUnreclaim:        34328 kB
+KernelStack:        2784 kB
+PageTables:         1744 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    17385660 kB
+Committed_AS:     206992 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      334480 kB
+VmallocChunk:   34359268652 kB
+HardwareCorrupted:     0 kB
+DirectMap4k:        8424 kB
+DirectMap2M:     2811904 kB
+DirectMap1G:    30408704 kB
+</pre>
+
+<p><strong>SSD</strong></p>
+
+<pre>
+root@ns3072798:~# df -HT
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/root      ext4      4.0T  892M  3.8T   1% /
+devtmpfs       devtmpfs   17G     0   17G   0% /dev
+tmpfs          tmpfs      17G     0   17G   0% /dev/shm
+tmpfs          tmpfs      17G   19M   17G   1% /run
+tmpfs          tmpfs     5.3M     0  5.3M   0% /run/lock
+tmpfs          tmpfs      17G     0   17G   0% /sys/fs/cgroup
+/dev/sda1      vfat      535M  156k  535M   1% /boot/efi
+</pre>
+
+<h3 id="тесты">Тесты</h3>
+
+<p>Пинги из Ульяновска на уровне 70-80 мс. Многовато, но для Европы норм.</p>
+
+<pre>
+[rail@localhost ~]$ ping 217.182.138.64
+PING 217.182.138.64 (217.182.138.64) 56(84) bytes of data.
+64 bytes from 217.182.138.64: icmp_seq=2 ttl=53 time=75.8 ms
+64 bytes from 217.182.138.64: icmp_seq=3 ttl=53 time=72.8 ms
+64 bytes from 217.182.138.64: icmp_seq=4 ttl=53 time=73.2 ms
+64 bytes from 217.182.138.64: icmp_seq=5 ttl=53 time=73.1 ms
+64 bytes from 217.182.138.64: icmp_seq=6 ttl=53 time=75.8 ms
+64 bytes from 217.182.138.64: icmp_seq=7 ttl=53 time=73.1 ms
+64 bytes from 217.182.138.64: icmp_seq=8 ttl=53 time=74.5 ms
+64 bytes from 217.182.138.64: icmp_seq=9 ttl=53 time=78.7 ms
+64 bytes from 217.182.138.64: icmp_seq=10 ttl=53 time=75.3 ms
+^C
+--- 217.182.138.64 ping statistics ---
+10 packets transmitted, 9 received, 10% packet loss, time 9042ms
+rtt min/avg/max/mdev = 72.886/74.740/78.761/1.843 ms
+</pre>
+
+<p><img src="https://puu.sh/viKNB/5234a136ba.png" alt="Информация об IP" /></p>
+
+<p><strong>CPU</strong></p>
+
+<pre>
+root@ns3072798:~# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          17.8554s
+    total number of events:              10000
+    total time taken by event execution: 17.8548
+    per-request statistics:
+         min:                                  1.78ms
+         avg:                                  1.79ms
+         max:                                  6.31ms
+         approx.  95 percentile:               1.82ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   17.8548/0.00
+</pre>
+
+<p>Тут результат на 2 секунды похуже чем у протестированного ранее <a href="/2017/01/ovh-i7-7700k/">i7-7700K 64GB 450NVMe</a> и на 2 секунды лучше чем у <a href="/2017/05/ovh-eg-16/">EG-16</a></p>
+
+<pre>
+root@ns3072798:~# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.5945s
+    total number of events:              64
+    total time taken by event execution: 35.5347
+    per-request statistics:
+         min:                                481.11ms
+         avg:                                555.23ms
+         max:                                593.19ms
+         approx.  95 percentile:             590.46ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.5552/0.02
+</pre>
+
+<p>Тут тест завершился за ~35 секунд против ~29 у Core I7. Лучше чем E3-1230v6, но похуже чем Core I7 7700K.</p>
+
+<p><strong>Memory</strong></p>
+
+<pre>
+root@ns3072798:~# sysbench --test=memory --num-threads=4 --memory-total-size=32G run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 32768M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 33554432 (5155064.87 ops/sec)
+
+32768.00 MB transferred (5034.24 MB/sec)
+
+
+Test execution summary:
+    total time:                          6.5090s
+    total number of events:              33554432
+    total time taken by event execution: 16.0268
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                  0.24ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           8388608.0000/92120.42
+    execution time (avg/stddev):   4.0067/0.04
+</pre>
+
+<p>Память показала почему то вдвое меньший результат по скорости чем у сервера на Core I7, но чуть лучше чем E3-1230v6.</p>
+
+<p><strong>HDD</strong></p>
+
+<p>Итак, давайте посмотрим что же у нас за диски</p>
+
+<pre>
+root@ns3072798:~# hdparm -I /dev/sda | grep "Model Number"
+    Model Number:       HGST HUS726040ALA610
+</pre>
+
+<p>Как  мы видим это Hitachi Ultrastar 7K6000, модель для ЦОДов. Такие же как на EG-16.</p>
+
+<p>А теперь посмотрим сколько они проработали:</p>
+
+<pre>
+root@ns3072798:~# smartctl --all /dev/sda | grep Power_On_Hours
+  9 Power_On_Hours          0x0012   100   100   000    Old_age   Always       -       71
+root@ns3072798:~# smartctl --all /dev/sdb | grep Power_On_Hours
+  9 Power_On_Hours          0x0012   100   100   000    Old_age   Always       -       71
+</pre>
+
+<p>Диски достались абсолютно новые, проработали на момент теста всего по 71 часу. Только из упаковки достали можно сказать =)</p>
+
+<p>Для начала замерим скорость линейной записи. Мерить будем обычной утилитой dd.</p>
+
+<pre>
+root@ns3072798:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 6.14015 s, 175 MB/s
+root@ns3072798:~# rm test
+root@ns3072798:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 6.35807 s, 169 MB/s
+root@ns3072798:~# rm test
+root@ns3072798:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 6.04387 s, 178 MB/s
+root@ns3072798:~# rm test
+</pre>
+
+<p>Тут результат оказался в среднем выше чем у других SATA-дисков. Обычно получается в районе 150 MB/s, тут же выдало 175 =)</p>
+
+<p>Теперь попробуем замерить скорость записи sysbench’ем</p>
+
+<pre>
+root@ns3072798:~# sysbench --test=fileio --file-total-size=40G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 327680Kb each, 40960Mb total
+Creating files for the test...
+root@ns3072798:~# sysbench --test=fileio --file-total-size=40G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 320Mb each
+40Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  22620 Read, 15080 Write, 48134 Other = 85834 Total
+Read 353.44Mb  Written 235.62Mb  Total transferred 589.06Mb  (1.9634Mb/sec)
+  125.66 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0249s
+    total number of events:              37700
+    total time taken by event execution: 41.4148
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  1.10ms
+         max:                                 51.24ms
+         approx.  95 percentile:               7.90ms
+
+Threads fairness:
+    events (avg/stddev):           37700.0000/0.00
+    execution time (avg/stddev):   41.4148/0.00
+</pre>
+
+<p>Тут тест выдал аналогично EG-16 довольно низкий результат. Но почему то все равно чуть лучше чем EG-16, хотя диски одинаковые.</p>
+
+<p><strong>Speedtest</strong></p>
+
+<p>Сеть замерять не стал - сервер в той же подсети что и <a href="/2017/05/ovh-eg-16/">предыдущий</a>. Так что посмотреть можно все там.</p>
+
+<p><strong>Nicehash</strong></p>
+
+<p>Также попробовал запустить <a href="https://hub.docker.com/r/rhamdeew/nheqminer/">вот этот майнер</a> биткоинов.</p>
+
+<p>Результат:
+Nicehash - 31.5 Sols/s</p>
+
+<p>Чуть лучше чем E3-1230v6 и чуть хуже чем у Core I7 7700K</p>
+
+<p><strong>7-zip benchmark</strong></p>
+
+<pre>
+root@ns3072798:~# 7za b
+
+7-Zip (A) [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
+p7zip Version 9.20 (locale=en_GB.UTF-8,Utf16=on,HugeFiles=on,8 CPUs)
+
+RAM size:   31912 MB,  # CPU hardware threads:   8
+RAM usage:   1701 MB,  # Benchmark threads:      8
+
+Dict        Compressing          |        Decompressing
+      Speed Usage    R/U Rating  |    Speed Usage    R/U Rating
+       KB/s     %   MIPS   MIPS  |     KB/s     %   MIPS   MIPS
+
+22:   22769   608   3642  22150  |   254143   797   2877  22920
+23:   24768   685   3684  25236  |   243127   778   2858  22243
+24:   23812   693   3695  25603  |   240682   779   2865  22325
+25:   23077   708   3722  26349  |   237881   777   2878  22369
+----------------------------------------------------------------
+Avr:          673   3686  24834               783   2869  22464
+Tot:          728   3278  23649
+</pre>
+
+<p>Бенч от 7-zip также не показал ничего особо выдающегося. Но ожидаемо лучше чем EG-16.</p>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>Вывод тут такой же что и в предыдущем посте. Да и вообще эти сервера очень похожи. Разве что тут идет доплата за увеличенную вдвое память и старшую модель процессора. И дополнительной плюшкой идет больше вариантов для выбора вместо базовых SATA-дисков. К примеру можно взять RAID из SATA-дисков + RAID из SSD или один MegaRaid из 3 SSD по 960 гигабайт. Все это конечно сильно влияет на цену, но и в качестве покупателей таких серверов я больше вижу какие-то компании, стартапы, но никак не обычного человека которому нужно захостить свои сайты.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест VPS от Sprintbox | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест VPS от провайдера Sprintbox">
+	
+	<meta name="keywords" content="vps, ssd, sprintbox">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2017/03/sprintbox/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест VPS от Sprintbox | CLSTR" />
+	<meta property="og:description" content="Тест VPS от провайдера Sprintbox" />
+	<meta property="og:url" content="https://clstr.ru/2017/03/sprintbox/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест VPS от Sprintbox</h1>
+    <p class="meta">
+    March 2, 2017
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/sprintbox"><img src="/uploads/2017/logo-sprintbox.svg" alt="sprintbox_logo" class="alignnone size-full" /></a></p>
+
+<p>Приветствую!</p>
+
+<p>С недавних пор хостер Sprinthost решил заняться сдачей VPS в аренду и запустил сервис Sprintbox. Продажи стартанули только в декабре 2016 года и
+пока заметно что сервис новый. Даже тариф у них пока один - 1 ядро 2Gb Ram 32G SSD KVM за 400 рублей в месяц. Цена вполне себе средняя.
+Честно говоря мне лень проводить какую то глубокую аналитику, поэтому просто опубликую  результаты тестов и пару интересных замечаний со своей стороны.</p>
+
+<p>В целом мне сервис понравился и я считаю что он стоит своих денег. И тем более это не какой-то школохост, а вполне надежный хостер который работает уже 11 лет =)</p>
+
+<p>Итак, поехали</p>
+
+<!--more-->
+
+<p>Получив тестовый месяц я запилил сервер на Debian Jessie и принялся его тестировать.</p>
+
+<h3 id="железо">«Железо»</h3>
+
+<p>Вывод inxi</p>
+
+<pre>
+root@box-1978:~# inxi -b
+System:    Host: box-1978 Kernel: 3.16.0-4-amd64 x86_64 (64 bit) Console: tty 0 Distro: Debian GNU/Linux 8
+Machine:   System: QEMU product: Standard PC (i440FX + PIIX 1996) v: pc-i440fx-2.1
+           Mobo: N/A model: N/A Bios: Sea v: 1.7.5-20140531_083030-gandalf date: 04/01/2014
+CPU:       Single core QEMU Virtual version 2.1.2 (-UP-) clocked at 1999 MHz
+Graphics:  Card: Cirrus Logic GD 5446
+           Display Server: N/A driver: N/A tty size: 182x27 Advanced Data: N/A for root out of X
+Network:   Card: Red Hat Virtio network device driver: virtio-pci
+Drives:    HDD Total Size: 34.4GB (2.9% used)
+Info:      Processes: 61 Uptime: 4 min Memory: 62.1/2010.3MB Init: systemd runlevel: 5
+           Client: Shell (bash) inxi: 2.1.28
+</pre>
+
+<p>35Gb SSD</p>
+
+<pre>
+root@box-1978:~# df -HT
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/vda1      ext4       34G  809M   32G   3% /
+udev           devtmpfs   11M     0   11M   0% /dev
+tmpfs          tmpfs     422M  5.6M  417M   2% /run
+tmpfs          tmpfs     1.1G     0  1.1G   0% /dev/shm
+tmpfs          tmpfs     5.3M     0  5.3M   0% /run/lock
+tmpfs          tmpfs     1.1G     0  1.1G   0% /sys/fs/cgroup
+</pre>
+
+<p>CPU</p>
+
+<pre>
+root@box-1978:~# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 6
+model name    : QEMU Virtual CPU version 2.1.2
+stepping    : 3
+microcode    : 0x1
+cpu MHz        : 1999.999
+cache size    : 4096 KB
+physical id    : 0
+siblings    : 1
+core id        : 0
+cpu cores    : 1
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 4
+wp        : yes
+flags        : fpu de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pse36 clflush mmx fxsr sse sse2 syscall nx lm rep_good nopl pni cx16 x2apic popcnt hypervisor lahf_lm
+bogomips    : 3999.99
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 40 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p>Memory</p>
+
+<pre>
+root@box-1978:~# cat /proc/meminfo
+MemTotal:        2058572 kB
+MemFree:         1565076 kB
+MemAvailable:    1899612 kB
+Buffers:           34812 kB
+Cached:           401316 kB
+SwapCached:            0 kB
+Active:           251964 kB
+Inactive:         190744 kB
+Active(anon):       6724 kB
+Inactive(anon):     5264 kB
+Active(file):     245240 kB
+Inactive(file):   185480 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                20 kB
+Writeback:             0 kB
+AnonPages:          6620 kB
+Mapped:            11460 kB
+Shmem:              5412 kB
+Slab:              39736 kB
+SReclaimable:      32880 kB
+SUnreclaim:         6856 kB
+KernelStack:         944 kB
+PageTables:         1080 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1029284 kB
+Committed_AS:      43460 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:        3864 kB
+VmallocChunk:   34359734079 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       28544 kB
+DirectMap2M:     2068480 kB
+</pre>
+
+<p>PT Summary</p>
+
+<pre>
+root@box-1978:~# pt-summary
+# Percona Toolkit System Summary Report ######################
+        Date | 2017-01-31 21:04:59 UTC (local TZ: MSK +0300)
+    Hostname | box-1978
+      Uptime | 8 min,  1 user,  load average: 0.02, 0.10, 0.06
+      System | QEMU; Standard PC (i440FX + PIIX, 1996); vpc-i440fx-2.1 (Other)
+ Service Tag | Not Specified
+    Platform | Linux
+     Release | Debian GNU/Linux 8.5 (jessie) (jessie)
+      Kernel | 3.16.0-4-amd64
+Architecture | CPU = 64-bit, OS = 64-bit
+   Threading | NPTL 2.19
+     SELinux | No SELinux detected
+ Virtualized | No virtualization detected
+# Processor ##################################################
+  Processors | physical = 1, cores = 1, virtual = 1, hyperthreading = no
+      Speeds | 1x1999.999
+      Models | 1xQEMU Virtual CPU version 2.1.2
+      Caches | 1x4096 KB
+# Memory #####################################################
+       Total | 2.0G
+        Free | 1.4G
+        Used | physical = 580.3M, swap allocated = 0.0, swap used = 0.0, virtual = 580.3M
+     Buffers | 38.0M
+      Caches | 478.3M
+       Dirty | 64 kB
+     UsedRSS | 50.3M
+  Swappiness | 60
+ DirtyPolicy | 20, 10
+ DirtyStatus | 0, 0
+  Locator   Size     Speed             Form Factor   Type          Type Detail
+  ========= ======== ================= ============= ============= ===========
+  DIMM 0    2048 MB  Unknown           DIMM          RAM           Other   
+# Mounted Filesystems ########################################
+  Filesystem  Size Used Type     Opts                                              Mountpoint
+  /dev/vda1    32G   4% ext4     rw,noatime,errors=remount-ro,data=ordered         /
+  tmpfs      1006M   0% tmpfs    rw,nosuid,nodev                                   /dev/shm
+  tmpfs      1006M   0% tmpfs    rw,nosuid,nodev,noexec,relatime,size=5120k        /dev/shm
+  tmpfs      1006M   0% tmpfs    rw,nosuid,relatime,size=411716k,mode=755          /dev/shm
+  tmpfs      1006M   0% tmpfs    ro,nosuid,nodev,noexec,mode=755                   /dev/shm
+  tmpfs      1006M   0% tmpfs    rw,nosuid,nodev                                   /sys/fs/cgroup
+  tmpfs      1006M   0% tmpfs    rw,nosuid,nodev,noexec,relatime,size=5120k        /sys/fs/cgroup
+  tmpfs      1006M   0% tmpfs    rw,nosuid,relatime,size=411716k,mode=755          /sys/fs/cgroup
+  tmpfs      1006M   0% tmpfs    ro,nosuid,nodev,noexec,mode=755                   /sys/fs/cgroup
+  tmpfs       403M   2% tmpfs    rw,nosuid,nodev                                   /run
+  tmpfs       403M   2% tmpfs    rw,nosuid,nodev,noexec,relatime,size=5120k        /run
+  tmpfs       403M   2% tmpfs    rw,nosuid,relatime,size=411716k,mode=755          /run
+  tmpfs       403M   2% tmpfs    ro,nosuid,nodev,noexec,mode=755                   /run
+  tmpfs       5.0M   0% tmpfs    rw,nosuid,nodev                                   /run/lock
+  tmpfs       5.0M   0% tmpfs    rw,nosuid,nodev,noexec,relatime,size=5120k        /run/lock
+  tmpfs       5.0M   0% tmpfs    rw,nosuid,relatime,size=411716k,mode=755          /run/lock
+  tmpfs       5.0M   0% tmpfs    ro,nosuid,nodev,noexec,mode=755                   /run/lock
+  udev         10M   0% devtmpfs rw,relatime,size=10240k,nr_inodes=256615,mode=755 /dev
+# Disk Schedulers And Queue Size #############################
+         sr0 | [cfq] 128
+         vda | 128
+# Disk Partioning ############################################
+Device       Type      Start        End               Size
+============ ==== ========== ========== ==================
+/dev/sr0     Disk                                   374784
+/dev/vda     Disk                              34359738368
+/dev/vda1    Part       2048   67102719                  0
+# Kernel Inode State #########################################
+dentry-state | 37571    28883    45    0    0    0
+     file-nr | 320    0    205261
+    inode-nr | 21418    452
+# LVM Volumes ################################################
+Unable to collect information
+# LVM Volume Groups ##########################################
+Unable to collect information
+# RAID Controller ############################################
+  Controller | No RAID controller detected
+# Network Config #############################################
+  Controller | Red Hat, Inc Virtio network device
+ FIN Timeout | 60
+  Port Range | 61000
+# Interface Statistics #######################################
+  interface  rx_bytes rx_packets  rx_errors   tx_bytes tx_packets  tx_errors
+  ========= ========= ========== ========== ========== ========== ==========
+  lo                0          0          0          0          0          0
+  eth0       80000000      80000          0    1250000      15000          0
+# Network Connections ########################################
+  Connections from remote IP addresses
+    176.116.142.64      1
+  Connections to local IP addresses
+    185.185.69.53       1
+  Connections to top 10 local ports
+    22                  1
+  States of connections
+    ESTABLISHED         1
+    LISTEN              2
+# Top Processes ##############################################
+  PID USER      PR  NI    VIRT    RES    SHR S %CPU %MEM     TIME+ COMMAND
+    1 root      20   0   28228   4292   2904 S  0.0  0.2   0:00.67 systemd
+    2 root      20   0       0      0      0 S  0.0  0.0   0:00.00 kthreadd
+    3 root      20   0       0      0      0 S  0.0  0.0   0:00.06 ksoftirqd/0
+    5 root       0 -20       0      0      0 S  0.0  0.0   0:00.00 kworker/0:0H
+    6 root      20   0       0      0      0 S  0.0  0.0   0:00.06 kworker/u2:0
+    7 root      20   0       0      0      0 S  0.0  0.0   0:00.37 rcu_sched
+    8 root      20   0       0      0      0 S  0.0  0.0   0:00.00 rcu_bh
+    9 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 migration/0
+   10 root      rt   0       0      0      0 S  0.0  0.0   0:00.00 watchdog/0
+# Notable Processes ##########################################
+  PID    OOM    COMMAND
+  527    -17    sshd
+# Simplified and fuzzy rounded vmstat (wait please) ##########
+  procs  ---swap-- -----io---- ---system---- --------cpu--------
+   r  b    si   so    bi    bo     ir     cs  us  sy  il  wa  st
+   1  0     0    0   150  2500    350    700   7   2  90   1   0
+   0  0     0    0   150     0    300   1250   5   8  87   0   0
+   0  0     0    0     0     0    350    200   0   0  99   0   1
+   1  0     0    0     0     0    150    125   0   0 100   0   0
+   0  0     0    0     0     0    100    100   0   0 100   0   0
+# The End ####################################################
+</pre>
+
+<h3 id="тесты">Тесты</h3>
+
+<p>Пинги из Ульяновска на уровне 30 мс что очень хорошо.</p>
+
+<pre>
+[rail@localhost ~]$ ping 185.185.69.53
+PING 185.185.69.53 (185.185.69.53) 56(84) bytes of data.
+64 bytes from 185.185.69.53: icmp_seq=1 ttl=53 time=29.3 ms
+64 bytes from 185.185.69.53: icmp_seq=2 ttl=53 time=29.7 ms
+64 bytes from 185.185.69.53: icmp_seq=3 ttl=53 time=28.9 ms
+64 bytes from 185.185.69.53: icmp_seq=4 ttl=53 time=28.9 ms
+64 bytes from 185.185.69.53: icmp_seq=5 ttl=53 time=28.9 ms
+64 bytes from 185.185.69.53: icmp_seq=6 ttl=53 time=29.1 ms
+64 bytes from 185.185.69.53: icmp_seq=7 ttl=53 time=28.7 ms
+64 bytes from 185.185.69.53: icmp_seq=8 ttl=53 time=30.0 ms
+64 bytes from 185.185.69.53: icmp_seq=9 ttl=53 time=29.1 ms
+64 bytes from 185.185.69.53: icmp_seq=10 ttl=53 time=28.9 ms
+^C
+--- 185.185.69.53 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9013ms
+rtt min/avg/max/mdev = 28.757/29.203/30.010/0.391 ms
+</pre>
+
+<p>Тест SSD</p>
+
+<p>Очень хорошие результаты по скорости записи на диск =)</p>
+
+<pre>
+root@box-1978:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.52858 s, 425 MB/s
+root@box-1978:~# rm -f test
+root@box-1978:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.7082 s, 396 MB/s
+root@box-1978:~# rm -f test
+root@box-1978:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 3.28286 s, 327 MB/s
+root@box-1978:~# rm -f test
+</pre>
+
+<p><strong>sysbench</strong></p>
+
+<pre>
+root@box-1978:~# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          35.7400s
+    total number of events:              10000
+    total time taken by event execution: 35.7361
+    per-request statistics:
+         min:                                  3.37ms
+         avg:                                  3.57ms
+         max:                                  9.60ms
+         approx.  95 percentile:               4.26ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   35.7361/0.00
+</pre>
+
+<pre>
+root@box-1978:~# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.2477s
+    total number of events:              64
+    total time taken by event execution: 11.4462
+    per-request statistics:
+         min:                                 71.20ms
+         avg:                                178.85ms
+         max:                                242.41ms
+         approx.  95 percentile:             241.77ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.1788/0.05
+</pre>
+
+<pre>
+root@box-1978:~# sysbench --test=memory --num-threads=4 --memory-total-size=2G run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 2048M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 2097152 (1096413.23 ops/sec)
+
+2048.00 MB transferred (1070.72 MB/sec)
+
+
+Test execution summary:
+    total time:                          1.9127s
+    total number of events:              2097152
+    total time taken by event execution: 5.7168
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                 12.04ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           524288.0000/10687.73
+    execution time (avg/stddev):   1.4292/0.03
+</pre>
+
+<pre>
+root@box-1978:~# sysbench --test=fileio --file-total-size=4G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 32768Kb each, 4096Mb total
+Creating files for the test...
+root@box-1978:~# sysbench --test=fileio --file-total-size=4G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 32Mb each
+4Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  623698 Read, 415798 Write, 1330432 Other = 2369928 Total
+Read 9.5169Gb  Written 6.3446Gb  Total transferred 15.861Gb  (54.14Mb/sec)
+ 3464.95 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0033s
+    total number of events:              1039496
+    total time taken by event execution: 68.2016
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.07ms
+         max:                                 14.96ms
+         approx.  95 percentile:               0.20ms
+
+Threads fairness:
+    events (avg/stddev):           1039496.0000/0.00
+    execution time (avg/stddev):   68.2016/0.00
+</pre>
+
+<p><strong>Speedtest</strong></p>
+
+<p>Попробовал замерить скорость сети через speedtest-cli</p>
+
+<pre>
+root@box-1978:~# speedtest-cli
+Retrieving speedtest.net configuration...
+Retrieving speedtest.net server list...
+Testing from  (185.185.69.53)...
+Selecting best server based on latency...
+Hosted by SoftLayer Technologies, Inc. (London) [1.47 km]: 61.423 ms
+Testing download speed........................................
+Download: 85.47 Mbits/s
+Testing upload speed..................................................
+Upload: 50.62 Mbits/s
+root@box-1978:~# speedtest-cli
+Retrieving speedtest.net configuration...
+Retrieving speedtest.net server list...
+Testing from  (185.185.69.53)...
+Selecting best server based on latency...
+Hosted by Structured Communications (London) [1.47 km]: 59.207 ms
+Testing download speed........................................
+Download: 0.00 Mbits/s
+Testing upload speed..................................................
+Upload: 51.56 Mbits/s
+root@box-1978:~# speedtest-cli
+Retrieving speedtest.net configuration...
+Retrieving speedtest.net server list...
+Testing from  (185.185.69.53)...
+Selecting best server based on latency...
+Hosted by fdcservers.net (London) [1.47 km]: 51.115 ms
+Testing download speed........................................
+Download: 60.77 Mbits/s
+Testing upload speed..................................................
+Upload: 45.33 Mbits/s
+</pre>
+
+<p><strong>7-zip benchmark</strong></p>
+
+<pre>
+root@box-1978:~# 7za b
+
+7-Zip (A) [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
+p7zip Version 9.20 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,1 CPU)
+
+RAM size:    2010 MB,  # CPU hardware threads:   1
+RAM usage:    419 MB,  # Benchmark threads:      1
+
+Dict        Compressing          |        Decompressing
+      Speed Usage    R/U Rating  |    Speed Usage    R/U Rating
+       KB/s     %   MIPS   MIPS  |     KB/s     %   MIPS   MIPS
+
+22:    2492   100   2433   2424  |    27639   100   2497   2495
+23:    2588   100   2645   2637  |    27670   100   2535   2533
+24:    2027   100   2188   2180  |    23878   100   2217   2215
+25:    2348   100   2689   2681  |    27020   100   2542   2541
+----------------------------------------------------------------
+Avr:          100   2488   2480               100   2448   2446
+Tot:          100   2468   2463
+</pre>
+
+<p><strong>Возможности панели</strong></p>
+
+<p>Образы на виртуалки раскатываются очень быстро и все необходимые дистрибутивы имеются в наличии. Также порадовал образ с Bitrix Env.
+Не смог удержаться и запустил тест в Битрикс-попугаях - https://puu.sh/tIPoN/9c802f90e9.png</p>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>В целом довольно неплохой сервис с минимальным уровнем требуемого функционала. Цены адекватные, сервера производительные, панель удобная.</p>
+
+<p>Думаю в скором времени еще порадуют новыми возможностями своего сервиса</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

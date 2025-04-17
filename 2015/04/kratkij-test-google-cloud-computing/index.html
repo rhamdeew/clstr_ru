@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Краткий тест Google Cloud Computing | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест Google Cloud Computing">
+	
+	<meta name="keywords" content="Google Cloud">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2015/04/kratkij-test-google-cloud-computing/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Краткий тест Google Cloud Computing | CLSTR" />
+	<meta property="og:description" content="Тест Google Cloud Computing" />
+	<meta property="og:url" content="https://clstr.ru/2015/04/kratkij-test-google-cloud-computing/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Краткий тест Google Cloud Computing</h1>
+    <p class="meta">
+    April 5, 2015
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/gcloud"><img src="/uploads/2015/01/google_cloud_logo.png" alt="google_cloud_logo" width="300" height="53" class="alignnone size-full wp-image-243" /></a></p>
+
+<p>Всем привет!<br />
+Долгое время не доходили руки до публикации результатов этого теста. Вкратце – у Google есть собственный cloud computing с огромным количеством сервисов. По своим возможностям слегка напоминает Amazon AWS. А еще после привязки своей кредитной карты Гугл дает довольно щедрый бонус которого хватит на то чтобы полноценно протестировать все продукты – $300 на 60 дней.</p>
+
+<p>Для тестов я поднял инстанс n1-standart-1 с 1 ядром и 3.75Gb RAM. Оплата здесь как и у амазона почасовая. Такой сервер стоит недешево. Если грузить его постоянно 30 дней то в конце месяца придется заплатить аж $45. Ну что же, давайте посмотрим что это за сервер.<br />
+<!--more--></p>
+
+<pre>Zone: europe-west1-c
+Image: debian-7-wheezy-v20141108
+Machine Type: n1-standard-1
+phpMyAdmin Installed: true
+</pre>
+
+<p>Для начала замерим пинги и посмотрим traceroute из Ульяновска.</p>
+
+<pre>➜  ~  ping 146.148.123.179
+PING 146.148.123.179 (146.148.123.179) 56(84) bytes of data.
+64 bytes from 146.148.123.179: icmp_seq=1 ttl=43 time=83.3 ms
+64 bytes from 146.148.123.179: icmp_seq=2 ttl=43 time=80.0 ms
+64 bytes from 146.148.123.179: icmp_seq=3 ttl=43 time=80.0 ms
+64 bytes from 146.148.123.179: icmp_seq=4 ttl=43 time=80.0 ms
+64 bytes from 146.148.123.179: icmp_seq=5 ttl=43 time=80.6 ms
+64 bytes from 146.148.123.179: icmp_seq=6 ttl=43 time=80.1 ms
+64 bytes from 146.148.123.179: icmp_seq=7 ttl=43 time=80.0 ms
+64 bytes from 146.148.123.179: icmp_seq=8 ttl=43 time=80.1 ms
+64 bytes from 146.148.123.179: icmp_seq=9 ttl=43 time=80.0 ms
+^C
+--- 146.148.123.179 ping statistics ---
+9 packets transmitted, 9 received, 0% packet loss, time 8010ms
+rtt min/avg/max/mdev = 80.043/80.505/83.333/1.075 ms
+</pre>
+
+<pre>➜  ~  traceroute 146.148.123.179
+traceroute to 146.148.123.179 (146.148.123.179), 30 hops max, 60 byte packets
+ 1  192.168.0.1 (192.168.0.1)  1.040 ms  1.148 ms  1.727 ms
+ 2  109.197.192.193 (109.197.192.193)  2.939 ms  3.274 ms  3.213 ms
+ 3  109.197.192.194 (109.197.192.194)  10.465 ms  10.402 ms  10.333 ms
+ 4  ASR--SW.evolife.su (109.197.192.83)  7.800 ms  7.757 ms  7.698 ms
+ 5  91.193.36.229 (91.193.36.229)  7.632 ms  7.576 ms  7.528 ms
+ 6  188.128.1.57 (188.128.1.57)  7.461 ms  2.069 ms  2.510 ms
+ 7  95.167.95.199 (95.167.95.199)  41.515 ms  41.448 ms  41.374 ms
+ 8  79.133.94.86 (79.133.94.86)  41.304 ms  41.232 ms  41.164 ms
+ 9  66.249.94.170 (66.249.94.170)  49.892 ms 72.14.233.106 (72.14.233.106)  77.334 ms  77.275 ms
+10  209.85.240.102 (209.85.240.102)  59.090 ms  59.052 ms  58.996 ms
+11  72.14.232.95 (72.14.232.95)  72.390 ms  72.364 ms  72.214 ms
+12  216.239.51.202 (216.239.51.202)  88.255 ms 209.85.252.249 (209.85.252.249)  97.768 ms 209.85.244.211 (209.85.244.211)  80.815 ms
+13  66.249.95.254 (66.249.95.254)  83.795 ms 216.239.47.83 (216.239.47.83)  83.792 ms 216.239.47.75 (216.239.47.75)  81.970 ms
+14  * * *
+15  179.123.148.146.bc.googleusercontent.com (146.148.123.179)  80.868 ms  80.783 ms  80.780 ms
+</pre>
+
+<p>К слову говоря до Hetzner пинги обычно около 40мс. Здесь же несмотря дажа на европейское расположение пинги в 2 раза выше.</p>
+
+<p>Как мы видим здесь нам доступно 1 ядро Intel Xeon непонятной модели)</p>
+
+<pre>rail@lamp-ytaw:~$ cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 62
+model name    : Intel(R) Xeon(R) CPU @ 2.50GHz
+stepping    : 4
+microcode    : 0x1
+cpu MHz        : 2500.000
+cache size    : 30720 KB
+physical id    : 0
+siblings    : 1
+core id        : 0
+cpu cores    : 1
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 13
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss ht syscall nx pdpe1gb rdtscp lm constant_tsc up nopl xtopology pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand hypervisor lahf_lm xsaveopt fsgsbase smep
+bogomips    : 5000.00
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 46 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p>И 3.75Gb RAM</p>
+
+<pre>rail@lamp-ytaw:~$ cat /proc/meminfo
+MemTotal:        3803632 kB
+MemFree:         3389184 kB
+Buffers:           25520 kB
+Cached:           191360 kB
+SwapCached:            0 kB
+Active:           132528 kB
+Inactive:         152008 kB
+Active(anon):      69620 kB
+Inactive(anon):      152 kB
+Active(file):      62908 kB
+Inactive(file):   151856 kB
+Unevictable:        2296 kB
+Mlocked:            2296 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               236 kB
+Writeback:             0 kB
+AnonPages:         69984 kB
+Mapped:            19392 kB
+Shmem:               200 kB
+Slab:              44300 kB
+SReclaimable:      36224 kB
+SUnreclaim:         8076 kB
+KernelStack:         704 kB
+PageTables:         5180 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1901816 kB
+Committed_AS:     510592 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       16600 kB
+VmallocChunk:   34359721759 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       45048 kB
+DirectMap2M:     2838528 kB
+DirectMap1G:     1048576 kB
+</pre>
+
+<p>Здесь нам доступно два диска – 1 под корень и 1 под LAMP</p>
+
+<pre>rail@lamp-ytaw:~$ df -H
+Filesystem                                              Size  Used Avail Use% Mounted on
+rootfs                                                   11G  1.4G  8.8G  14% /
+udev                                                     11M     0   11M   0% /dev
+tmpfs                                                   390M  123k  390M   1% /run
+/dev/disk/by-uuid/68c02a3a-9b6a-4dd0-b36b-6a93b5931ac0   11G  1.4G  8.8G  14% /
+tmpfs                                                   5.3M     0  5.3M   0% /run/lock
+tmpfs                                                   779M     0  779M   0% /run/shm
+/dev/sdb                                                 22G  181M   20G   1% /lamp
+</pre>
+
+<p>Замерим скорость линейной записи на диск.</p>
+
+<pre>rail@lamp-ytaw:~$ dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 14.8534 s, 72.3 MB/s
+rail@lamp-ytaw:~$ cat /etc/issue
+Debian GNU/Linux 7 \n \l
+</pre>
+
+<p>На самом деле получилось очень даже небыстро :/</p>
+
+<p>Ну и результаты тестов sysbench для тех кому это интересно.</p>
+
+<pre>rail@lamp-ytaw:~$ sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          28.2590s
+    total number of events:              10000
+    total time taken by event execution: 28.2561
+    per-request statistics:
+         min:                                  2.72ms
+         avg:                                  2.83ms
+         max:                                 20.61ms
+         approx.  95 percentile:               2.95ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   28.2561/0.00
+
+rail@lamp-ytaw:~$ sysbench --test=threads --thread-locks=1 --max-time=20s run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing thread subsystem performance test
+Thread yields per test: 1000 Locks used: 1
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          1.9594s
+    total number of events:              10000
+    total time taken by event execution: 1.9568
+    per-request statistics:
+         min:                                  0.19ms
+         avg:                                  0.20ms
+         max:                                  7.55ms
+         approx.  95 percentile:               0.22ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   1.9568/0.00
+</pre>
+
+<pre>rail@lamp-ytaw:~$ sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.1543s
+    total number of events:              64
+    total time taken by event execution: 5.6164
+    per-request statistics:
+         min:                                  2.25ms
+         avg:                                 87.76ms
+         max:                                138.45ms
+         approx.  95 percentile:             137.51ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.0878/0.04
+</pre>
+
+<pre>rail@lamp-ytaw:~$ sysbench --test=memory --num-threads=4 --memory-total-size=2G run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 2048M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 2097152 (1635809.35 ops/sec)
+
+2048.00 MB transferred (1597.47 MB/sec)
+
+
+Test execution summary:
+    total time:                          1.2820s
+    total number of events:              2097152
+    total time taken by event execution: 3.9542
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                 20.01ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           524288.0000/1979.87
+    execution time (avg/stddev):   0.9886/0.04
+</pre>
+
+<pre>rail@lamp-ytaw:~$ sysbench --test=fileio --file-total-size=4G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 32768Kb each, 4096Mb total
+Creating files for the test...
+rail@lamp-ytaw:~$ sysbench --test=fileio --file-total-size=4G --file-test-mode=rndrw --max-time=300 --max-requests=0 runsysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 32Mb each
+4Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  216960 Read, 144640 Write, 462724 Other = 824324 Total
+Read 3.3105Gb  Written 2.207Gb  Total transferred 5.5176Gb  (18.833Mb/sec)
+ 1205.32 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0036s
+    total number of events:              361600
+    total time taken by event execution: 167.4883
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.46ms
+         max:                                464.70ms
+         approx.  95 percentile:               3.59ms
+
+Threads fairness:
+    events (avg/stddev):           361600.0000/0.00
+    execution time (avg/stddev):   167.4883/0.00
+</pre>
+
+<p><strong>Резюме:</strong><br />
+На самом деле когда я тестировал этот сервис мне это делать было некогда и лень xD (предновогодние праздники были). В любом случае советую воспользоваться триальными 300 баксами и попробовать все гугловские сервисы самим. Можно даже выстроить собственную гибкую отказоустойчивую инфраструктуру на сервисах гугла. Кстати, чтобы потом не тратить деньги можно просто найти в панели пункт «Disable billing» и приостановить платные сервисы без удаления аккаунта. Аккаунт удалять не советую ибо из этой же консоли можно получать API-ключи для различных бесплатных гугловских сервисов таких как Youtube API например.</p>
+
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

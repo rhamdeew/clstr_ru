@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест Cadedic. Часть 3. | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тестируем виртуальный сервер на XEN во Франции">
+	
+	<meta name="keywords" content="Cadedic, XEN">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2015/09/cadedic-france/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест Cadedic. Часть 3. | CLSTR" />
+	<meta property="og:description" content="Тестируем виртуальный сервер на XEN во Франции" />
+	<meta property="og:url" content="https://clstr.ru/2015/09/cadedic-france/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест Cadedic. Часть 3.</h1>
+    <p class="meta">
+    September 8, 2015
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/cadedic"><img src="/uploads/2015/09/cadedic-l.png" alt="cadedic_logo" class="alignnone size-full" /></a></p>
+
+<p>Итак, следующий вариант это сервер во Франции. Тут я немного отошел от своего принципа и взял второй по стоимости тариф - Prosto XEN-512 за 3.99USD в месяц.</p>
+
+<p>Тут мы видим что предложение выгоднее двух предыдущих аж на 20%. Сейчас посмотрим что нам предлагают за эти деньги.</p>
+
+<!--more-->
+
+<p><strong>Технические данные</strong></p>
+
+<p>Итак, для начала посмотрим на пинги из Ульяновска:</p>
+<pre>
+➜  ~  ping 51.254.70.74
+PING 51.254.70.74 (51.254.70.74) 56(84) bytes of data.
+64 bytes from 51.254.70.74: icmp_seq=1 ttl=55 time=80.8 ms
+64 bytes from 51.254.70.74: icmp_seq=2 ttl=55 time=80.0 ms
+64 bytes from 51.254.70.74: icmp_seq=3 ttl=55 time=79.6 ms
+64 bytes from 51.254.70.74: icmp_seq=4 ttl=55 time=79.6 ms
+64 bytes from 51.254.70.74: icmp_seq=5 ttl=55 time=80.0 ms
+64 bytes from 51.254.70.74: icmp_seq=6 ttl=55 time=80.2 ms
+64 bytes from 51.254.70.74: icmp_seq=7 ttl=55 time=81.4 ms
+64 bytes from 51.254.70.74: icmp_seq=8 ttl=55 time=80.6 ms
+64 bytes from 51.254.70.74: icmp_seq=9 ttl=55 time=82.8 ms
+^C
+--- 51.254.70.74 ping statistics ---
+9 packets transmitted, 9 received, 0% packet loss, time 8012ms
+rtt min/avg/max/mdev = 79.654/80.624/82.803/1.003 ms
+</pre>
+
+<p>Как я понимаю это всеми любимый OVH. Пинги сравнимы с Hetzner.</p>
+
+<p>Сюда я также накатил CentOS 6.4</p>
+<pre>
+[root@francetest ~]# cat /etc/issue
+CentOS release 6.4 (Final)
+Kernel \r on an \m
+</pre>
+
+<p>Тут тоже Xeon:</p>
+<pre>
+[root@francetest ~]# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 58
+model name    : Intel(R) Xeon(R) CPU E3-1225 V2 @ 3.20GHz
+stepping    : 9
+cpu MHz        : 3192.792
+cache size    : 8192 KB
+fdiv_bug    : no
+hlt_bug        : no
+f00f_bug    : no
+coma_bug    : no
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 13
+wp        : yes
+flags        : fpu de tsc msr pae cx8 sep cmov pat clflush mmx fxsr sse sse2 ss ht nx up aperfmperf unfair_spinlock pni pclmulqdq ssse3 sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes avx f16c rdrand hypervisor ida arat xsaveopt pln pts dts fsgsbase erms
+bogomips    : 6385.58
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 36 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p>Память:</p>
+<pre>
+[root@francetest ~]# cat /proc/meminfo
+MemTotal:         509552 kB
+MemFree:          466828 kB
+Buffers:            2628 kB
+Cached:            22836 kB
+SwapCached:            0 kB
+Active:            14792 kB
+Inactive:          16252 kB
+Active(anon):       5596 kB
+Inactive(anon):      112 kB
+Active(file):       9196 kB
+Inactive(file):    16140 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:             0 kB
+HighFree:              0 kB
+LowTotal:         509552 kB
+LowFree:          466828 kB
+SwapTotal:        131064 kB
+SwapFree:         131064 kB
+Dirty:                92 kB
+Writeback:             0 kB
+AnonPages:          5600 kB
+Mapped:             5556 kB
+Shmem:               120 kB
+Slab:               7196 kB
+SReclaimable:       3716 kB
+SUnreclaim:         3480 kB
+KernelStack:         480 kB
+PageTables:          756 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      385840 kB
+Committed_AS:      55252 kB
+VmallocTotal:     333816 kB
+VmallocUsed:         944 kB
+VmallocChunk:     331760 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      524288 kB
+DirectMap2M:           0 kB
+</pre>
+
+<p>Диск доступен вот такой:</p>
+<pre>
+[root@francetest ~]# df -H
+Файловая система       Разм   Исп   Дост  Исп% смонтирована на
+/dev/xvda1             5,3G   1,1G   4,0G  22% /
+none                   261M      0   261M   0% /dev/shm
+</pre>
+
+<p>Тут всего 5 гигабайт места :/</p>
+
+<p><strong>Замеры</strong></p>
+
+<p>Скорость записи на диск нормальная для SATA-дисков:</p>
+<pre>
+[root@francetest ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей считано
+16384+0 записей написано
+ скопировано 1073741824 байта (1,1 GB), 7,86288 c, 137 MB/c
+</pre>
+
+<p>Speedtest тут очень даже порадовал:</p>
+<pre>
+[root@francetest ~]# speedtest-cli --simple
+Ping: 10.808 ms
+Download: 527.38 Mbit/s
+Upload: 96.72 Mbit/s
+</pre>
+
+<p>Также я запускал тесты <a href="http://serverbear.com/benchmark/2015/08/30/98e3d8PLucr5ehpr">Serverbear</a></p>
+
+<p>Ну и здесь я тоже накатил Bitrix Env и 1С-Битрикс редакции “Малый Бизнес”. Тест показал вот такие результаты:</p>
+
+<p><img src="/uploads/2015/09/cadedic-fr-bitrix.png" alt="" /></p>
+
+<p><strong>Выводы:</strong></p>
+
+<p>По моему мнению этот вариант даже несмотря на малый объем дискового пространства более интересен чем предыдущие два. А еще лучше взять следующий тариф с 1024Mb RAM за 4.99USD.</p>
+
+<p>Это хороший вариант для тех кто хочет попробовать OVH, но хочет русскоязычную техподдержку и не хочет проходить муторный процесс регистрации с отправкой сканов паспортов. Рекомендую =)</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

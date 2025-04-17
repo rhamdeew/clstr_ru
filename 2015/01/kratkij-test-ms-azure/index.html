@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Краткий тест MS Azure | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Немного потестировал MS Azure">
+	
+	<meta name="keywords" content="Azure, Cloud">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2015/01/kratkij-test-ms-azure/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Краткий тест MS Azure | CLSTR" />
+	<meta property="og:description" content="Немного потестировал MS Azure" />
+	<meta property="og:url" content="https://clstr.ru/2015/01/kratkij-test-ms-azure/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Краткий тест MS Azure</h1>
+    <p class="meta">
+    January 29, 2015
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p>Microsoft для тестов своего облака дает всем желающим ресурсов на 7000 рублей в ограниченное время (месяц если мне не изменяет память). Аналогично Amazon AWS обладает кучей различных инструментов для постройки своей облачной инфраструктуры. Просто так к нему не подкатить – надо разбираться.<br />
+Я пробовал запускать на их ресурсах инстанс с мощностью примерно соответствующей минимальным тарифам VPS у других хостинг провайдеров. Результаты меня мягко говоря огорчили – производительность ни к черту!<br />
+Хотя возможно я просто не умею его правильно готовить.<br />
+<!--more--></p>
+
+<h3 id="итак-голые-результаты">Итак, голые результаты:</h3>
+
+<p>Смотрим что у нас за железо:</p>
+
+<pre>azureuser@watchsport:~$ cat /etc/issue
+Ubuntu 14.10 \n \l
+
+azureuser@watchsport:~$ cat /proc/cpuinfo
+processor    : 0
+vendor_id    : AuthenticAMD
+cpu family    : 16
+model        : 8
+model name    : AMD Opteron(tm) Processor 4171 HE
+stepping    : 1
+microcode    : 0xffffffff
+cpu MHz        : 2094.729
+cache size    : 512 KB
+physical id    : 0
+siblings    : 4
+core id        : 0
+cpu cores    : 4
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 5
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt lm 3dnowext 3dnow rep_good nopl extd_apicid pni cx16 popcnt hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw
+bogomips    : 4189.45
+TLB size    : 1024 4K pages
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 42 bits physical, 48 bits virtual
+power management:
+
+processor    : 1
+vendor_id    : AuthenticAMD
+cpu family    : 16
+model        : 8
+model name    : AMD Opteron(tm) Processor 4171 HE
+stepping    : 1
+microcode    : 0xffffffff
+cpu MHz        : 2094.729
+cache size    : 512 KB
+physical id    : 0
+siblings    : 4
+core id        : 1
+cpu cores    : 4
+apicid        : 1
+initial apicid    : 1
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 5
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt lm 3dnowext 3dnow rep_good nopl extd_apicid pni cx16 popcnt hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw
+bogomips    : 4189.94
+TLB size    : 1024 4K pages
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 42 bits physical, 48 bits virtual
+power management:
+
+processor    : 2
+vendor_id    : AuthenticAMD
+cpu family    : 16
+model        : 8
+model name    : AMD Opteron(tm) Processor 4171 HE
+stepping    : 1
+microcode    : 0xffffffff
+cpu MHz        : 2094.729
+cache size    : 512 KB
+physical id    : 0
+siblings    : 4
+core id        : 2
+cpu cores    : 4
+apicid        : 2
+initial apicid    : 2
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 5
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt lm 3dnowext 3dnow rep_good nopl extd_apicid pni cx16 popcnt hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw
+bogomips    : 4308.42
+TLB size    : 1024 4K pages
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 42 bits physical, 48 bits virtual
+power management:
+
+processor    : 3
+vendor_id    : AuthenticAMD
+cpu family    : 16
+model        : 8
+model name    : AMD Opteron(tm) Processor 4171 HE
+stepping    : 1
+microcode    : 0xffffffff
+cpu MHz        : 2094.729
+cache size    : 512 KB
+physical id    : 0
+siblings    : 4
+core id        : 3
+cpu cores    : 4
+apicid        : 3
+initial apicid    : 3
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 5
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt lm 3dnowext 3dnow rep_good nopl extd_apicid pni cx16 popcnt hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw
+bogomips    : 4284.70
+TLB size    : 1024 4K pages
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 42 bits physical, 48 bits virtual
+power management:
+
+processor    : 4
+vendor_id    : AuthenticAMD
+cpu family    : 16
+model        : 8
+model name    : AMD Opteron(tm) Processor 4171 HE
+stepping    : 1
+microcode    : 0xffffffff
+cpu MHz        : 2094.729
+cache size    : 512 KB
+physical id    : 1
+siblings    : 4
+core id        : 0
+cpu cores    : 4
+apicid        : 4
+initial apicid    : 4
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 5
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt lm 3dnowext 3dnow rep_good nopl extd_apicid pni cx16 popcnt hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw
+bogomips    : 4263.93
+TLB size    : 1024 4K pages
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 42 bits physical, 48 bits virtual
+power management:
+
+processor    : 5
+vendor_id    : AuthenticAMD
+cpu family    : 16
+model        : 8
+model name    : AMD Opteron(tm) Processor 4171 HE
+stepping    : 1
+microcode    : 0xffffffff
+cpu MHz        : 2094.729
+cache size    : 512 KB
+physical id    : 1
+siblings    : 4
+core id        : 1
+cpu cores    : 4
+apicid        : 5
+initial apicid    : 5
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 5
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt lm 3dnowext 3dnow rep_good nopl extd_apicid pni cx16 popcnt hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw
+bogomips    : 4268.20
+TLB size    : 1024 4K pages
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 42 bits physical, 48 bits virtual
+power management:
+
+processor    : 6
+vendor_id    : AuthenticAMD
+cpu family    : 16
+model        : 8
+model name    : AMD Opteron(tm) Processor 4171 HE
+stepping    : 1
+microcode    : 0xffffffff
+cpu MHz        : 2094.729
+cache size    : 512 KB
+physical id    : 1
+siblings    : 4
+core id        : 2
+cpu cores    : 4
+apicid        : 6
+initial apicid    : 6
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 5
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt lm 3dnowext 3dnow rep_good nopl extd_apicid pni cx16 popcnt hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw
+bogomips    : 4336.40
+TLB size    : 1024 4K pages
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 42 bits physical, 48 bits virtual
+power management:
+
+processor    : 7
+vendor_id    : AuthenticAMD
+cpu family    : 16
+model        : 8
+model name    : AMD Opteron(tm) Processor 4171 HE
+stepping    : 1
+microcode    : 0xffffffff
+cpu MHz        : 2094.729
+cache size    : 512 KB
+physical id    : 1
+siblings    : 4
+core id        : 3
+cpu cores    : 4
+apicid        : 7
+initial apicid    : 7
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 5
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ht syscall nx mmxext fxsr_opt lm 3dnowext 3dnow rep_good nopl extd_apicid pni cx16 popcnt hypervisor lahf_lm cmp_legacy cr8_legacy abm sse4a misalignsse 3dnowprefetch osvw
+bogomips    : 4205.00
+TLB size    : 1024 4K pages
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 42 bits physical, 48 bits virtual
+power management:
+
+
+
+azureuser@watchsport:~$ cat /proc/meminfo
+MemTotal:       14360284 kB
+MemFree:        13875916 kB
+MemAvailable:   13928392 kB
+Buffers:           13560 kB
+Cached:           250988 kB
+SwapCached:            0 kB
+Active:           205584 kB
+Inactive:          97168 kB
+Active(anon):      38284 kB
+Inactive(anon):      252 kB
+Active(file):     167300 kB
+Inactive(file):    96916 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         38244 kB
+Mapped:            18260 kB
+Shmem:               324 kB
+Slab:              49460 kB
+SReclaimable:      27000 kB
+SUnreclaim:        22460 kB
+KernelStack:        5856 kB
+PageTables:         2388 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     7180140 kB
+Committed_AS:     149832 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       62016 kB
+VmallocChunk:   34352220732 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     10240 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       69568 kB
+DirectMap2M:    14610432 kB
+</pre>
+
+<pre>azureuser@watchsport:~$ df -H
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda1        31G  1.2G   29G   4% /
+none            4.1k     0  4.1k   0% /sys/fs/cgroup
+udev            7.4G  4.1k  7.4G   1% /dev
+tmpfs           1.5G  324k  1.5G   1% /run
+none            5.3M     0  5.3M   0% /run/lock
+none            7.4G     0  7.4G   0% /run/shm
+none            105M     0  105M   0% /run/user
+none             66k     0   66k   0% /etc/network/interfaces.dynamic.d
+/dev/sdb1       640G   73M  607G   1% /mnt
+</pre>
+
+<pre>azureuser@watchsport:~$ sudo smartctl --all /dev/sda1
+smartctl 6.2 2013-07-26 r3841 [x86_64-linux-3.16.0-23-generic] (local build)
+Copyright (C) 2002-13, Bruce Allen, Christian Franke, www.smartmontools.org
+
+=== START OF INFORMATION SECTION ===
+Vendor:               Msft
+Product:              Virtual Disk
+Revision:             1.0
+User Capacity:        31,457,280,000 bytes [31.4 GB]
+Logical block size:   512 bytes
+LU is thin provisioned, LBPRZ=0
+&gt;&gt; Terminate command early due to bad response to IEC mode page
+A mandatory SMART command failed: exiting. To continue, add one or more '-T permissive' options.
+</pre>
+
+<pre>azureuser@watchsport:~$ sudo inxi -b
+System:    Host: watchsport Kernel: 3.16.0-23-generic x86_64 (64 bit) Console: tty 0 Distro: Ubuntu 14.10 utopic
+Machine:   Mobo: Microsoft model: Virtual Machine v: 7.0 serial: 0000-0009-2445-6508-5965-4591-19
+           Bios: American Megatrends v: 090006 date: 05/23/2012
+CPU(s):    2 Quad core AMD Opteron 4171 HEs (-HT-MCP-SMP-) clocked at 2094 MHz
+Graphics:  Card: Microsoft Hyper-V virtual VGA
+           Display Server: N/A driver: N/A tty size: 134x20 Advanced Data: N/A for root out of X
+Network:   Card: Failed to Detect Network Card!
+Drives:    HDD Total Size: 681.1GB (0.2% used)
+Info:      Processes: 290 Uptime: 15 min Memory: 234.6/14023.7MB Init: Upstart runlevel: 2
+           Client: Shell (sudo) inxi: 2.1.28
+</pre>
+
+<p>Тест линейной скорости записи на диск:</p>
+
+<pre>azureuser@watchsport:~$ dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 47.2208 s, 22.7 MB/s
+</pre>
+
+<p>Стоимость такой вм в месяц чуть выше 9 тысяч рублей (!!!) и это не считая платы за трафик.<br />
+Вот такие дела.</p>
+
+<p>Немного скриншотов в тему:<br />
+<a href="/uploads/2015/01/azure-metrics.png"><img src="/uploads/2015/01/azure-metrics-1024x507.png" alt="azure-metrics" width="625" height="309" class="alignnone size-large wp-image-215" /></a></p>
+
+<p><a href="/uploads/2015/01/azure-webapps.png"><img src="/uploads/2015/01/azure-webapps-1024x579.png" alt="azure-webapps" width="625" height="353" class="alignnone size-large wp-image-216" /></a></p>
+
+<p><a href="/uploads/2015/01/azure.png"><img src="/uploads/2015/01/azure.png" alt="azure" width="625" height="345" class="alignnone size-large wp-image-217" /></a></p>
+
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

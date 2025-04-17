@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест i7-7700K 64GB 450NVMe от OVH | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест выделенного сервера на процессоре Core I7 седьмого поколения">
+	
+	<meta name="keywords" content="ovh, dedicated, intel, ssd">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2017/01/ovh-i7-7700k/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест i7-7700K 64GB 450NVMe от OVH | CLSTR" />
+	<meta property="og:description" content="Тест выделенного сервера на процессоре Core I7 седьмого поколения" />
+	<meta property="og:url" content="https://clstr.ru/2017/01/ovh-i7-7700k/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/ovh_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header style="background-image: url('/img/ovh.jpg')">
+    <h1 class="title">Тест i7-7700K 64GB 450NVMe от OVH</h1>
+    <p class="meta">
+    January 12, 2017
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/ovh"><img src="/uploads/2014/09/ovh_logo.png" alt="ovh_logo" class="alignnone size-full" /></a></p>
+
+<p>Приветствую!</p>
+
+<p>И снова благодаря <a href="http://obzor.ly/">alice2k</a> мне на тест достался топовый выделенный сервер от OVH. Итак, на сей раз мы имеем дело с разогнанным Intel Core I7 седьмого поколения c 64 гигабайтами ОЗУ на борту и RAID-массивом из двух SSD Intel P3520 (специальная серия для ЦОДов).</p>
+
+<p>Спеки:</p>
+
+<pre>
+    Intel i7-7700k Overclocked 4c-8t 5.0GHz in Turbo Boost (Tech details)
+    64GB DDR4 2400MHz
+    2x450GB NVMe Intel P3520
+    GPU Intel HD Graphics 630
+</pre>
+
+<!--more-->
+
+<p>На сервер накатили Debian Jessie и предоставили его мне на тест.</p>
+
+<p>Ну а теперь посмотрим что нам скажут об этом сервере разнообразные утилиты:</p>
+
+<h3 id="железо">Железо</h3>
+
+<pre>
+root@ns3063216:~# inxi -b
+System:    Host: ns3063216.ip-193-70-80.eu Kernel: 3.16.0-4-amd64 x86_64 (64 bit) Console: tty 0 Distro: Debian 8
+Machine:   Mobo: ASUSTeK model: STRIX Z270F GAMING v: Rev 1.xx serial: 161187540200586
+           Bios: American Megatrends v: 0222 date: 10/11/2016
+CPU:       Quad core Intel Core i7-7700K (-HT-MCP-) clocked at 800 MHz
+Graphics:  Card: Intel Device 5912
+           Display Server: N/A driver: N/A tty size: 182x27 Advanced Data: N/A for root out of X
+Network:   Card-1: Intel Ethernet Connection (5) I219-V
+           Card-2: Intel I210 Gigabit Network Connection driver: igb
+Drives:    HDD Total Size: NA (-)
+RAID:      Device: 1: /dev/md2
+Info:      Processes: 122 Uptime: 7:05 Memory: 250.9/64421.9MB Init: systemd runlevel: 5
+           Client: Shell (bash) inxi: 2.1.28
+</pre>
+
+<p>Более подробный отчет по железу можно посмотреть тут - <a href="https://gist.github.com/rhamdeew/8622082dd9fa065b807e5a33673b8489">pt-summary</a></p>
+
+<p>Отсюда можно узнать что на сервере установлены 4 планки ОЗУ по 16Gb и что на момент тестов сервер никак не был загружен.</p>
+
+<p><strong>CPU</strong></p>
+
+<pre>
+root@ns3063216:~# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 158
+model name    : Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
+stepping    : 9
+microcode    : 0x3e
+cpu MHz        : 800.000
+cache size    : 8192 KB
+physical id    : 0
+siblings    : 8
+core id        : 0
+cpu cores    : 4
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 22
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap clflushopt
+bogomips    : 8396.27
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 39 bits physical, 48 bits virtual
+power management:
+
+...
+
+processor    : 7
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 158
+model name    : Intel(R) Core(TM) i7-7700K CPU @ 4.20GHz
+stepping    : 9
+microcode    : 0x3e
+cpu MHz        : 800.000
+cache size    : 8192 KB
+physical id    : 0
+siblings    : 8
+core id        : 3
+cpu cores    : 4
+apicid        : 7
+initial apicid    : 7
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 22
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf eagerfpu pni pclmulqdq dtes64 monitor ds_cpl vmx est tm2 ssse3 fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap clflushopt
+bogomips    : 8396.27
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 39 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p><strong>Гигабайт памяти</strong></p>
+
+<pre>
+root@ns3063216:~# cat /proc/meminfo
+MemTotal:       65968052 kB
+MemFree:        65083584 kB
+MemAvailable:   65566324 kB
+Buffers:           56040 kB
+Cached:           579228 kB
+SwapCached:            0 kB
+Active:           357192 kB
+Inactive:         312872 kB
+Active(anon):      36112 kB
+Inactive(anon):     7584 kB
+Active(file):     321080 kB
+Inactive(file):   305288 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       1046520 kB
+SwapFree:        1046520 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:         34800 kB
+Mapped:            23252 kB
+Shmem:              8896 kB
+Slab:              72500 kB
+SReclaimable:      50632 kB
+SUnreclaim:        21868 kB
+KernelStack:        2240 kB
+PageTables:         1576 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    34030544 kB
+Committed_AS:     235708 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      375572 kB
+VmallocChunk:   34359359947 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       72456 kB
+DirectMap2M:     3977216 kB
+DirectMap1G:    62914560 kB
+</pre>
+
+<p><strong>SSD</strong></p>
+
+<pre>
+root@ns3063216:~# df -HT
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/md2       ext4      442G  1.1G  419G   1% /
+udev           devtmpfs   11M     0   11M   0% /dev
+tmpfs          tmpfs      14G  9.2M   14G   1% /run
+tmpfs          tmpfs      34G     0   34G   0% /dev/shm
+tmpfs          tmpfs     5.3M     0  5.3M   0% /run/lock
+tmpfs          tmpfs      34G     0   34G   0% /sys/fs/cgroup
+/dev/nvme0n1p1 vfat      535M  156k  535M   1% /boot/efi
+</pre>
+
+<h3 id="тесты">Тесты</h3>
+
+<p>Пинги из Ульяновска на уровне 80-90 мс. Многовато, но для Европы норм.</p>
+
+<pre>
+[rail@localhost ~]$ ping 193.70.80.148
+PING 193.70.80.148 (193.70.80.148) 56(84) bytes of data.
+64 bytes from 193.70.80.148: icmp_seq=1 ttl=55 time=84.2 ms
+64 bytes from 193.70.80.148: icmp_seq=2 ttl=55 time=86.1 ms
+64 bytes from 193.70.80.148: icmp_seq=3 ttl=55 time=97.7 ms
+64 bytes from 193.70.80.148: icmp_seq=4 ttl=55 time=88.8 ms
+64 bytes from 193.70.80.148: icmp_seq=5 ttl=55 time=90.2 ms
+64 bytes from 193.70.80.148: icmp_seq=6 ttl=55 time=86.7 ms
+64 bytes from 193.70.80.148: icmp_seq=7 ttl=55 time=86.3 ms
+64 bytes from 193.70.80.148: icmp_seq=8 ttl=55 time=84.7 ms
+64 bytes from 193.70.80.148: icmp_seq=9 ttl=55 time=106 ms
+64 bytes from 193.70.80.148: icmp_seq=10 ttl=55 time=90.4 ms
+^C
+--- 193.70.80.148 ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9013ms
+rtt min/avg/max/mdev = 84.261/90.221/106.613/6.615 ms
+</pre>
+
+<p><img src="https://puu.sh/tisGV/a310c89fc8.png" alt="Информация об IP" /></p>
+
+<p><strong>CPU</strong></p>
+
+<pre>
+root@ns3063216:~# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          15.0464s
+    total number of events:              10000
+    total time taken by event execution: 15.0459
+    per-request statistics:
+         min:                                  1.49ms
+         avg:                                  1.50ms
+         max:                                  9.44ms
+         approx.  95 percentile:               1.55ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   15.0459/0.00
+</pre>
+
+<p>Результат в 3 раза лучше чем у <a href="https://clstr.ru/2016/10/arubacloud-vps-1gb/">VPS Aruba</a> и в полтора раза лучше чем у <a href="https://clstr.ru/2016/08/ks-i5-16gb/">Core I5-3570S</a>.</p>
+
+<pre>
+root@ns3063216:~# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.5035s
+    total number of events:              64
+    total time taken by event execution: 29.9732
+    per-request statistics:
+         min:                                406.84ms
+         avg:                                468.33ms
+         max:                                502.04ms
+         approx.  95 percentile:             499.03ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.4683/0.03
+</pre>
+
+<p>На данном тесте также отрыв от Core I5 в 1.5 раза.</p>
+
+<p><strong>Memory</strong></p>
+
+<pre>
+root@ns3063216:~# sysbench --test=memory --num-threads=4 --memory-total-size=64G run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 65536M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 67108864 (9493227.61 ops/sec)
+
+65536.00 MB transferred (9270.73 MB/sec)
+
+
+Test execution summary:
+    total time:                          7.0691s
+    total number of events:              67108864
+    total time taken by event execution: 19.9994
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                  0.22ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           16777216.0000/883081.74
+    execution time (avg/stddev):   4.9998/0.15
+</pre>
+
+<p>Память такая же быстрая как и <a href="https://clstr.ru/2016/06/runabove-i7-game-servers/">тут</a> и в 4.5 раза быстрее чем у Aruba =)</p>
+
+<p><strong>SSD</strong></p>
+
+<p>Для начала замерим скорость линейной записи. Мерить будем обычной утилитой dd.</p>
+
+<pre>
+root@ns3063216:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.0472 s, 524 MB/s
+root@ns3063216:~# rm test
+root@ns3063216:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.03913 s, 527 MB/s
+root@ns3063216:~# rm test
+root@ns3063216:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.02256 s, 531 MB/s
+root@ns3063216:~# rm test
+</pre>
+
+<p>Скорость записи для SSD очень даже приличная. Не сравнится конечно с магией облачной виртуализации когда результат может быть <a href="https://clstr.ru/2016/10/arubacloud-vps-1gb/">в районе 1GB/s</a>, но в 2 раза уделывает по скорости SSD на <a href="https://clstr.ru/2016/06/runabove-i7-game-servers/">другом дедике</a>.</p>
+
+<p>Теперь попробуем замерить скорость записи sysbench’ем</p>
+
+<pre>
+root@ns3063216:~# sysbench --test=fileio --file-total-size=96G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 768Mb each
+96Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  2209154 Read, 1472769 Write, 4712832 Other = 8394755 Total
+Read 33.709Gb  Written 22.473Gb  Total transferred 56.182Gb  (191.77Mb/sec)
+12273.07 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0001s
+    total number of events:              3681923
+    total time taken by event execution: 240.6974
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.07ms
+         max:                                  7.38ms
+         approx.  95 percentile:               0.26ms
+
+Threads fairness:
+    events (avg/stddev):           3681923.0000/0.00
+    execution time (avg/stddev):   240.6974/0.00
+</pre>
+
+<p>Тест отвалился через 300 секунд так как max-time было указано 300. Выше вы видите результат за это время.</p>
+
+<p><strong>Speedtest</strong></p>
+
+<p>Попробовал замерить скорость сети через speedtest-cli</p>
+
+<pre>
+root@ns3063216:~# speedtest-cli
+Retrieving speedtest.net configuration...
+Testing from OVH (193.70.80.148)...
+Retrieving speedtest.net server list...
+Selecting best server based on ping...
+Hosted by Bouygues Telecom (Paris) [1.88 km]: 11.663 ms
+Testing download speed................................................................................
+Download: 785.31 Mbit/s
+Testing upload speed....................................................................................................
+Upload: 161.02 Mbit/s
+</pre>
+
+<p>Как видите в Париже это практически гигабит =) Испытуемый сервер кстати находится в Рубе.</p>
+
+<p><strong>Nicehash</strong></p>
+
+<p>Также попробовал запустить <a href="https://hub.docker.com/r/rhamdeew/nheqminer/">вот этот майнер</a> биткоинов.</p>
+
+<p>Результат:
+Nicehash - 31 Sol/s</p>
+
+<p>Для сравнения Intel Core I5 у меня выдавал только около 20 Sol/s</p>
+
+<p><strong>1C-Битрикс: Стандарт</strong></p>
+
+<p>Также установил на сервер LAMP с PHP 7.0 и поставил 1С-Битрикс. Честно говоря я хотел затестить больше саму готовность Битрикса к PHP 7, но заодно сделал тест стандартной утилитой битрикса.</p>
+
+<p>Результат - <a href="https://puu.sh/tiyYi/e562b339c4.png">https://puu.sh/tiyYi/e562b339c4.png</a>
+118 попугаев вместо 30 необходимых.</p>
+
+<p>Но этому тесту я бы верил в последнюю очередь =)</p>
+
+<p><strong>7-zip benchmark</strong></p>
+
+<pre>
+root@ns3063216:~# 7za b
+
+7-Zip (A) [64] 9.20  Copyright (c) 1999-2010 Igor Pavlov  2010-11-18
+p7zip Version 9.20 (locale=en_GB.UTF-8,Utf16=on,HugeFiles=on,8 CPUs)
+
+RAM size:   64421 MB,  # CPU hardware threads:   8
+RAM usage:   1701 MB,  # Benchmark threads:      8
+
+Dict        Compressing          |        Decompressing
+      Speed Usage    R/U Rating  |    Speed Usage    R/U Rating
+       KB/s     %   MIPS   MIPS  |     KB/s     %   MIPS   MIPS
+
+22:   27588   644   4166  26838  |   299467   799   3381  27008
+23:   28289   683   4218  28824  |   295423   798   3385  27027
+24:   27665   705   4219  29745  |   291753   798   3392  27063
+25:   27108   722   4286  30951  |   288477   799   3394  27127
+----------------------------------------------------------------
+Avr:          689   4222  29090               799   3388  27056
+Tot:          744   3805  28073
+</pre>
+
+<p>Бенч от 7-zip я до этого запускал только на VPS от Aruba и результаты даже сравнивать неинтересно. Тут система в разы мощнее.</p>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>Ну что сказать - очень мощный сервер с большим количеством ОЗУ и большим объемом места на очень быстром SSD да и еще на гигабитном канале. Цену я на него пока не видел, но скажу что такой серв отлично подойдет и под веб-хостинг требовательных сайтов и под нарезку на мощные виртуалки.</p>
+
+<p>Такой вот универсальный мощный вариант минусов в котором я пока не увидел =)</p>
+
+<p>Разве что хотелось бы локацию в Москве)</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Краткий тест RIAAS. | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тестируем московского хостинг-провайдера RIAAS">
+	
+	<meta name="keywords" content="PaaS">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2015/09/riaas/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Краткий тест RIAAS. | CLSTR" />
+	<meta property="og:description" content="Тестируем московского хостинг-провайдера RIAAS" />
+	<meta property="og:url" content="https://clstr.ru/2015/09/riaas/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Краткий тест RIAAS.</h1>
+    <p class="meta">
+    September 22, 2015
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/riaas"><img src="/uploads/2015/09/riaas-logo.png" alt="riaas_logo" class="alignnone size-full" /></a></p>
+
+<p>Протестировал московский IaaS ориентированный на клиентов предъявляющих серьезные требования к качеству и надежности. Виртуализация здесь VMware. Фиксированных тарифов нет - в онлайн калькуляторе можно накрутить подходящий по цене и производительности сервер. Есть даже возможность докупить ip по 40 рублей за штуку.
+Для теста мне предоставили вот такую машинку:</p>
+
+<p>1 ядро Xeon E5 2690v2
+512 мб памяти
+10 гб SSD диск
+300 Мбит интернет
+1 IP</p>
+
+<p>Стоимость 922,5 руб. в месяц. Без оверсела, без лимитов по нагрузке на проц и память.</p>
+
+<p>Под катом небольшие результаты тестов</p>
+
+<!--more-->
+
+<p>Смотрим что нам досталось на тест:</p>
+
+<p>Пинги до Москвы из Ульяновска закономерно очень короткие. Всего 27мс.</p>
+<pre>
+➜  ~  ping 77.247.243.158
+PING 77.247.243.158 (77.247.243.158) 56(84) bytes of data.
+64 bytes from 77.247.243.158: icmp_seq=1 ttl=55 time=27.4 ms
+64 bytes from 77.247.243.158: icmp_seq=2 ttl=55 time=27.0 ms
+64 bytes from 77.247.243.158: icmp_seq=3 ttl=55 time=27.5 ms
+64 bytes from 77.247.243.158: icmp_seq=4 ttl=55 time=27.5 ms
+64 bytes from 77.247.243.158: icmp_seq=5 ttl=55 time=27.4 ms
+64 bytes from 77.247.243.158: icmp_seq=6 ttl=55 time=27.9 ms
+^C
+--- 77.247.243.158 ping statistics ---
+6 packets transmitted, 6 received, 0% packet loss, time 5007ms
+rtt min/avg/max/mdev = 27.044/27.504/27.995/0.279 ms
+</pre>
+
+<p>Debian 7:</p>
+<pre>
+root@debian:~# cat /etc/issue
+Debian GNU/Linux 7 \n \l
+</pre>
+
+<p>Процессор:</p>
+<pre>
+root@debian:~# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 58
+model name    : Intel(R) Xeon(R) CPU E5-2690 v2 @ 3.00GHz
+stepping    : 0
+microcode    : 0x427
+cpu MHz        : 2999.999
+cache size    : 25600 KB
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 13
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc up arch_perfmon pebs bts nopl xtopology tsc_reliable nonstop_tsc aperfmperf pni pclmulqdq ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt aes xsave avx f16c rdrand hypervisor lahf_lm ida arat epb pln pts dtherm fsgsbase smep
+bogomips    : 5999.99
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 40 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p>Память:</p>
+<pre>
+root@debian:~# cat /proc/meminfo
+MemTotal:         508888 kB
+MemFree:          249360 kB
+Buffers:           46104 kB
+Cached:           167984 kB
+SwapCached:            0 kB
+Active:            85960 kB
+Inactive:         139068 kB
+Active(anon):      10972 kB
+Inactive(anon):      144 kB
+Active(file):      74988 kB
+Inactive(file):   138924 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                28 kB
+Writeback:             0 kB
+AnonPages:         10932 kB
+Mapped:             8024 kB
+Shmem:               180 kB
+Slab:              23904 kB
+SReclaimable:      15352 kB
+SUnreclaim:         8552 kB
+KernelStack:         480 kB
+PageTables:         1692 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      254444 kB
+Committed_AS:      53612 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      134992 kB
+VmallocChunk:   34359600892 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       45056 kB
+DirectMap2M:      479232 kB
+</pre>
+
+<p>Диск размечен вот так:</p>
+<pre>
+root@debian:~# df -H
+Filesystem                                              Size  Used Avail Use% Mounted on
+rootfs                                                  9.3G  1.1G  7.8G  12% /
+udev                                                     11M     0   11M   0% /dev
+tmpfs                                                    53M  181k   52M   1% /run
+/dev/disk/by-uuid/fa351ce9-ed40-4dd1-982f-8eef997ce1cd  9.3G  1.1G  7.8G  12% /
+tmpfs                                                   5.3M     0  5.3M   0% /run/lock
+tmpfs                                                   105M     0  105M   0% /run/shm
+</pre>
+
+<p>Да, здесь SSD =)</p>
+<pre>
+root@debian:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 1.7302 s, 621 MB/s
+</pre>
+
+<p>Немного тестов sysbench:</p>
+<pre>
+root@debian:~# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          25.7657s
+    total number of events:              10000
+    total time taken by event execution: 25.7612
+    per-request statistics:
+         min:                                  2.54ms
+         avg:                                  2.58ms
+         max:                                  6.27ms
+         approx.  95 percentile:               2.62ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   25.7612/0.00
+</pre>
+
+<pre>
+root@debian:~# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.1370s
+    total number of events:              64
+    total time taken by event execution: 3.6247
+    per-request statistics:
+         min:                                  2.05ms
+         avg:                                 56.64ms
+         max:                                127.34ms
+         approx.  95 percentile:             122.36ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.0566/0.04
+</pre>
+
+<pre>
+root@debian:~# sysbench --test=memory --num-threads=4 --memory-total-size=512M run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 512M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 524288 (3150507.40 ops/sec)
+
+512.00 MB transferred (3076.67 MB/sec)
+
+
+Test execution summary:
+    total time:                          0.1664s
+    total number of events:              524288
+    total time taken by event execution: 0.4631
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                 12.03ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           131072.0000/6659.97
+    execution time (avg/stddev):   0.1158/0.02
+</pre>
+
+<pre>
+root@debian:~# sysbench --test=fileio --file-total-size=4G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 32768Kb each, 4096Mb total
+Creating files for the test...
+</pre>
+<pre>
+root@debian:~# sysbench --test=fileio --file-total-size=4G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 32Mb each
+4Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  341548 Read, 227698 Write, 728576 Other = 1297822 Total
+Read 5.2116Gb  Written 3.4744Gb  Total transferred 8.686Gb  (29.648Mb/sec)
+ 1897.47 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0030s
+    total number of events:              569246
+    total time taken by event execution: 208.4003
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.37ms
+         max:                                116.90ms
+         approx.  95 percentile:               0.86ms
+
+Threads fairness:
+    events (avg/stddev):           569246.0000/0.00
+    execution time (avg/stddev):   208.4003/0.00
+</pre>
+
+<p>Тесты Serverbear: <a href="http://serverbear.com/benchmark/2015/09/20/JHkOuAjkwxUGe9LK">http://serverbear.com/benchmark/2015/09/20/JHkOuAjkwxUGe9LK</a></p>
+
+<p><strong>Вывод:</strong>
+В синтетических тестах сервер показал довольно высокую производительность. Плюс он находится в Москве, а значит для клиентов из России доступ будет быстрее. Отличная надежная машина минус которой разве что в высокой цене. Но оно того стоит.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

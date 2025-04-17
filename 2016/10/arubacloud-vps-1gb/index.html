@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест VPS от ArubaCloud | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест виртуального сервера от ArubaCloud">
+	
+	<meta name="keywords" content="arubacloud, vps">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2016/10/arubacloud-vps-1gb/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест VPS от ArubaCloud | CLSTR" />
+	<meta property="og:description" content="Тест виртуального сервера от ArubaCloud" />
+	<meta property="og:url" content="https://clstr.ru/2016/10/arubacloud-vps-1gb/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест VPS от ArubaCloud</h1>
+    <p class="meta">
+    October 21, 2016
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/arubacloud"><img src="/uploads/2016/arubacloud.png" alt="arubacloud_logo" class="alignnone size-full" /></a></p>
+
+<p>Привет!</p>
+
+<p>Об этом облачном провайдере с привлекательными очень дешевыми ценами я впервые услышал если не ошибаюсь в прошлом году. Компания предлагает VPS c 1 ядром, 1 гигабайтом памяти и 20 гигабайтам SSD за немыслимые 1 евро в месяц =) По сути это цена ip-адреса.</p>
+
+<p>Второй тариф стоит уже 6.5 евро, но имеет большое преимущество - лицензионная Windows Server. Виртуализация тут кстати VMware.</p>
+
+<p>Также у них есть Cloud Pro с оплатой за часы работы инстансов, облачные бэкапы, облачный object storage и мониторинг сайтов.</p>
+
+<p>Лично я пока успел затестить только VPS за 1 евро. Локации тут кстати тоже довольно интересные - Германия, Англия, Италия, Франция и Чехия.
+Так как я еще ни разу не тестил локацию в Чехии я взял сервер там.</p>
+
+<p>Ну а сейчас результаты тестов.</p>
+
+<!--more-->
+
+<blockquote>
+  <p><strong>UPD июнь 2020:</strong></p>
+
+  <p>На днях мне пришло письмо из Арубы что в с первого августа промо-акция заканчивается и что ранее оплачиваемые по 1 евро серверы станут стоить €2.79</p>
+
+  <p>Как вариант можно попробовать поймать что-то у <a href="/2019/06/pq/">pq.hosting за 1 евро</a></p>
+</blockquote>
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- clstr banner -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3140541524320205" data-ad-slot="1616664118" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<h3 id="регистрация">Регистрация</h3>
+
+<p>Все бы хорошо, но низкую стоимость компенсирует сложность регистрации. Кстати тут дают триал на месяц, но я им не воспользовался.
+Сложность номер раз - не приходят смс с подтверждением номера. Пробовал Tele2, Билайн и вроде МТС еще - никуда ничего не пришло. Пришлось воспользоваться украинской виртуальной симкой (сервис sms-reg). Туда все пришло сразу.</p>
+
+<p>Второй момент - у нас есть несколько панелей. В одной панели у нас данные аккаунта и баланс на счету. Управление виртуальными машинами происходит в другой панели пароль от которой как раз приходит в смс.</p>
+
+<p>Третий момент - при регистрации можно убрать VAT, но из-за сложности интерфейса разобраться у меня не получилось, а написать в техподдержку до регистрации нет возможности. В итоге заплатил аж 20 евроцентов VAT! =) Потом конечно написал в ТП и после подтверждения того что я из РФ (нужно либо дать им свой ИНН либо отсканировать к примеру квитанцию ЖКХ) VAT убрали.</p>
+
+<p>На все эти действия времени уходит не так много, но все это накладывает определенные неудобства. По этой же причине я дошел до обзора этого сервиса только сейчас. Было некогда и лень бороться с неудобной регистрацией.</p>
+
+<p>В «облачной» панели уже все просто и понятно. Итак, запустил сервер. На сервере установлена CentOS 7 64-bit.</p>
+
+<p><img src="https://i.imgur.com/OHNQ18t.png" alt="Чешский IP" /></p>
+
+<p>Вот скрины из мастера настройки нового сервера:</p>
+
+<p><img src="https://imgur.com/5rdxLKw.png" alt="" /></p>
+
+<p><img src="https://imgur.com/bRNzkZo.png" alt="" /></p>
+
+<p><img src="https://imgur.com/EGP7TY8.png" alt="" /></p>
+
+<p><img src="https://imgur.com/2044JTb.png" alt="" /></p>
+
+<h3 id="железо">“Железо”</h3>
+
+<pre>
+[root@prazheczka ~]# inxi -b
+System:    Host: prazheczka Kernel: 3.10.0-327.4.5.el7.x86_64 x86_64 (64 bit) Console: tty 0
+           Distro: CentOS Linux release 7.2.1511 (Core)
+Machine:   System: VMware (portable) product: VMware Virtual Platform serial: VMware-42 3c a7 b3 e5 58 98 b6-cb ba b5 2a c4 5b a4 87
+           Mobo: Intel model: 440BX Desktop Reference Platform Bios: Phoenix v: 6.00 date: 09/17/2015
+CPU:       Single core Intel Xeon E5-2650L v4 (-MCP-) speed: 1699 MHz (max)
+Graphics:  Card: VMware SVGA II Adapter
+           Display Server: N/A driver: N/A tty size: 182x27 Advanced Data: N/A for root out of X
+Network:   Card-1: Intel 82545EM Gigabit Ethernet Controller (Copper) driver: e1000
+           Card-2: Intel 82545EM Gigabit Ethernet Controller (Copper) driver: e1000
+           Card-3: Intel 82545EM Gigabit Ethernet Controller (Copper) driver: e1000
+Drives:    HDD Total Size: 21.5GB (17.2% used)
+Info:      Processes: 78 Uptime: 36 min Memory: 95.4/993.3MB Init: systemd runlevel: 3
+           Client: Shell (bash) inxi: 2.3.0
+</pre>
+
+<p><strong>CPU</strong></p>
+
+<pre>
+[root@prazheczka ~]# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 79
+model name    : Intel(R) Xeon(R) CPU E5-2650L v4 @ 1.70GHz
+stepping    : 1
+microcode    : 0xb000017
+cpu MHz        : 1699.998
+cache size    : 35840 KB
+physical id    : 0
+siblings    : 1
+core id        : 0
+cpu cores    : 1
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 20
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx rdtscp lm constant_tsc arch_perfmon nopl xtopology tsc_reliable nonstop_tsc aperfmperf pni pclmulqdq ssse3 fma cx16 sse4_1 sse4_2 movbe popcnt aes xsave avx hypervisor lahf_lm 3dnowprefetch ida arat epb pln pts dtherm
+bogomips    : 3399.99
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 40 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p><strong>Гигабайт памяти</strong></p>
+
+<pre>
+[root@prazheczka ~]# cat /proc/meminfo
+MemTotal:        1017184 kB
+MemFree:          651616 kB
+MemAvailable:     821120 kB
+Buffers:           17832 kB
+Cached:           253464 kB
+SwapCached:            0 kB
+Active:           209380 kB
+Inactive:          84776 kB
+Active(anon):      14892 kB
+Inactive(anon):    14820 kB
+Active(file):     194488 kB
+Inactive(file):    69956 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       2187260 kB
+SwapFree:        2187260 kB
+Dirty:               372 kB
+Writeback:             0 kB
+AnonPages:         22892 kB
+Mapped:            17532 kB
+Shmem:              6852 kB
+Slab:              47492 kB
+SReclaimable:      35364 kB
+SUnreclaim:        12128 kB
+KernelStack:        1344 kB
+PageTables:         2564 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     2695852 kB
+Committed_AS:     137648 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:      145972 kB
+VmallocChunk:   34359584792 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:      2048 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       49088 kB
+DirectMap2M:      999424 kB
+</pre>
+
+<p><strong>SSD</strong></p>
+
+<p>Места на диске чуть больше 20 гигабайт.</p>
+
+<pre>
+[root@prazheczka ~]# df -HT
+Файловая система       Тип      Размер Использовано  Дост Использовано% Cмонтировано в
+/dev/mapper/vg-lv_root ext4        19G         1,4G   17G            8% /
+devtmpfs               devtmpfs   511M            0  511M            0% /dev
+tmpfs                  tmpfs      521M            0  521M            0% /dev/shm
+tmpfs                  tmpfs      521M         7,1M  514M            2% /run
+tmpfs                  tmpfs      521M            0  521M            0% /sys/fs/cgroup
+/dev/sda1              ext4       500M         111M  359M           24% /boot
+tmpfs                  tmpfs      105M            0  105M            0% /run/user/0
+</pre>
+
+<h3 id="тест">Тест</h3>
+
+<p>Пинги из Ульяновска. Получается чуть длиннее чем с Hetzner с OVH France и заметно длиннее чем FastVPS в Эстонии.</p>
+
+<pre>
+[rail@localhost ~]$ ping 85.255.2.xx
+PING 85.255.2.xx (85.255.2.xx) 56(84) bytes of data.
+64 bytes from 85.255.2.xx: icmp_seq=1 ttl=57 time=102 ms
+64 bytes from 85.255.2.xx: icmp_seq=2 ttl=57 time=102 ms
+64 bytes from 85.255.2.xx: icmp_seq=3 ttl=57 time=101 ms
+64 bytes from 85.255.2.xx: icmp_seq=4 ttl=57 time=101 ms
+64 bytes from 85.255.2.xx: icmp_seq=5 ttl=57 time=99.4 ms
+64 bytes from 85.255.2.xx: icmp_seq=6 ttl=57 time=100 ms
+64 bytes from 85.255.2.xx: icmp_seq=7 ttl=57 time=209 ms
+64 bytes from 85.255.2.xx: icmp_seq=8 ttl=57 time=109 ms
+64 bytes from 85.255.2.xx: icmp_seq=9 ttl=57 time=100 ms
+64 bytes from 85.255.2.xx: icmp_seq=10 ttl=57 time=99.2 ms
+^C
+--- 85.255.2.xx ping statistics ---
+10 packets transmitted, 10 received, 0% packet loss, time 9011ms
+rtt min/avg/max/mdev = 99.212/112.657/209.681/32.458 ms
+</pre>
+
+<p><strong>Тест CPU</strong></p>
+
+<p>Тестим проц sysbench’ем.</p>
+
+<p>А вот тут результаты чуть ниже чем у недавно протестированных <a href="/2016/09/simplecloud-vps-1gb/">simplecloud</a> и <a href="/2016/05/ihor-ssd-ferrum/">ihor</a>.</p>
+
+<pre>
+[root@prazheczka ~]# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+	total time:                      	37.5932s
+	total number of events:          	10000
+	total time taken by event execution: 37.5916
+	per-request statistics:
+     	min:                              	3.74ms
+     	avg:                              	3.76ms
+     	max:                              	7.64ms
+     	approx.  95 percentile:           	3.77ms
+
+Threads fairness:
+	events (avg/stddev):       	10000.0000/0.00
+	execution time (avg/stddev):   37.5916/0.00
+</pre>
+
+<p>А в этом тесте результаты получились получше чем у конкурентов.</p>
+
+<pre>
+[root@prazheczka ~]# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+Test execution summary:
+	total time:                      	0.2024s
+	total number of events:          	64
+	total time taken by event execution: 0.1996
+	per-request statistics:
+     	min:                              	3.10ms
+     	avg:                              	3.12ms
+     	max:                              	3.19ms
+     	approx.  95 percentile:           	3.16ms
+
+Threads fairness:
+	events (avg/stddev):       	1.0000/0.00
+	execution time (avg/stddev):   0.0031/0.00
+</pre>
+
+<p><strong>Тест ОЗУ</strong></p>
+
+<p>Память чуть медленнее чем у SimpleCloud, но практически вдвое быстрее чем у Ihor.</p>
+
+<pre>
+[root@prazheczka ~]# sysbench --test=memory --num-threads=4 --memory-total-size=1G run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 1024M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 1048576 (2131689.27 ops/sec)
+
+1024.00 MB transferred (2081.73 MB/sec)
+
+
+Test execution summary:
+	total time:                      	0.4919s
+	total number of events:          	1048576
+	total time taken by event execution: 1.5765
+	per-request statistics:
+     	min:                              	0.00ms
+     	avg:                              	0.00ms
+     	max:                             	44.03ms
+     	approx.  95 percentile:           	0.00ms
+
+Threads fairness:
+	events (avg/stddev):       	262144.0000/18607.74
+	execution time (avg/stddev):   0.3941/0.07
+</pre>
+
+<p><strong>Тест диска</strong></p>
+
+<p>Посмотрим что покажет dd.</p>
+
+<p>Ничего себе скорость! Выше в три раза чем у ближайших конкурентов! =)</p>
+
+<pre>
+[root@prazheczka ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 1,33799 c, 803 MB/c
+[root@prazheczka ~]# rm -f test
+[root@prazheczka ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 0,998514 c, 1,1 GB/c
+[root@prazheczka ~]# rm -f test
+[root@prazheczka ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 0,934465 c, 1,1 GB/c
+[root@prazheczka ~]# rm -f test
+</pre>
+
+<p>Тест fileio только подтвердил результаты полученные dd. Втрое быстрее чем у SimpleCloud =)</p>
+
+<pre>
+[root@prazheczka ~]# sysbench --test=fileio --file-total-size=2G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 16384Kb each, 2048Mb total
+Creating files for the test...
+[root@prazheczka ~]# sysbench --test=fileio --file-total-size=2G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 16Mb each
+2Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  1447169 Read, 964779 Write, 3087232 Other = 5499180 Total
+Read 22.082Gb  Written 14.721Gb  Total transferred 36.803Gb  (125.62Mb/sec)
+ 8039.41 Requests/sec executed
+
+Test execution summary:
+	total time:                      	300.0156s
+	total number of events:          	2411948
+	total time taken by event execution: 222.4805
+	per-request statistics:
+     	min:                              	0.00ms
+     	avg:                              	0.09ms
+     	max:                             	19.99ms
+     	approx.  95 percentile:           	0.24ms
+
+Threads fairness:
+	events (avg/stddev):       	2411948.0000/0.00
+	execution time (avg/stddev):   222.4805/0.00
+</pre>
+
+<p><strong>Разные тесты</strong></p>
+
+<p>Запустил также бенчмарк 7-zip. Сравнивать результаты пока не с чем, но пусть будут тут.</p>
+
+<pre>
+[root@prazheczka ~]# 7za b
+
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=ru_RU.UTF-8,Utf16=on,HugeFiles=on,64 bits,1 CPU Intel(R) Xeon(R) CPU E5-2650L v4 @ 1.70GHz (406F1),ASM,AES-NI)
+
+Intel(R) Xeon(R) CPU E5-2650L v4 @ 1.70GHz (406F1)
+CPU Freq:  1982  1990  1990  1989  1987  1989  1989  1988  1987
+
+RAM size: 	993 MB,  # CPU hardware threads:   1
+RAM usage:	435 MB,  # Benchmark threads:  	1
+
+                   	Compressing  |              	Decompressing
+Dict 	Speed Usage	R/U Rating  |  	Speed Usage	R/U Rating
+     	KiB/s 	%   MIPS   MIPS  |  	KiB/s 	%   MIPS   MIPS
+
+22:   	3105   100   3020   3021  |  	24583   100   2106   2099
+23:   	2965   100   3026   3021  |  	24448   100   2119   2116
+24:   	2870	99   3103   3087  |  	24245   100   2136   2128
+25:   	2776   100   3174   3170  |  	24060   100   2149   2142
+----------------------------------  | ------------------------------
+Avr:         	100   3081   3075  |          	100   2127   2121
+Tot:         	100   2604   2598
+</pre>
+
+<p>Еще попробовал бенч от freevps.us</p>
+
+<pre>
+freevps.us bench
+
+[root@prazheczka ~]# ./bench.sh
+Benchmark started on Пт сен 30 09:20:29 EDT 2016
+Full benchmark log: /root/bench.log
+
+System Info
+-----------
+Processor    : Intel(R) Xeon(R) CPU E5-2650L v4 @ 1.70GHz
+CPU Cores    : 1
+Frequency    : 1699.998 MHz
+Memory   	 : 993 MB
+Swap   	 :  MB
+Uptime   	 : 1:37,
+
+OS   	 : \S
+Arch   	 : x86_64 (64 Bit)
+Kernel   	 : 3.10.0-327.4.5.el7.x86_64
+Hostname    : prazheczka
+
+
+Speedtest (IPv4 only)
+---------------------
+Your public IPv4 is 85.255.2.xx
+
+Location   	 Provider    Speed
+CDN   		 Cachefly    41,0MB/s
+
+Atlanta, GA, US   	 Coloat   	 398KB/s
+Dallas, TX, US   	 Softlayer    581KB/s
+Seattle, WA, US   	 Softlayer    749KB/s
+San Jose, CA, US    Softlayer    569KB/s
+Washington, DC, US    Softlayer     732KB/s
+
+Tokyo, Japan   	 Linode   	 628KB/s
+Singapore    	 Softlayer    476KB/s
+
+Rotterdam, Netherlands    id3.net   	 631KB/s
+Haarlem, Netherlands    Leaseweb    1,35MB/s
+
+
+Disk Speed
+----------
+I/O (1st run)    : 991 MB/c
+I/O (2nd run)    : 1 GB/c
+I/O (3rd run)    : 1 GB/c
+Average I/O    : 331 MB/s
+</pre>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>Считаю данное предложение отличным вариантом для хостинга нетребовательных к большому объему памяти сайтов. Обычно тормоза упираются в диск, а тут как мы видим с ним никаких проблем =)</p>
+
+<p>Пока еще не было времени потестить остальные локации, но если там такие же крутые результаты как и в этом тесте то явно есть смысл заморочиться со сложной регистрацией чтобы получить качественные железки.</p>
+
+<p>Мне настолько понравились результаты что я даже решил продлить этот сервер и пользоваться им.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

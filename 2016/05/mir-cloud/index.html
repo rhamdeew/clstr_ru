@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест MIR Cloud Jelastic | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест MIR Cloud Jelastic">
+	
+	<meta name="keywords" content="mir cloud">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2016/05/mir-cloud/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест MIR Cloud Jelastic | CLSTR" />
+	<meta property="og:description" content="Тест MIR Cloud Jelastic" />
+	<meta property="og:url" content="https://clstr.ru/2016/05/mir-cloud/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест MIR Cloud Jelastic</h1>
+    <p class="meta">
+    May 2, 2016
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/mir"><img src="/uploads/2016/mirlogo.png" alt="MIR Hosting logo" class="alignnone size-full" /></a></p>
+
+<p>Привет!</p>
+
+<p>Публикую краткие тесты облака Jelastic от MIR Hosting. Вообще для адекватного теста облака Jelastic нужен немного другой подход. Нужно пробовать запускать свои приложения и смотреть на соотношение цены и качества. Почему я больше люблю сервера с гарантированными ресурсами? А потому что всегда знаю в какую цену мне это встанет и не буду постоянно в голове калькулировать стоимость затраченных ресурсов. Зато с другой стороны облако местами может быть даже выгоднее за счет более гибкого использования ресурсов.</p>
+
+<p>Ну а тут я просто запустил облачный инстанс с Nginx и PHP 5.6, а потом посмотрел что там за ресурсы нам дают.</p>
+
+<!--more-->
+
+<p><img src="https://i.imgur.com/4QKSroh.png" alt="Jelastic" /></p>
+
+<p>Смотрим информацию по внешнему ip инстанса:</p>
+
+<p><img src="https://i.imgur.com/J0GOLDj.png" alt="" /></p>
+
+<p>Тут у нас PHP 5.6.11 и 256 мегабайт памяти:</p>
+
+<pre>
+nginx@node3335-env-9224195 ~ $ php -v
+PHP 5.6.11 (cli) (built: Jul 13 2015 08:01:25)
+Copyright (c) 1997-2015 The PHP Group
+Zend Engine v2.6.0, Copyright (c) 1998-2015 Zend Technologies
+nginx@node3335-env-9224195 ~ $ free -m
+              total        used        free      shared  buff/cache   available
+Mem:            256          10         182           6          62         168
+Swap:           128           0         128
+</pre>
+
+<pre>
+nginx@node3335-env-9224195 ~ $ cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 63
+model name    : Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz
+stepping    : 2
+microcode    : 43
+cpu MHz        : 15.917
+cache size    : 15360 KB
+physical id    : 0
+siblings    : 12
+core id        : 0
+cpu cores    : 6
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 15
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf cpuid_faulting pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bogomips    : 4794.34
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 46 bits physical, 48 bits virtual
+power management:
+
+...
+
+processor    : 23
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 63
+model name    : Intel(R) Xeon(R) CPU E5-2620 v3 @ 2.40GHz
+stepping    : 2
+microcode    : 43
+cpu MHz        : 15.917
+cache size    : 15360 KB
+physical id    : 1
+siblings    : 12
+core id        : 5
+cpu cores    : 6
+apicid        : 27
+initial apicid    : 27
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 15
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good xtopology nonstop_tsc aperfmperf cpuid_faulting pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase bmi1 avx2 smep bmi2 erms invpcid xsaveopt
+bogomips    : 4793.95
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 46 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p>cpuinfo почему то показывает все 24 потока процессора Intel Xeon E5-2620. Естественно нам доступны куда более скромные ресурсы (400Mhz) =)</p>
+
+<p>256 мегабайт ОЗУ (2 клаудлета):</p>
+
+<pre>
+nginx@node3335-env-9224195 ~ $ cat /proc/meminfo
+MemTotal:         262144 kB
+MemFree:          186880 kB
+Cached:            56772 kB
+Buffers:               0 kB
+Active:            28668 kB
+Inactive:          39008 kB
+Active(anon):      13152 kB
+Inactive(anon):     4552 kB
+Active(file):      15516 kB
+Inactive(file):    34456 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:        131072 kB
+SwapFree:         131072 kB
+Dirty:                28 kB
+Writeback:             0 kB
+AnonPages:         17704 kB
+Shmem:              6800 kB
+Slab:               7572 kB
+SReclaimable:       2456 kB
+SUnreclaim:         5116 kB
+</pre>
+
+<p>И 100 гигабайтный сторадж (на самом деле тут стоимость идет от потребления, &lt;10Gb бесплатно):</p>
+<pre>
+nginx@node3335-env-9224195 /var/www/webroot/ROOT $ df -H
+Filesystem         Size  Used Avail Use% Mounted on
+/dev/ploop33296p1  106G  1.2G  100G   2% /
+devtmpfs           135M     0  135M   0% /dev
+tmpfs              135M     0  135M   0% /dev/shm
+tmpfs              135M  4.4M  130M   4% /run
+tmpfs              135M     0  135M   0% /sys/fs/cgroup
+</pre>
+
+<p>Пинги высоковаты - ~74мс, но это Нидерланды:</p>
+<pre>
+[rail@localhost ~]$ ping env-9224195.mircloud.host
+PING env-9224195.mircloud.host (185.15.211.5) 56(84) bytes of data.
+64 bytes from 185.15.211.5: icmp_seq=1 ttl=54 time=73.7 ms
+64 bytes from 185.15.211.5: icmp_seq=2 ttl=54 time=74.0 ms
+64 bytes from 185.15.211.5: icmp_seq=3 ttl=54 time=74.3 ms
+64 bytes from 185.15.211.5: icmp_seq=4 ttl=54 time=73.8 ms
+64 bytes from 185.15.211.5: icmp_seq=5 ttl=54 time=74.4 ms
+64 bytes from 185.15.211.5: icmp_seq=6 ttl=54 time=73.8 ms
+64 bytes from 185.15.211.5: icmp_seq=7 ttl=54 time=74.0 ms
+64 bytes from 185.15.211.5: icmp_seq=8 ttl=54 time=74.1 ms
+64 bytes from 185.15.211.5: icmp_seq=9 ttl=54 time=73.7 ms
+64 bytes from 185.15.211.5: icmp_seq=10 ttl=54 time=74.3 ms
+64 bytes from 185.15.211.5: icmp_seq=11 ttl=54 time=73.8 ms
+64 bytes from 185.15.211.5: icmp_seq=12 ttl=54 time=73.9 ms
+^C
+--- env-9224195.mircloud.host ping statistics ---
+12 packets transmitted, 12 received, 0% packet loss, time 11015ms
+rtt min/avg/max/mdev = 73.751/74.023/74.416/0.401 ms
+</pre>
+
+<p>А скорость записи на диск очень медленная:</p>
+
+<pre>
+nginx@node3335-env-9224195 /var/www/webroot/ROOT $ dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 100.051 s, 10.7 MB/s
+nginx@node3335-env-9224195 /var/www/webroot/ROOT $ ls
+index.php  test
+nginx@node3335-env-9224195 /var/www/webroot/ROOT $ rm test
+nginx@node3335-env-9224195 /var/www/webroot/ROOT $ dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 97.0675 s, 11.1 MB/s
+nginx@node3335-env-9224195 /var/www/webroot/ROOT $ rm test
+nginx@node3335-env-9224195 /var/www/webroot/ROOT $ dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 96.8872 s, 11.1 MB/s
+</pre>
+
+<p><img src="https://i.imgur.com/OuqYbnK.png" alt="Jelastic create" /></p>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>Вообще тут можно экспериментировать и запускать различные интересные конфигурации с балансировщиками, отдельымии инстансами под базы данных и прочим. Довольно интересно для разработки и тестирования приложений. Что касается конечных потребителей со стандартным LAMP-стеком - это будет слишком сложное в настройке решение.</p>
+
+<p>P.S. Если приноровиться можно запускать там бесплатные инстансы с Nginx/PHP/MySQL/SSH, но без выделенного ip.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест Cadedic. Часть 2. | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тестируем виртуальный сервер на XEN в Канаде">
+	
+	<meta name="keywords" content="Cadedic, VPS, XEN">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2015/09/cadedic-canada/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест Cadedic. Часть 2. | CLSTR" />
+	<meta property="og:description" content="Тестируем виртуальный сервер на XEN в Канаде" />
+	<meta property="og:url" content="https://clstr.ru/2015/09/cadedic-canada/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест Cadedic. Часть 2.</h1>
+    <p class="meta">
+    September 8, 2015
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/cadedic"><img src="/uploads/2015/09/cadedic-l.png" alt="cadedic_logo" class="alignnone size-full" /></a></p>
+
+<p>Продолжаем тест Cadedic и беремся за Prosto XEN-500 в далеком Ванкувере (Канада) за 5USD. Здесь доступно намного больше тарифов включая варианты с SSD и Premium-линейка со стоимостью в 20USD за виртуалку с 512Mb ОЗУ.</p>
+
+<!--more-->
+
+<p><strong>Технические данные</strong></p>
+
+<p>Итак, для начала посмотрим на пинги из Ульяновска:</p>
+<pre>
+➜  ~  ping 162.247.14.204
+PING 162.247.14.204 (162.247.14.204) 56(84) bytes of data.
+64 bytes from 162.247.14.204: icmp_seq=1 ttl=48 time=229 ms
+64 bytes from 162.247.14.204: icmp_seq=2 ttl=48 time=232 ms
+64 bytes from 162.247.14.204: icmp_seq=3 ttl=48 time=229 ms
+64 bytes from 162.247.14.204: icmp_seq=4 ttl=48 time=229 ms
+64 bytes from 162.247.14.204: icmp_seq=5 ttl=48 time=2306 ms
+64 bytes from 162.247.14.204: icmp_seq=6 ttl=48 time=1307 ms
+64 bytes from 162.247.14.204: icmp_seq=7 ttl=48 time=307 ms
+64 bytes from 162.247.14.204: icmp_seq=8 ttl=48 time=230 ms
+64 bytes from 162.247.14.204: icmp_seq=9 ttl=48 time=229 ms
+64 bytes from 162.247.14.204: icmp_seq=10 ttl=48 time=229 ms
+64 bytes from 162.247.14.204: icmp_seq=11 ttl=48 time=228 ms
+^C
+--- 162.247.14.204 ping statistics ---
+11 packets transmitted, 11 received, 0% packet loss, time 10011ms
+rtt min/avg/max/mdev = 228.983/523.691/2306.466/641.667 ms, pipe 3
+</pre>
+
+<p>Ого-го! Сервер явно не для российских пользователей =) Впрочем, если у вас клиенты за океаном, то ситуацию будет противоположной.</p>
+
+<p>Здесь также CentOS 6.4</p>
+<pre>
+[root@canadatest ~]# cat /etc/issue
+CentOS release 6.4 (Final)
+Kernel \r on an \m
+</pre>
+
+<p>Процессор вот такой:</p>
+<pre>
+[root@canadatest ~]# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 42
+model name    : Intel(R) Xeon(R) CPU E31240 @ 3.30GHz
+stepping    : 7
+cpu MHz        : 3300.076
+cache size    : 8192 KB
+fdiv_bug    : no
+hlt_bug        : no
+f00f_bug    : no
+coma_bug    : no
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 13
+wp        : yes
+flags        : fpu de tsc msr pae cx8 sep cmov pat clflush mmx fxsr sse sse2 ss ht nx up aperfmperf unfair_spinlock pni pclmulqdq ssse3 sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes avx hypervisor ida arat epb xsaveopt pln pts dts
+bogomips    : 6600.15
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 36 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p>Здесь уже настоящий серверный Xeon. Вот <a href="http://cpuboss.com/cpus/Intel-Xeon-E3-1240-vs-Intel-Pentium-G840">сравнение</a> с тем процессором что стоит в украинском ДЦ.</p>
+
+<p>Память:</p>
+<pre>
+[root@canadatest ~]# cat /proc/meminfo
+MemTotal:         497300 kB
+MemFree:          102472 kB
+Buffers:          170156 kB
+Cached:           191528 kB
+SwapCached:          852 kB
+Active:           317968 kB
+Inactive:          52784 kB
+Active(anon):       5776 kB
+Inactive(anon):     3344 kB
+Active(file):     312192 kB
+Inactive(file):    49440 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:             0 kB
+HighFree:              0 kB
+LowTotal:         497300 kB
+LowFree:          102472 kB
+SwapTotal:        131064 kB
+SwapFree:         130212 kB
+Dirty:                56 kB
+Writeback:             0 kB
+AnonPages:          8236 kB
+Mapped:             6256 kB
+Shmem:               124 kB
+Slab:              19532 kB
+SReclaimable:      15744 kB
+SUnreclaim:         3788 kB
+KernelStack:         496 kB
+PageTables:          840 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      379712 kB
+Committed_AS:      60704 kB
+VmallocTotal:     346104 kB
+VmallocUsed:         944 kB
+VmallocChunk:     344048 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      512000 kB
+DirectMap2M:           0 kB
+</pre>
+
+<p>Диск доступен вот такой:</p>
+<pre>
+[root@canadatest ~]# df -H
+Файловая система       Разм   Исп   Дост  Исп% смонтирована на
+/dev/xvda1              27G   1,1G    25G   5% /
+none                   255M      0   255M   0% /dev/shm
+</pre>
+
+<p>Здесь на 5 гигабайт больше чем в предыдущем варианте.</p>
+
+<p><strong>Замеры</strong></p>
+
+<p>Линейная скорость записи на диск тут вообще никакая:</p>
+<pre>
+[root@canadatest ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей считано
+16384+0 записей написано
+ скопировано 1073741824 байта (1,1 GB), 42,3323 c, 25,4 MB/c
+</pre>
+
+<p>Speedtest тоже не радует:</p>
+<pre>
+[root@canadatest ~]# speedtest-cli --simple
+Ping: 79.637 ms
+Download: 31.98 Mbit/s
+Upload: 21.80 Mbit/s
+</pre>
+
+<p>Также я запускал тесты <a href="http://serverbear.com/benchmark/2015/08/30/1WxqQ76pecMSCXh4">Serverbear</a></p>
+
+<p>Сюда я тоже накатил Bitrix Env и 1С-Битрикс редакции “Малый Бизнес”. Количество попугаев тут ожидаемо ниже чем в предыдущем варианте:</p>
+
+<p><img src="/uploads/2015/09/cadedic-ca-bitrix.png" alt="" /></p>
+
+<p><strong>Выводы:</strong></p>
+
+<p>Считаю что этот вариант не стоит серьезно рассматривать. Стоит дороже чем должно. Надо бы посмотреть другие тарифы в этой локации.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

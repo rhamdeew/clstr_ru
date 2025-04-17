@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Краткий тест IBM Power8 на RunAbove | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Как-то довелось мне потестировать сервер с процессором IBM Power 8. Об этом пост.">
+	
+	<meta name="keywords" content="IBM, Power 8, RunAbove">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2014/10/kratkij-test-ibm-power8-na-runabove/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Краткий тест IBM Power8 на RunAbove | CLSTR" />
+	<meta property="og:description" content="Как-то довелось мне потестировать сервер с процессором IBM Power 8. Об этом пост." />
+	<meta property="og:url" content="https://clstr.ru/2014/10/kratkij-test-ibm-power8-na-runabove/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Краткий тест IBM Power8 на RunAbove</h1>
+    <p class="meta">
+    October 15, 2014
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http:/uploads/2014/10/runabove-logo.png"><img src="/uploads/2014/10/runabove-logo.png" alt="RunAbove" width="182" height="69" class="alignnone size-full wp-image-138" /></a></p>
+
+<p>Всем доброго дня!<br />
+На днях провайдер облачных вычислений RunAbove (детище OVH Group) представил возможность заказа инстансов на новейшей платформе IBM Power8 и в честь этого начал раздавать всем желающим аккаунты с 32$ на счету. Надо сказать что если взять 176-поточный сервер тарифа 2 XL то этих денег хватит чуть больше чем на сутки ибо стоимость будет 1.08$ за час. Для тарифа S (8 потоков 4Gb RAM 10Gb HDD) средств хватит почти на месяц.<br />
+<strong>Внимание! При регистрации просят указать номер кредитки или привязать Paypal. Так что не забывайте уничтожать инстансы после тестов, а то можно остаться без штанов на одном только 2XL =)</strong><br />
+<!--more--></p>
+
+<h2 id="что-внутри">Что внутри</h2>
+
+<p>Внутри нас ждет современный веб-интерфейс для запуска инстансов и возможностью создания стораджей. Функций минимум, но зато выглядит это не в пример проще чем какой-нибудь Amazon где ощущаешь себя в кабине звездолета сидя перед их навороченным веб-интерфейсом =)</p>
+
+<p><em>Скрины панели кстати сделать я поленился.</em></p>
+
+<p>Сразу скажу что штука эта специфическая и для разворачивания стандартного LAMP не годится в силу того что для веб-сервера обычно не нужны такие дикие процессорные мощности, но зато важна производительность диска и доступный объем ОЗУ. Тут же диски медленные, кол-во ОЗУ приемлимое и очень мощный процессор. А цена высокая.</p>
+
+<p>Вот скрин htop где видно 176 потоков. Такое лично я наблюдаю впервые =)<br />
+<a href="http:/uploads/2014/10/runabove-power8cpu.png"><img src="/uploads/2014/10/runabove-power8cpu-1024x576.png" alt="IBM Power8 2 XL 176 threads" width="625" height="351" class="alignnone size-large wp-image-140" /></a></p>
+
+<p>Думаю что это решение большей подойдет для задач где нужно производить огромное количество расчетов (может майнить? )) ведь на веб-сервер такой мощный процессор отдавать будет просто-напросто жалко.</p>
+
+<p>В качестве доступной ОС здесь только Fedora 19.</p>
+
+<p>Чуть ниже скидываю результаты скучных синтетических тестов и конфигурации железа – возможно кому то будет интересно.</p>
+
+<h3 id="тариф-s">Тариф S</h3>
+
+<pre>cat /proc/cpuinfo
+
+processor    : 0
+cpu        : POWER8E (raw), altivec supported
+clock        : 3026.000000MHz
+revision    : 2.1 (pvr 004b 0201)
+
+...
+
+processor    : 7
+cpu        : POWER8E (raw), altivec supported
+clock        : 3026.000000MHz
+revision    : 2.1 (pvr 004b 0201)
+
+timebase    : 512000000
+platform    : pSeries
+model        : IBM pSeries (emulated by qemu)
+machine        : CHRP IBM pSeries (emulated by qemu)
+</pre>
+
+<pre>cat /proc/meminfo
+MemTotal:        4171712 kB
+MemFree:         3544448 kB
+MemAvailable:    3901184 kB
+Buffers:           21376 kB
+Cached:           343616 kB
+SwapCached:            0 kB
+Active:           353472 kB
+Inactive:         124736 kB
+Active(anon):     114688 kB
+Inactive(anon):     2432 kB
+Active(file):     238784 kB
+Inactive(file):   122304 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        113152 kB
+Mapped:            43776 kB
+Shmem:              3968 kB
+Slab:             106368 kB
+SReclaimable:      25984 kB
+SUnreclaim:        80384 kB
+KernelStack:        2048 kB
+PageTables:         1536 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     2085824 kB
+Committed_AS:     246720 kB
+VmallocTotal:   8589934592 kB
+VmallocUsed:       15936 kB
+VmallocChunk:   8589825600 kB
+HardwareCorrupted:     0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:         64 kB
+</pre>
+
+<pre>[admin@rh-dev ~]$ cat /etc/issue
+Fedora release 19 (Schrödinger’s Cat)
+Kernel \r on an \m (\l)
+
+[admin@rh-dev ~]$ inxi -b
+System:    Host: rh-dev Kernel: 3.14.17-100.fc19.ppc64p7 ppc64 (32 bit) Console: tty 0
+           Distro: Fedora release 19 (Schrödinger’s Cat)
+Machine:   No /sys/class/dmi; using dmidecode: dmidecode is not installed.
+CPU:       Octa core POWER8E (raw) altivec supported (-MCP-) clocked at 3026 MHz
+Graphics:  Card: Device 1234:1111
+           Display Server: N/A driver: N/A tty size: 134x20 Advanced Data: N/A out of X
+Network:   Card: Red Hat Virtio network device driver: virtio-pci
+Drives:    HDD Total Size: 10.7GB (13.4% used)
+Info:      Processes: 112 Uptime: 4 min Memory: 268.9/4073.9MB Init: systemd runlevel: 3
+           Client: Shell (bash) inxi: 2.2.1
+</pre>
+
+<p>Пинги из Ульяновска:</p>
+
+<pre>➜  ulopen  ping 92.222.64.224
+PING 92.222.64.224 (92.222.64.224) 56(84) bytes of data.
+64 bytes from 92.222.64.224: icmp_seq=1 ttl=50 time=81.4 ms
+64 bytes from 92.222.64.224: icmp_seq=2 ttl=50 time=81.1 ms
+64 bytes from 92.222.64.224: icmp_seq=3 ttl=50 time=81.1 ms
+64 bytes from 92.222.64.224: icmp_seq=4 ttl=50 time=84.2 ms
+</pre>
+
+<p>Линейная скорость записи на диск очень невелика:</p>
+
+<pre>[admin@supa-s ~]$ dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+
+16384+0 записей получено
+16384+0 записей отправлено
+ скопировано 1073741824 байта (1,1 GB), 36,7431 c, 29,2 MB/c
+
+</pre>
+
+<p><strong>Sysbench</strong></p>
+
+<p><strong>CPU:</strong></p>
+
+<pre>[admin@supa-s ~]$ sysbench --test=cpu --cpu-max-prime=20000 --num-threads=4 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          6.8619s
+    total number of events:              10000
+    total time taken by event execution: 27.4415
+    per-request statistics:
+         min:                                  2.41ms
+         avg:                                  2.74ms
+         max:                                  4.61ms
+         approx.  95 percentile:               2.76ms
+
+Threads fairness:
+    events (avg/stddev):           2500.0000/4.53
+    execution time (avg/stddev):   6.8604/0.00
+
+</pre>
+
+<pre>[admin@supa-s ~]$ sysbench --test=threads --thread-locks=1 --max-time=20s run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing thread subsystem performance test
+Thread yields per test: 1000 Locks used: 1
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          5.4300s
+    total number of events:              10000
+    total time taken by event execution: 5.4274
+    per-request statistics:
+         min:                                  0.53ms
+         avg:                                  0.54ms
+         max:                                  1.09ms
+         approx.  95 percentile:               0.56ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   5.4274/0.00
+</pre>
+
+<pre>[admin@supa-s ~]$ sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          1.3583s
+    total number of events:              64
+    total time taken by event execution: 85.6216
+    per-request statistics:
+         min:                               1285.09ms
+         avg:                               1337.84ms
+         max:                               1355.59ms
+         approx.  95 percentile:            1354.20ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   1.3378/0.02
+</pre>
+
+<p><strong>Memory:</strong></p>
+
+<pre>[admin@supa-s ~]$ sysbench --test=memory --num-threads=4 --memory-total-size=2G run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 2048M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 2097152 (3301588.24 ops/sec)
+
+2048.00 MB transferred (3224.21 MB/sec)
+
+
+Test execution summary:
+    total time:                          0.6352s
+    total number of events:              2097152
+    total time taken by event execution: 1.9867
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                  0.56ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           524288.0000/779.36
+    execution time (avg/stddev):   0.4967/0.00
+
+</pre>
+
+<p><strong>HDD:</strong></p>
+
+<pre>[admin@supa-s ~]$ sysbench --test=fileio --file-total-size=4G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 32768Kb each, 4096Mb total
+Creating files for the test...
+[admin@supa-s ~]$ sysbench --test=fileio --file-total-size=4G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 32Mb each
+4Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  27900 Read, 18600 Write, 59433 Other = 105933 Total
+Read 435.94Mb  Written 290.62Mb  Total transferred 726.56Mb  (2.4218Mb/sec)
+  155.00 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0066s
+    total number of events:              46500
+    total time taken by event execution: 5.9905
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.13ms
+         max:                                468.40ms
+         approx.  95 percentile:               0.16ms
+
+Threads fairness:
+    events (avg/stddev):           46500.0000/0.00
+    execution time (avg/stddev):   5.9905/0.00
+</pre>
+
+<p>Ну как мы видим диск скоростью здесь особо не радует, зато процессор в норме и ОЗУ довольно быстрая.<br />
+Теперь результаты тарифа 2 XL.</p>
+
+<h3 id="тариф-2-xl">Тариф 2 XL</h3>
+
+<p>Разница этих тарифов только в размере доступных ресурсов, так например в /proc/cpuinfo выдется 176 потоков вместо 8 на тарифе S. ОЗУ здесь 48Gb и HDD 480Gb.</p>
+
+<p><strong>Sysbench</strong></p>
+
+<p><strong>CPU:</strong></p>
+
+<pre>[admin@supa ~]$ sysbench --test=cpu --cpu-max-prime=20000 --num-threads=176 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 176
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          0.4474s
+    total number of events:              10000
+    total time taken by event execution: 29.0787
+    per-request statistics:
+         min:                                  0.93ms
+         avg:                                  2.91ms
+         max:                                 45.80ms
+         approx.  95 percentile:               5.11ms
+
+Threads fairness:
+    events (avg/stddev):           56.8182/63.16
+    execution time (avg/stddev):   0.1652/0.15
+
+[admin@supa ~]$ sysbench --test=threads --thread-locks=1 --max-time=20s run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing thread subsystem performance test
+Thread yields per test: 1000 Locks used: 1
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          5.3768s
+    total number of events:              10000
+    total time taken by event execution: 5.3739
+    per-request statistics:
+         min:                                  0.52ms
+         avg:                                  0.54ms
+         max:                                  1.00ms
+         approx.  95 percentile:               0.56ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   5.3739/0.00
+
+[admin@supa ~]$ sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          5.7995s
+    total number of events:              64
+    total time taken by event execution: 309.5168
+    per-request statistics:
+         min:                               1529.58ms
+         avg:                               4836.20ms
+         max:                               5791.37ms
+         approx.  95 percentile:            5783.46ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   4.8362/0.97
+</pre>
+
+<p><strong>Memory:</strong></p>
+
+<pre>[admin@supa ~]$ sysbench --test=memory --memory-total-size=32G --num-threads=4 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 32768M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 33554432 (1578729.94 ops/sec)
+
+32768.00 MB transferred (1541.73 MB/sec)
+
+
+Test execution summary:
+    total time:                          21.2541s
+    total number of events:              33554432
+    total time taken by event execution: 36.1877
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                  1.57ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           8388608.0000/93782.69
+    execution time (avg/stddev):   9.0469/0.10
+
+</pre>
+
+<p><strong>HDD:</strong></p>
+
+<pre>[admin@supa ~]$ sysbench --test=fileio --file-total-size=64G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 524288Kb each, 65536Mb total
+Creating files for the test...
+[admin@supa ~]$ sysbench --test=fileio --file-total-size=64G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 512Mb each
+64Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  25080 Read, 16720 Write, 53456 Other = 95256 Total
+Read 391.88Mb  Written 261.25Mb  Total transferred 653.12Mb  (2.1771Mb/sec)
+  139.33 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0020s
+    total number of events:              41800
+    total time taken by event execution: 47.0813
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  1.13ms
+         max:                                153.91ms
+         approx.  95 percentile:               7.24ms
+
+Threads fairness:
+    events (avg/stddev):           41800.0000/0.00
+    execution time (avg/stddev):   47.0813/0.00
+</pre>
+
+<p>ОЗУ тут отчего то подкачало – показало вдвое меньшую производительность, производительность диска тоже чуть ниже. А вот процессор зато решает =)</p>
+
+<h3 id="резюме">Резюме</h3>
+
+<p>Специфичное решение для того кто знает зачем ему оно нужно.</p>
+
+<p><strong>Поздний ноябрьский апдейт</strong><br />
+На данный момент RunAbove раздает промокоды с 10$ на счету. Можно их найти если немного погуглить.<br />
+Плюс также обязательно стоит упомянуть наличие хранилища на OpenStack Swift со стоимостью чуть больше рубля за гигабайт (даже с учетом текущего курса!).<br />
+И еще я хотел рассказать про режим эксперта:<br />
+<a href="/uploads/2014/10/runabove_expert.png"><img src="/uploads/2014/10/runabove_expert-1024x825.png" alt="RunAbove admin panel expert mode" width="625" height="503" class="alignnone size-large wp-image-143" /></a></p>
+
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест ARMCloud от RunAbove. | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тестируем облачные сервера на ARM-процессорах">
+	
+	<meta name="keywords" content="RunAbove, ARM">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2015/10/armcloud/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест ARMCloud от RunAbove. | CLSTR" />
+	<meta property="og:description" content="Тестируем облачные сервера на ARM-процессорах" />
+	<meta property="og:url" content="https://clstr.ru/2015/10/armcloud/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест ARMCloud от RunAbove.</h1>
+    <p class="meta">
+    October 2, 2015
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/runabove"><img src="/uploads/2014/10/runabove-logo.png" alt="runabove_logo" class="alignnone size-full" /></a></p>
+
+<p>Как я понимаю это теперь тестовая площадка для различных экспериментов в OVH. На сей раз тестируются сверхдешевые VPS на базе 64-битных процессоров ARMV8 со стоимостью от 1.13$ в месяц. Да это же цена одного айпишника =) Впрочем пока эти сервера вообще предоставляются бесплатно на тест, но в количестве не больше 2 штук на аккаунт.</p>
+
+<p>Итак, сегодня у нас на тесте машинка с 1 ядром 2Ghz, 2Gb RAM и 10Gb HDD.</p>
+
+<p>Начнем =)</p>
+
+<!--more-->
+
+<p>Вот собственно линейка цен:</p>
+
+<p><img src="https://i.imgur.com/zlTCLcS.png" alt="" /></p>
+
+<p>Я выбрал Ubuntu 14.04. На выбор еще были варианты с vmlinuz и initrd, но столько свободного времени у меня нету =)</p>
+
+<pre>
+admin@armtst:~$ cat /etc/issue
+Ubuntu 14.04.3 LTS \n \l
+</pre>
+
+<p>Очень кратко о процессоре:</p>
+<pre>
+admin@armtst:~$ cat /proc/cpuinfo
+processor    : 0 [nid: 0]
+Features    : fp asimd aes pmull sha1 sha2 crc32
+CPU implementer    : 0x43
+CPU architecture: 8
+CPU variant    : 0x0
+CPU part    : 0x0a1
+CPU revision    : 0
+</pre>
+
+<p>Да, целых два гига:</p>
+<pre>
+admin@armtst:~$ cat /proc/meminfo
+MemTotal:        2050824 kB
+MemFree:         1757032 kB
+MemAvailable:    1969448 kB
+Buffers:            9568 kB
+Cached:           208500 kB
+SwapCached:            0 kB
+Active:            97956 kB
+Inactive:         131596 kB
+Active(anon):      11512 kB
+Inactive(anon):      172 kB
+Active(file):      86444 kB
+Inactive(file):   131424 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                56 kB
+Writeback:             0 kB
+AnonPages:         11524 kB
+Mapped:            10100 kB
+Shmem:               204 kB
+Slab:              23776 kB
+SReclaimable:      16004 kB
+SUnreclaim:         7772 kB
+KernelStack:        1024 kB
+PageTables:          556 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     1025412 kB
+Committed_AS:      47608 kB
+VmallocTotal:   133679808448 kB
+VmallocUsed:      152332 kB
+VmallocChunk:   133679644780 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+</pre>
+
+<p>И 10 гигабайт <strong>свободного</strong> пространства. Как видите целый гиг выделили под систему:</p>
+<pre>
+admin@armtst:~$ df -H
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/vda         11G  1.3G  8.9G  13% /
+none            4.1k     0  4.1k   0% /sys/fs/cgroup
+udev            1.1G   13k  1.1G   1% /dev
+tmpfs           211M  193k  210M   1% /run
+none            5.3M     0  5.3M   0% /run/lock
+none            1.1G     0  1.1G   0% /run/shm
+none            105M     0  105M   0% /run/user
+</pre>
+
+<p>Пинги из Ульяновска нормальные для Франции:</p>
+<pre>
+➜  ~  ping 149.202.248.87
+PING 149.202.248.87 (149.202.248.87) 56(84) bytes of data.
+64 bytes from 149.202.248.87: icmp_seq=1 ttl=46 time=69.4 ms
+64 bytes from 149.202.248.87: icmp_seq=2 ttl=46 time=68.9 ms
+64 bytes from 149.202.248.87: icmp_seq=3 ttl=46 time=70.4 ms
+64 bytes from 149.202.248.87: icmp_seq=4 ttl=46 time=69.0 ms
+64 bytes from 149.202.248.87: icmp_seq=5 ttl=46 time=70.0 ms
+64 bytes from 149.202.248.87: icmp_seq=6 ttl=46 time=70.3 ms
+64 bytes from 149.202.248.87: icmp_seq=7 ttl=46 time=66.4 ms
+64 bytes from 149.202.248.87: icmp_seq=8 ttl=46 time=66.7 ms
+64 bytes from 149.202.248.87: icmp_seq=9 ttl=46 time=70.3 ms
+64 bytes from 149.202.248.87: icmp_seq=10 ttl=46 time=66.3 ms
+64 bytes from 149.202.248.87: icmp_seq=11 ttl=46 time=66.9 ms
+64 bytes from 149.202.248.87: icmp_seq=12 ttl=46 time=69.6 ms
+64 bytes from 149.202.248.87: icmp_seq=13 ttl=46 time=66.4 ms
+64 bytes from 149.202.248.87: icmp_seq=14 ttl=46 time=69.6 ms
+64 bytes from 149.202.248.87: icmp_seq=15 ttl=46 time=70.1 ms
+64 bytes from 149.202.248.87: icmp_seq=16 ttl=46 time=66.8 ms
+64 bytes from 149.202.248.87: icmp_seq=17 ttl=46 time=69.9 ms
+^C
+--- 149.202.248.87 ping statistics ---
+17 packets transmitted, 17 received, 0% packet loss, time 16022ms
+rtt min/avg/max/mdev = 66.347/68.694/70.491/1.602 ms
+</pre>
+
+<p>Скорость линейной записи на диск вполне приемлимая:</p>
+<pre>
+admin@armtst:~$ dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 6.06535 s, 177 MB/s
+</pre>
+
+<p>Это хороший результат =)</p>
+
+<p>А вот на этом моменте я решил пожадничать и в панели сразу же создать второй сервер. В итоге панель подвисла в состоянии билдинга второго сервера, а первый сервер упал. Видимо это действительно alpha-тест =)</p>
+
+<p>Возобновить тесты удалось только через три часа когда все заработало. Кстати второй сервер пришлось отменить и пересоздать заново. тут все сработало быстро и уже через пять минут он был мне тоже доступен.</p>
+
+<p>Если кому интересно вот результаты sysbench:</p>
+<pre>
+admin@armtst:~$ sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          67.1739s
+    total number of events:              10000
+    total time taken by event execution: 67.1685
+    per-request statistics:
+         min:                                  6.65ms
+         avg:                                  6.72ms
+         max:                                  8.93ms
+         approx.  95 percentile:               6.75ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   67.1685/0.00
+</pre>
+
+<pre>
+admin@armtst:~$ sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          1.2485s
+    total number of events:              64
+    total time taken by event execution: 63.2868
+    per-request statistics:
+         min:                                502.28ms
+         avg:                                988.86ms
+         max:                               1196.94ms
+         approx.  95 percentile:            1188.86ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.9889/0.17
+</pre>
+
+<pre>
+admin@armtst:~$ sysbench --test=memory --num-threads=4 --memory-total-size=512M run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 512M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 524288 (782228.60 ops/sec)
+
+512.00 MB transferred (763.90 MB/sec)
+
+
+Test execution summary:
+    total time:                          0.6702s
+    total number of events:              524288
+    total time taken by event execution: 1.9188
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                 30.09ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           131072.0000/3239.92
+    execution time (avg/stddev):   0.4797/0.06
+</pre>
+
+<pre>
+admin@armtst:~$ sysbench --test=fileio --file-total-size=4G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 32768Kb each, 4096Mb total
+Creating files for the test...
+</pre>
+
+<pre>
+admin@armtst:~$ sysbench --test=fileio --file-total-size=4G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 32Mb each
+4Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  144420 Read, 96280 Write, 308006 Other = 548706 Total
+Read 2.2037Gb  Written 1.4691Gb  Total transferred 3.6728Gb  (12.536Mb/sec)
+  802.33 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0018s
+    total number of events:              240700
+    total time taken by event execution: 47.8581
+    per-request statistics:
+         min:                                  0.01ms
+         avg:                                  0.20ms
+         max:                                 46.44ms
+         approx.  95 percentile:               0.52ms
+
+Threads fairness:
+    events (avg/stddev):           240700.0000/0.00
+    execution time (avg/stddev):   47.8581/0.00
+</pre>
+
+<p>И тесты <a href="http://serverbear.com/benchmark/2015/09/23/apA0iBsFJAbAfKNK">Serverbear</a></p>
+
+<p>Да, очков тут негусто. Но в целом это очень крутое предложение и главный его козырь это цена. Для всяких тестовых машинок юзать такие сервера однозначно буду. Скоро собираюсь даже один проект на таком сервере захостить. Если не забуду обновлю пост и опубликую результаты аптайма.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

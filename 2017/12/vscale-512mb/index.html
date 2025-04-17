@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест VPS 512Mb от Vscale | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест виртуального сервера на тарифе с 512 мегабайт от Vsale">
+	
+	<meta name="keywords" content="vps, vscale">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2017/12/vscale-512mb/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест VPS 512Mb от Vscale | CLSTR" />
+	<meta property="og:description" content="Тест виртуального сервера на тарифе с 512 мегабайт от Vsale" />
+	<meta property="og:url" content="https://clstr.ru/2017/12/vscale-512mb/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест VPS 512Mb от Vscale</h1>
+    <p class="meta">
+    December 6, 2017
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p>Доброй ночи!</p>
+
+<p><a href="http://u.hmdw.me/vscale"><img src="/uploads/2018/vscale_logo.png" alt="vscale_logo" width="120" height="50" class="alignnone size-full " /></a></p>
+
+<p>Затестил тут на днях <a href="http://u.hmdw.me/vscale">сервер от Vscale</a> за 200 рублей. За эти деньги нам дают в распоряжение машинку на 512 мегабайт памяти, с одним ядром процессора и 20Gb SSD. Локации две на выбор - Москва и Санкт-Петербург.</p>
+
+<!--more-->
+
+<p>Вообще сервис очень сильно похож на DigitalOcean и Vultr как по дизайну так и по возможностям с ценами. Цены я бы не сказал что низкие, так по цене мощных виртуалок можно взять и полноценные дедики в разы более мощные и за ту же цену.</p>
+
+<p>Но тут дело немного в другом - сервис позиционируется для разработчиков. То есть предполагается что инстансы будут постоянно создаваться и уничтожаться по мере надобности. Для того чтобы делать это не вручную есть даже удобный API. И в конечном счете тут можно выгодно приобретать необходимые серверные мощности на непродолжительное время.</p>
+
+<p>Итак, перейдем к тесту. Я поднял виртуалку в локации Москва.</p>
+
+<h3 id="железо">Железо</h3>
+
+<p><strong>CPU</strong></p>
+<pre>
+[root@cs169947 ~]# cat /proc/cpuinfo
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz
+stepping	: 1
+microcode	: 0x1
+cpu MHz		: 2199.976
+cache size	: 25600 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl eagerfpu pni pclmulqdq vmx ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat
+bogomips	: 4399.95
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p><strong>ОЗУ</strong></p>
+<pre>
+[root@cs169947 ~]# cat /proc/meminfo
+MemTotal:         500196 kB
+MemFree:           86536 kB
+MemAvailable:     384188 kB
+Buffers:           13540 kB
+Cached:           274620 kB
+SwapCached:            0 kB
+Active:           209936 kB
+Inactive:         140960 kB
+Active(anon):      62900 kB
+Inactive(anon):     4204 kB
+Active(file):     147036 kB
+Inactive(file):   136756 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               308 kB
+Writeback:             0 kB
+AnonPages:         62780 kB
+Mapped:            21988 kB
+Shmem:              4368 kB
+Slab:              46808 kB
+SReclaimable:      27000 kB
+SUnreclaim:        19808 kB
+KernelStack:        1152 kB
+PageTables:         3032 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      250096 kB
+Committed_AS:     274836 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:        3268 kB
+VmallocChunk:   34359732420 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       53228 kB
+DirectMap2M:      471040 kB
+DirectMap1G:           0 kB
+</pre>
+
+<p><strong>20GB SSD</strong></p>
+<pre>
+[root@cs169947 ~]# df -HT
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/vda1      ext4       22G  1.2G   20G   6% /
+devtmpfs       devtmpfs  246M     0  246M   0% /dev
+tmpfs          tmpfs     257M     0  257M   0% /dev/shm
+tmpfs          tmpfs     257M  4.5M  252M   2% /run
+tmpfs          tmpfs     257M     0  257M   0% /sys/fs/cgroup
+tmpfs          tmpfs      52M     0   52M   0% /run/user/0
+</pre>
+
+<h3 id="тесты">Тесты</h3>
+
+<p><strong>DD</strong></p>
+<pre>
+[root@cs169947 ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.0133 s, 533 MB/s
+[root@cs169947 ~]# rm -f test
+[root@cs169947 ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.02419 s, 530 MB/s
+[root@cs169947 ~]# rm -f test
+[root@cs169947 ~]# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.0271 s, 530 MB/s
+[root@cs169947 ~]# rm -f test
+</pre>
+
+<p><strong>Пинг из Ульяновска</strong></p>
+<pre>
+~ rail$ ping 78.155.218.175
+PING 78.155.218.175 (78.155.218.175): 56 data bytes
+64 bytes from 78.155.218.175: icmp_seq=0 ttl=55 time=31.623 ms
+64 bytes from 78.155.218.175: icmp_seq=1 ttl=55 time=31.525 ms
+64 bytes from 78.155.218.175: icmp_seq=2 ttl=55 time=31.499 ms
+64 bytes from 78.155.218.175: icmp_seq=3 ttl=55 time=31.471 ms
+64 bytes from 78.155.218.175: icmp_seq=4 ttl=55 time=31.355 ms
+64 bytes from 78.155.218.175: icmp_seq=5 ttl=55 time=37.136 ms
+64 bytes from 78.155.218.175: icmp_seq=6 ttl=55 time=31.403 ms
+64 bytes from 78.155.218.175: icmp_seq=7 ttl=55 time=32.909 ms
+64 bytes from 78.155.218.175: icmp_seq=8 ttl=55 time=33.217 ms
+64 bytes from 78.155.218.175: icmp_seq=9 ttl=55 time=31.524 ms
+64 bytes from 78.155.218.175: icmp_seq=10 ttl=55 time=31.410 ms
+^C
+--- 78.155.218.175 ping statistics ---
+11 packets transmitted, 11 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 31.355/32.279/37.136/1.653 ms
+</pre>
+
+<p><strong>Sysbench тест CPU</strong></p>
+<pre>
+[root@cs169947 ~]# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 20000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   336.70
+
+General statistics:
+    total time:                          10.0011s
+    total number of events:              3368
+
+Latency (ms):
+         min:                                  2.56
+         avg:                                  2.97
+         max:                                  6.67
+         95th percentile:                      3.43
+         sum:                               9998.16
+
+Threads fairness:
+    events (avg/stddev):           3368.0000/0.00
+    execution time (avg/stddev):   9.9982/0.00
+</pre>
+
+<pre>
+[root@cs169947 ~]# sysbench --test=mutex --num-threads=64 run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: --num-threads is deprecated, use --threads instead
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+General statistics:
+    total time:                          11.9590s
+    total number of events:              64
+
+Latency (ms):
+         min:                              10638.93
+         avg:                              11401.92
+         max:                              11952.17
+         95th percentile:                  11732.86
+         sum:                             729723.05
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   11.4019/0.29
+</pre>
+
+<p><strong>Sysbench тест ОЗУ</strong></p>
+<pre>
+[root@cs169947 ~]# sysbench --test=memory --num-threads=4 --memory-total-size=512M run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: --num-threads is deprecated, use --threads instead
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 512MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 524288 (2142867.05 per second)
+
+512.00 MiB transferred (2092.64 MiB/sec)
+
+
+General statistics:
+    total time:                          0.2427s
+    total number of events:              524288
+
+Latency (ms):
+         min:                                  0.00
+         avg:                                  0.00
+         max:                                 43.01
+         95th percentile:                      0.00
+         sum:                                294.89
+
+Threads fairness:
+    events (avg/stddev):           131072.0000/0.00
+    execution time (avg/stddev):   0.0737/0.01
+</pre>
+
+<p><strong>Sysbench тест диска</strong></p>
+
+<pre>
+[root@cs169947 ~]#  sysbench --test=fileio --file-total-size=1G prepare
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+128 files, 8192Kb each, 1024Mb total
+Creating files for the test...
+Extra file open flags: 0
+Creating file test_file.0
+...
+Creating file test_file.127
+1073741824 bytes written in 3.60 seconds (284.17 MiB/sec).
+
+
+
+[root@cs169947 ~]# sysbench --test=fileio --file-total-size=1G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+WARNING: the --test option is deprecated. You can pass a script name or path on the command line without any options.
+WARNING: --max-time is deprecated, use --time instead
+sysbench 1.0.9 (using system LuaJIT 2.0.4)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Extra file open flags: 0
+128 files, 8MiB each
+1GiB total file size
+Block size 16KiB
+Number of IO requests: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Initializing worker threads...
+
+Threads started!
+
+
+
+File operations:
+    reads/s:                      1562.68
+    writes/s:                     1041.79
+    fsyncs/s:                     3333.70
+
+Throughput:
+    read, MiB/s:                  24.42
+    written, MiB/s:               16.28
+
+General statistics:
+    total time:                          300.0215s
+    total number of events:              1781597
+
+Latency (ms):
+         min:                                  0.00
+         avg:                                  0.17
+         max:                                 44.23
+         95th percentile:                      0.58
+         sum:                             298678.40
+
+Threads fairness:
+    events (avg/stddev):           1781597.0000/0.00
+    execution time (avg/stddev):   298.6784/0.00
+</pre>
+
+<p><strong>SpeedTest</strong>
+Из Москвы в Москву почти гигабит выжимает)</p>
+
+<pre>
+[root@cs169947 speedtest-cli]# speedtest
+Retrieving speedtest.net configuration...
+Testing from OOO Network of data-centers Selectel (78.155.218.175)...
+Retrieving speedtest.net server list...
+Selecting best server based on ping...
+Hosted by Beeline (Moscow) [1.61 km]: 2.549 ms
+Testing download speed................................................................................
+Download: 868.59 Mbit/s
+Testing upload speed................................................................................................
+Upload: 810.48 Mbit/s
+</pre>
+
+<p><strong>Inxi</strong></p>
+<pre>
+[root@cs169947 speedtest-cli]# inxi -b
+System:    Host: cs169947 Kernel: 3.10.0-693.5.2.el7.x86_64 x86_64 bits: 64 Console: tty 0
+           Distro: CentOS Linux release 7.4.1708 (Core)
+Machine:   Device: kvm System: Bochs product: Bochs serial: N/A
+           Mobo: N/A model: N/A serial: N/A BIOS: Bochs v: Bochs date: 01/01/2011
+CPU:       Single core Intel Xeon E5-2630 v4 (-MCP-) speed: 2199 MHz (max)
+Graphics:  Card: Cirrus Logic GD 5446
+           Display Server: N/A driver: N/A tty size: 204x25 Advanced Data: N/A for root out of X
+Network:   Card: Red Hat Virtio network device driver: virtio-pci
+Drives:    HDD Total Size: 21.5GB (10.7% used)
+Info:      Processes: 60 Uptime: 27 min Memory: 121.8/488.5MB Init: systemd runlevel: 3
+           Client: Shell (bash) inxi: 2.3.43
+</pre>
+
+<p><strong>7-zip benchmark не смог выполниться полностью</strong></p>
+<pre>
+[root@cs169947 speedtest-cli]# 7za b
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,1 CPU Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz (406F1),ASM,AES-NI)
+
+Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz (406F1)
+CPU Freq:  1423  1770  2052  2588  2802  2634  2612  2659  2480
+
+RAM size:     488 MB,  # CPU hardware threads:   1
+RAM usage:    435 MB,  # Benchmark threads:      1
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       3681   100   3581   3582  |      34919   100   2978   2981
+23:       3696   100   3772   3767  |      35599   100   3086   3081
+24:       3240   100   3495   3484  |      33578   100   2937   2948
+/usr/bin/7za: line 2:  2611 Killed                  "/usr/libexec/p7zip/7za" "$@"
+</pre>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>Качественный сервис за свои деньги. Лучше использовать его для разработки и изучить API.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Обзор DigitalOcean | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Обзор облачных виртуальных серверов от DigitalOcean">
+	
+	<meta name="keywords" content="DigitalOcean, Droplets, VPS">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2015/04/obzor-digitalocean/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Обзор DigitalOcean | CLSTR" />
+	<meta property="og:description" content="Обзор облачных виртуальных серверов от DigitalOcean" />
+	<meta property="og:url" content="https://clstr.ru/2015/04/obzor-digitalocean/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Обзор DigitalOcean</h1>
+    <p class="meta">
+    April 5, 2015
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/digitalocean"><img src="/uploads/2015/04/do_logo.png" alt="digitalocean_logo" class="alignnone size-full" /></a></p>
+
+<blockquote>
+  <p><strong>UPD 2021:</strong>
+Если зарегистрируетесь по моей ссылке то <a href="http://u.hmdw.me/digitalocean">получите 100$ на 60 дней для тестирования сервисов DigitalOcean</a>.</p>
+</blockquote>
+
+<h3 id="немного-о-сервисе">Немного о сервисе</h3>
+
+<p>С этим сервисом я знаком уже довольно давно, еще с тех времен когда они только запускались в начале 2012 года. Популярность этот хостинг-провайдер обрел благодаря огромному количеству промокодов с внушительными суммами и щедрой партнерской программе. Даже у меня за 1.5 года рефка так просто прокачала на $100. А ведь я знаю людей у кого благодаря партнерской программе висит по $1000.</p>
+
+<p>Впрочем и сам сервис был практически первым настолько удобным. Время от регистрации на сайте и до запуска первого сервера проходит всего пара минут. При этом сервера на технологии виртуализации KVM и даже на самых минимальных тарифах обладают довольно высокой производительностью.</p>
+
+<p>За все время у меня локнули только 1 VPS когда на него прилетел мощный DDoS. Да и то прислали письмо с вежливыми извинениями. Также они славятся довольно приятным клиентским сервисом. Бывает что в честь каких то памятных дат накидывают немного денег на баланс, а если долгое время не пользоваться сервисом то также прибавляют сумму на балансе и шлют письма с вежливыми вопросами в стиле «Быть может вам что-то не понравилось?».</p>
+
+<p>Хотя с развитием сервиса правила немного ужесточились. Теперь к примеру нет возможности выводить партнерские деньги на Paypal (раньше такая возможность была) и принимают уже далеко не все кредитные карты (раньше прокатывали Qiwi Virtual и прочие Кукурузы).<br />
+<!--more--></p>
+
+<h3 id="панель-управления">Панель управления</h3>
+
+<p>Первым делом после регистрации нам нужно активировать биллинг для возможности создания новых серверов.<br />
+Это можно сделать либо привязав свою кредитную карту либо сделав оплату с Paypal.</p>
+
+<p>Привязка кредитной карты:<br />
+<a href="/uploads/2015/01/do-panelpayments.png"><img src="/uploads/2015/01/do-panelpayments-1024x655.png" alt="do-panelpayments" width="625" height="400" class="alignnone size-large wp-image-232" /></a></p>
+
+<p>Биллинг:<br />
+<a href="/uploads/2015/01/do-panelbalance.png"><img src="/uploads/2015/01/do-panelbalance-1024x709.png" alt="do-panelbalance" width="625" height="433" class="alignnone size-large wp-image-233" /></a></p>
+
+<p>Вот так выглядит приглашение к созданию дролпетов (виртуальные сервера в терминологии DO) после активации биллинга:<br />
+<a href="/uploads/2015/01/dopanelhome.png"><img src="/uploads/2015/01/dopanelhome-1024x480.png" alt="dopanelhome" width="625" height="293" class="alignnone size-large wp-image-234" /></a></p>
+
+<p>Вот так выглядит выбор тарифа, ДЦ и предустановленного образа. Кстати с недавних пор также есть возможность выбрать образ с FreeBSD.<br />
+<a href="/uploads/2015/01/do-paneldroplts.png"><img src="/uploads/2015/01/do-paneldroplts-635x1024.png" alt="do-paneldroplts" width="625" height="1008" class="alignnone size-large wp-image-224" /></a></p>
+
+<p>А еще можно выбрать образы с предустановленными приложениями:<br />
+<a href="/uploads/2015/01/do-panelapps.png"><img src="/uploads/2015/01/do-panelapps-585x1024.png" alt="do-panelapps" width="585" height="1024" class="alignnone size-large wp-image-223" /></a></p>
+
+<p>Создание нового сервера за 55 секунд:<br />
+<a href="/uploads/2015/01/do-createdroplet.png"><img src="/uploads/2015/01/do-createdroplet-1024x480.png" alt="do-createdroplet" width="625" height="293" class="alignnone size-large wp-image-222" /></a></p>
+
+<p>Панель управления запущенным сервером:<br />
+<a href="/uploads/2015/01/do-server.png"><img src="/uploads/2015/01/do-server-1024x712.png" alt="do-server" width="625" height="435" class="alignnone size-large wp-image-221" /></a><br />
+Здесь можно сменить тариф на более дорогой, можно подключаться к консоли прямо в браузере и делать снапшоты.</p>
+
+<p>За +20% от стоимости сервера можно включить его автоматические бэкапы. Раньше это кстати было бесплатно, но из-за хитрецов которые решили так бесплатно хранить огромные объемы данных за резервное копирование стали взымать плату.<br />
+<a href="/uploads/2015/01/do-panelimages.png"><img src="/uploads/2015/01/do-panelimages-1024x552.png" alt="do-panelimages" width="625" height="337" class="alignnone size-large wp-image-225" /></a></p>
+
+<p>Подробная инструкция о том как создавать SSH-ключи и для чего они нужны:<br />
+<a href="/uploads/2015/01/do-panelsshkeys.png"><img src="/uploads/2015/01/do-panelsshkeys-808x1024.png" alt="do-panelsshkeys" width="625" height="792" class="alignnone size-large wp-image-226" /></a></p>
+
+<p>Техподдержка:<br />
+<a href="/uploads/2015/01/do-panelsupport.png"><img src="/uploads/2015/01/do-panelsupport-1024x553.png" alt="do-panelsupport" width="625" height="338" class="alignnone size-large wp-image-227" /></a></p>
+
+<p>Панель для генерации API-ключей. Кстати на днях вышла вторая версия DigitalOcean API. Если правильно использовать API то можно рулить своей инфраструктурой в автоматическом режиме. В этом плане сервис немного похож на Amazon AWS. Правда возможности более скромные.<br />
+<a href="/uploads/2015/01/do-panelapi.png"><img src="/uploads/2015/01/do-panelapi-1024x764.png" alt="do-panelapi" width="625" height="466" class="alignnone size-large wp-image-228" /></a></p>
+
+<p>Управление DNS и PTR-записями:<br />
+<a href="/uploads/2015/01/do-paneldns.png"><img src="/uploads/2015/01/do-paneldns-1024x480.png" alt="do-paneldns" width="625" height="293" class="alignnone size-large wp-image-229" /></a></p>
+
+<p>Партнерская программа:<br />
+<a href="/uploads/2015/01/do-panereferer.png"><img src="/uploads/2015/01/do-panereferer-1024x979.png" alt="do-panereferer" width="625" height="598" class="alignnone size-large wp-image-230" /></a></p>
+
+<p>Пользовательские настройки:<br />
+<a href="/uploads/2015/01/do-panelsettings.png"><img src="/uploads/2015/01/do-panelsettings-944x1024.png" alt="do-panelsettings" width="625" height="678" class="alignnone size-large wp-image-231" /></a></p>
+
+<p>Еще стоит упомянуть <a href="https://www.digitalocean.com/community/">DigitalOcean Community</a> куда можно присылать свои статьи с инструкциями по настройке серверного ПО. За хорошие статьи они платят где-то 100-200 долларов.</p>
+
+<h3 id="тестирование-сервера">Тестирование сервера</h3>
+
+<p>Традиционно для тестов я взял сервер на самом минимальном тарифе (1 ядро, 512 мегабайт ОЗУ и 20 гигабайт SSD за 5$ в месяц). Сервер взял в ДЦ AMS-3.</p>
+
+<p>На сервере установлена последняя Ubuntu LTS:</p>
+
+<pre>root@test:~# cat /etc/issue
+Ubuntu 14.04.1 LTS \n \l
+</pre>
+
+<p>Здесь нам доступно 1 ядро Intel Xeon E502630L</p>
+
+<pre>root@test:~# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 45
+model name    : Intel(R) Xeon(R) CPU E5-2630L 0 @ 2.00GHz
+stepping    : 7
+microcode    : 0x1
+cpu MHz        : 1999.999
+cache size    : 15360 KB
+physical id    : 0
+siblings    : 1
+core id        : 0
+cpu cores    : 1
+apicid        : 0
+initial apicid    : 0
+fdiv_bug    : no
+f00f_bug    : no
+coma_bug    : no
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 13
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon eagerfpu pni pclmulqdq vmx ssse3 cx16 pcid sse4_1 sse4_2 x2apic popcnt tsc_deadline_timer aes xsave avx hypervisor lahf_lm xsaveopt vnmi ept tsc_adjust
+bogomips    : 3999.99
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 40 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p>И 512Mb RAM</p>
+
+<pre>root@test:~# cat /proc/meminfo
+MemTotal:         507256 kB
+MemFree:            6736 kB
+Buffers:            6464 kB
+Cached:           460256 kB
+SwapCached:            0 kB
+Active:            76896 kB
+Inactive:         396960 kB
+Active(anon):       7224 kB
+Inactive(anon):      236 kB
+Active(file):      69672 kB
+Inactive(file):   396724 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+HighTotal:             0 kB
+HighFree:              0 kB
+LowTotal:         507256 kB
+LowFree:            6736 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                32 kB
+Writeback:             0 kB
+AnonPages:          7136 kB
+Mapped:             5764 kB
+Shmem:               324 kB
+Slab:              19216 kB
+SReclaimable:      14412 kB
+SUnreclaim:         4804 kB
+KernelStack:         528 kB
+PageTables:          460 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      253628 kB
+Committed_AS:      39616 kB
+VmallocTotal:     512000 kB
+VmallocUsed:        6280 kB
+VmallocChunk:     500292 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:         0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       28664 kB
+DirectMap2M:      495616 kB
+</pre>
+
+<p>Вот что нам рассказывает Inxi</p>
+
+<pre>root@test:~# inxi -b
+System:    Host: test Kernel: 3.13.0-37-generic i686 (32 bit) Console: tty 0 Distro: Ubuntu 14.04 trusty
+Machine:   System: Bochs product: Bochs
+           Mobo: N/A model: N/A Bios: Bochs version: Bochs date: 01/01/2011
+CPU:       Single core Intel Xeon CPU E5-2630L 0 (-MCP-) clocked at 1999.999 MHz
+Graphics:  Card: Cirrus Logic GD 5446 X-Vendor: N/A driver: N/A tty size: 134x20 Advanced Data: N/A for root out of X
+Network:   Card: Red Hat Virtio network device driver: virtio-pci
+Drives:    HDD Total Size: 21.5GB (13.5% used)
+Info:      Processes: 65 Uptime: 7 min Memory: 37.2/495.4MB Runlevel: 2 Client: Shell (bash) inxi: 1.9.17
+</pre>
+
+<p>Для начала замерим скорость линейной записи на диск и увидим впечатляющие 527 мегабайт/сек!</p>
+
+<pre>root@test:~# dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.03905 s, 527 MB/s
+</pre>
+
+<p>Пинги из Ульяновска до Амстердама</p>
+
+<pre>➜  www git:(master) ping 188.166.51.86
+PING 188.166.51.86 (188.166.51.86) 56(84) bytes of data.
+64 bytes from 188.166.51.86: icmp_seq=1 ttl=56 time=72.9 ms
+64 bytes from 188.166.51.86: icmp_seq=2 ttl=56 time=71.5 ms
+64 bytes from 188.166.51.86: icmp_seq=3 ttl=56 time=71.8 ms
+64 bytes from 188.166.51.86: icmp_seq=4 ttl=56 time=71.8 ms
+64 bytes from 188.166.51.86: icmp_seq=5 ttl=56 time=71.4 ms
+64 bytes from 188.166.51.86: icmp_seq=6 ttl=56 time=72.7 ms
+64 bytes from 188.166.51.86: icmp_seq=7 ttl=56 time=72.3 ms
+64 bytes from 188.166.51.86: icmp_seq=8 ttl=56 time=73.4 ms
+^C
+--- 188.166.51.86 ping statistics ---
+8 packets transmitted, 8 received, 0% packet loss, time 7004ms
+rtt min/avg/max/mdev = 71.486/72.269/73.417/0.724 ms
+</pre>
+
+<p>Далее идут скучные тесты Sysbench</p>
+
+<pre>root@test:~# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+
+Test execution summary:
+    total time:                          39.0694s
+    total number of events:              10000
+    total time taken by event execution: 39.0649
+    per-request statistics:
+         min:                                  3.08ms
+         avg:                                  3.91ms
+         max:                                  8.46ms
+         approx.  95 percentile:               4.42ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   39.0649/0.00
+
+root@test:~# sysbench --test=threads --thread-locks=1 --max-time=20s run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing thread subsystem performance test
+Thread yields per test: 1000 Locks used: 1
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          5.0218s
+    total number of events:              10000
+    total time taken by event execution: 5.0154
+    per-request statistics:
+         min:                                  0.48ms
+         avg:                                  0.50ms
+         max:                                  1.00ms
+         approx.  95 percentile:               0.68ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   5.0154/0.00
+
+root@test:~# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.2671s
+    total number of events:              64
+    total time taken by event execution: 9.6812
+    per-request statistics:
+         min:                                  3.77ms
+         avg:                                151.27ms
+         max:                                260.00ms
+         approx.  95 percentile:             228.47ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.1513/0.07
+
+root@test:~# sysbench --test=memory --num-threads=4 --memory-total-size=512M run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 512M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 524288 (725162.30 ops/sec)
+
+512.00 MB transferred (708.17 MB/sec)
+
+
+Test execution summary:
+    total time:                          0.7230s
+    total number of events:              524288
+    total time taken by event execution: 2.2786
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                 12.04ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           131072.0000/3658.43
+    execution time (avg/stddev):   0.5697/0.03
+
+root@test:~# sysbench --test=fileio --file-total-size=4G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 32768Kb each, 4096Mb total
+Creating files for the test...
+
+root@test:~#
+root@test:~# sysbench --test=fileio --file-total-size=4G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 32Mb each
+4Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  662304 Read, 441536 Write, 1412864 Other = 2516704 Total
+Read 10.106Gb  Written 6.7373Gb  Total transferred 16.843Gb  (57.49Mb/sec)
+ 3679.39 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0063s
+    total number of events:              1103840
+    total time taken by event execution: 125.3469
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.11ms
+         max:                                 18.84ms
+         approx.  95 percentile:               0.24ms
+
+Threads fairness:
+    events (avg/stddev):           1103840.0000/0.00
+    execution time (avg/stddev):   125.3469/0.00
+</pre>
+
+<p>И результаты теста <a href="http://serverbear.com/benchmark/2014/12/26/k5DbPi8KXs8y3yft">Serverbear</a>.</p>
+
+<p><strong>Резюме</strong><br />
+Это достаточно серьезный сервис с производительными недорогими серверами и большим количеством локаций включая даже такую экзотику как Сингапур. Хотя у Vultr (клона DO) локаций побольше, но DigitalOcean несравненно популярнее.<br />
+Всячески рекомендую его и для разработки и для продакшна. Сам частенько здесь поднимаю тестовые сервера. Пару раз хостил довольно тяжелые сайты с большой посещалкой – никаких проблем не было.<br />
+Напоследок вот вам моя <a href="http://u.hmdw.me/digitalocean">рефка</a> с вашими халявными $10 на счет =)</p>
+
+<blockquote>
+  <p><strong>UPD 2021:</strong>
+Если зарегистрируетесь по моей ссылке то <a href="http://u.hmdw.me/digitalocean">получите 100$ на 60 дней для тестирования сервисов DigitalOcean</a>.</p>
+</blockquote>
+
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

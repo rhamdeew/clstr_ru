@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Обзор VPS Prime от Beget в Санкт-Петербурге | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест виртуального сервера на тарифе с 2 гигабайтами ОЗУ от Beget">
+	
+	<meta name="keywords" content="vps, beget, Россия">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2018/11/beget-vps-prime/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Обзор VPS Prime от Beget в Санкт-Петербурге | CLSTR" />
+	<meta property="og:description" content="Тест виртуального сервера на тарифе с 2 гигабайтами ОЗУ от Beget" />
+	<meta property="og:url" content="https://clstr.ru/2018/11/beget-vps-prime/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Обзор VPS Prime от Beget в Санкт-Петербурге</h1>
+    <p class="meta">
+    November 23, 2018
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/beget"><img src="/uploads/2018/beget_logo.png" alt="beget_logo" class="alignnone size-full" /></a></p>
+
+<p>Добрый день!</p>
+
+<p>Затестил тут 2 тарифа виртуалок на хостинге Бегет. В данном посте публикую результаты теста виртуалки на самом дешевом тарифе с 2Gb ОЗУ, 2 ядрами процессора и 30Gb SSD.</p>
+
+<p>Стоимость такого конфига 22 рублей в сутки или 660 рублей в месяц.</p>
+
+<p>Картинки и подробности в <a href="/2018/11/beget-vps-simple/">предыдущем посте</a>. Здесь же только данные теста.</p>
+
+<!--more-->
+
+<h3 id="сведения-о-vm">Сведения о VM</h3>
+
+<p><strong>CentOS Linux release 7.5.1804 (Core)</strong></p>
+
+<pre>
+cat /etc/centos-release
+-----------
+CentOS Linux release 7.5.1804 (Core)
+</pre>
+
+<pre>
+uname -a
+-----------
+Linux jiqhumfura 3.10.0-862.6.3.el7.x86_64 #1 SMP Tue Jun 26 16:32:21 UTC 2018 x86_64 x86_64 x86_64 GNU/Linux
+</pre>
+
+<p><strong>Виртуализация KVM</strong></p>
+<pre>
+inxi -b
+-----------
+System:    Host: jiqhumfura Kernel: 3.10.0-862.6.3.el7.x86_64 x86_64 bits: 64 Console: N/A
+           Distro: CentOS Linux release 7.5.1804 (Core)
+Machine:   Type: Kvm System: QEMU product: Standard PC (i440FX + PIIX, 1996) v: pc-i440fx-2.11 serial: N/A
+           Mobo: N/A model: N/A serial: N/A BIOS: SeaBIOS v: 1.10.2-1ubuntu1 date: 04/01/2014
+CPU:       2x Single Core: Intel Xeon E5-2699 v4 type: SMP speed: 2200 MHz
+Graphics:  Card-1: Cirrus Logic GD 5446 driver: cirrus v: kernel
+           Display: server: No display server data found. Headless machine? tty: 204x25
+           Message: Unable to show advanced data. Required tool glxinfo missing.
+Network:   Card-1: Intel 82371AB/EB/MB PIIX4 ACPI type: network bridge driver: piix4_smbus
+           Card-2: Red Hat Virtio network driver: virtio-pci
+Drives:    Local Storage: total: 30.00 GiB used: 1.79 GiB (6.0%)
+Info:      Processes: 95 Uptime: 4m Memory: 1.73 GiB used: 264.4 MiB (14.9%) Init: systemd runlevel: 3
+           Shell: clstr_test.sh inxi: 3.0.20
+</pre>
+
+<p><strong>CPU и ОЗУ</strong></p>
+
+<pre>
+cat /proc/cpuinfo
+-----------
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz
+stepping	: 1
+microcode	: 0x1
+cpu MHz		: 2199.994
+cache size	: 16384 KB
+physical id	: 0
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology eagerfpu pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ibrs ibpb fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat spec_ctrl
+bogomips	: 4399.98
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 79
+model name	: Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz
+stepping	: 1
+microcode	: 0x1
+cpu MHz		: 2199.994
+cache size	: 16384 KB
+physical id	: 1
+siblings	: 1
+core id		: 0
+cpu cores	: 1
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 13
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush mmx fxsr sse sse2 ss syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon rep_good nopl xtopology eagerfpu pni pclmulqdq ssse3 fma cx16 pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand hypervisor lahf_lm abm 3dnowprefetch ibrs ibpb fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm rdseed adx smap xsaveopt arat spec_ctrl
+bogomips	: 4399.98
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 40 bits physical, 48 bits virtual
+power management:
+
+
+Memory Info:
+====================================================
+cat /proc/meminfo
+-----------
+MemTotal:        1815816 kB
+MemFree:          616128 kB
+MemAvailable:    1450444 kB
+Buffers:           44300 kB
+Cached:           899740 kB
+SwapCached:            0 kB
+Active:           564324 kB
+Inactive:         504068 kB
+Active(anon):     124808 kB
+Inactive(anon):    16496 kB
+Active(file):     439516 kB
+Inactive(file):   487572 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:               892 kB
+Writeback:             0 kB
+AnonPages:        124220 kB
+Mapped:            60928 kB
+Shmem:             16984 kB
+Slab:              94824 kB
+SReclaimable:      76264 kB
+SUnreclaim:        18560 kB
+KernelStack:        2496 kB
+PageTables:         4840 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:      907908 kB
+Committed_AS:     505576 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:       11104 kB
+VmallocChunk:   34359719676 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     22528 kB
+CmaTotal:              0 kB
+CmaFree:               0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:       57200 kB
+DirectMap2M:     2039808 kB
+DirectMap1G:           0 kB
+</pre>
+
+<p><strong>Разметка диска</strong></p>
+<pre>
+df -HT
+-----------
+Filesystem     Type      Size  Used Avail Use% Mounted on
+/dev/sda1      ext4       32G  2.0G   29G   7% /
+devtmpfs       devtmpfs  907M     0  907M   0% /dev
+tmpfs          tmpfs     930M     0  930M   0% /dev/shm
+tmpfs          tmpfs     930M   18M  913M   2% /run
+tmpfs          tmpfs     930M     0  930M   0% /sys/fs/cgroup
+tmpfs          tmpfs     186M     0  186M   0% /run/user/0
+</pre>
+
+<p><strong>PT Summary</strong></p>
+<pre>
+pt-summary
+-----------
+# Percona Toolkit System Summary Report ######################
+        Date | 2018-09-12 23:01:36 UTC (local TZ: UTC +0000)
+    Hostname | jiqhumfura
+      Uptime | 4 min,  1 user,  load average: 0.80, 0.55, 0.22
+      System | QEMU; Standard PC (i440FX + PIIX, 1996); vpc-i440fx-2.11 (Other)
+ Service Tag | Not Specified
+    Platform | Linux
+     Release | CentOS Linux release 7.5.1804 (Core)
+      Kernel | 3.10.0-862.6.3.el7.x86_64
+Architecture | CPU = 64-bit, OS = 64-bit
+   Threading | NPTL 2.17
+     SELinux | Disabled
+ Virtualized | VMWare
+# Processor ##################################################
+  Processors | physical = 2, cores = 2, virtual = 2, hyperthreading = no
+      Speeds | 2x2199.994
+      Models | 2xIntel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz
+      Caches | 2x16384 KB
+# Memory #####################################################
+       Total | 1.7G
+        Free | 597.2M
+        Used | physical = 158.4M, swap allocated = 0.0, swap used = 0.0, virtual = 158.4M
+      Shared | 16.6M
+     Buffers | 1017.7M
+      Caches | 1.4G
+       Dirty | 1016 kB
+     UsedRSS | 227.4M
+  Swappiness | 30
+ DirtyPolicy | 30, 10
+ DirtyStatus | 0, 0
+  Locator   Size     Speed             Form Factor   Type          Type Detail
+  ========= ======== ================= ============= ============= ===========
+  DIMM 0    2048 MB  Unknown           DIMM          RAM           Other
+# Mounted Filesystems ########################################
+  Filesystem  Size Used Type     Opts                                             Mountpoint
+  /dev/sda1    30G   7% ext4     rw,relatime,data=ordered                         /
+  devtmpfs    865M   0% devtmpfs rw,nosuid,size=885264k,nr_inodes=221316,mode=755 /dev
+  tmpfs       178M   0% tmpfs    rw,nosuid,nodev                                  /run/user/0
+  tmpfs       178M   0% tmpfs    rw,nosuid,nodev,mode=755                         /run/user/0
+  tmpfs       178M   0% tmpfs    rw,nosuid,nodev,relatime,size=181584k,mode=700   /run/user/0
+  tmpfs       178M   0% tmpfs    ro,nosuid,nodev,noexec,mode=755                  /run/user/0
+  tmpfs       887M   0% tmpfs    rw,nosuid,nodev                                  /dev/shm
+  tmpfs       887M   0% tmpfs    rw,nosuid,nodev,mode=755                         /dev/shm
+  tmpfs       887M   0% tmpfs    rw,nosuid,nodev,relatime,size=181584k,mode=700   /dev/shm
+  tmpfs       887M   0% tmpfs    ro,nosuid,nodev,noexec,mode=755                  /dev/shm
+  tmpfs       887M   0% tmpfs    rw,nosuid,nodev                                  /sys/fs/cgroup
+  tmpfs       887M   0% tmpfs    rw,nosuid,nodev,mode=755                         /sys/fs/cgroup
+  tmpfs       887M   0% tmpfs    rw,nosuid,nodev,relatime,size=181584k,mode=700   /sys/fs/cgroup
+  tmpfs       887M   0% tmpfs    ro,nosuid,nodev,noexec,mode=755                  /sys/fs/cgroup
+  tmpfs       887M   2% tmpfs    rw,nosuid,nodev                                  /run
+  tmpfs       887M   2% tmpfs    rw,nosuid,nodev,mode=755                         /run
+  tmpfs       887M   2% tmpfs    rw,nosuid,nodev,relatime,size=181584k,mode=700   /run
+  tmpfs       887M   2% tmpfs    ro,nosuid,nodev,noexec,mode=755                  /run
+# Disk Schedulers And Queue Size #############################
+         sda | [deadline] 128
+         sr0 | [deadline] 128
+# Disk Partioning ############################################
+Device       Type      Start        End               Size
+============ ==== ========== ========== ==================
+/dev/sda     Disk                              32212254720
+/dev/sda1    Part       2048   62914526        32211188736
+/dev/sr0     Disk                                   376832
+# Kernel Inode State #########################################
+dentry-state | 122246	107623	45	0	0	0
+     file-nr | 1216	0	174805
+    inode-nr | 36606	202
+# LVM Volumes ################################################
+Unable to collect information
+# LVM Volume Groups ##########################################
+Unable to collect information
+# RAID Controller ############################################
+  Controller | No RAID controller detected
+# Network Config #############################################
+  Controller | Red Hat, Inc. Virtio network device
+ FIN Timeout | 60
+  Port Range | 60999
+# Interface Statistics #######################################
+  interface  rx_bytes rx_packets  rx_errors   tx_bytes tx_packets  tx_errors
+  ========= ========= ========== ========== ========== ========== ==========
+  lo              400          6          0        400          6          0
+  eth0      175000000      50000          0    2500000      25000          0
+  docker0           0          0          0          0          0          0
+# Network Devices ############################################
+  Device    Speed     Duplex
+  ========= ========= =========
+  eth0
+  docker0
+# Network Connections ########################################
+  Connections from remote IP addresses
+    5.101.159.144       1
+    74.121.199.234      7
+    91.195.125.127      6
+    176.116.137.97      1
+    188.64.168.74       7
+  Connections to local IP addresses
+    193.200.74.100     20
+  Connections to top 10 local ports
+    41248               1
+    44092               1
+    52188               1
+    59960               1
+    59962               1
+    59964               1
+    59970               1
+    59974               1
+    59980               1
+    59986               1
+  States of connections
+    ESTABLISHED         2
+    LISTEN              6
+    TIME_WAIT          20
+# Top Processes ##############################################
+  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND
+    1 root      20   0   43484   3680   2404 S   0.0  0.2   0:02.83 systemd
+    2 root      20   0       0      0      0 S   0.0  0.0   0:00.00 kthreadd
+    3 root      20   0       0      0      0 S   0.0  0.0   0:00.02 ksoftirqd/0
+    4 root      20   0       0      0      0 S   0.0  0.0   0:00.03 kworker/0:0
+    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+
+    6 root      20   0       0      0      0 S   0.0  0.0   0:00.18 kworker/u1+
+    7 root      rt   0       0      0      0 S   0.0  0.0   0:00.10 migration/0
+    8 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh
+    9 root      20   0       0      0      0 S   0.0  0.0   0:00.30 rcu_sched
+# Notable Processes ##########################################
+  PID    OOM    COMMAND
+ 1396    -17    sshd
+# Simplified and fuzzy rounded vmstat (wait please) ##########
+  procs  ---swap-- -----io---- ---system---- --------cpu--------
+   r  b    si   so    bi    bo     ir     cs  us  sy  il  wa  st
+   2  0     0    0   900  2500   1000    900  26   8  58   8   0
+   0  0     0    0     0     8   1000   1250   3   7  90   0   0
+   0  0     0    0     0     1    225    175   0   1  99   1   0
+   0  0     0    0     0     0    200    150   0   0  99   1   0
+   0  0     0    0     0   300    200    175   0   0  98   2   0
+# Memory mamagement ##########################################
+Transparent huge pages are enabled.
+# The End ####################################################
+</pre>
+
+<h3 id="тесты">Тесты</h3>
+
+<p><strong>DD</strong></p>
+
+<pre>
+dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync 2&gt;&amp;1
+rm -f test
+-----------
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.58814 s, 415 MB/s
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 2.91231 s, 369 MB/s
+16384+0 records in
+16384+0 records out
+1073741824 bytes (1.1 GB) copied, 3.42819 s, 313 MB/s
+</pre>
+
+<p><strong>Sysbench тест CPU</strong></p>
+<pre>
+sysbench cpu --cpu-max-prime=20000 --num-threads=1 run
+-----------
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Prime numbers limit: 20000
+
+Initializing worker threads...
+
+Threads started!
+
+CPU speed:
+    events per second:   337.77
+
+General statistics:
+    total time:                          10.0010s
+    total number of events:              3379
+
+Latency (ms):
+         min:                                    2.70
+         avg:                                    2.96
+         max:                                   14.33
+         95th percentile:                        3.19
+         sum:                                 9994.73
+
+Threads fairness:
+    events (avg/stddev):           3379.0000/0.00
+    execution time (avg/stddev):   9.9947/0.00
+</pre>
+
+<pre>
+sysbench mutex --threads=64 run
+-----------
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 64
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+Threads started!
+
+
+General statistics:
+    total time:                          6.1926s
+    total number of events:              64
+
+Latency (ms):
+         min:                                 4070.28
+         avg:                                 5568.45
+         max:                                 6090.30
+         95th percentile:                     6026.41
+         sum:                               356380.55
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   5.5684/0.44
+</pre>
+
+<p><strong>Sysbench тест ОЗУ</strong></p>
+<pre>
+sysbench memory --num-threads=4 --memory-total-size=1G run
+-----------
+WARNING: --num-threads is deprecated, use --threads instead
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 4
+Initializing random number generator from current time
+
+
+Running memory speed test with the following options:
+  block size: 1KiB
+  total size: 1024MiB
+  operation: write
+  scope: global
+
+Initializing worker threads...
+
+Threads started!
+
+Total operations: 1048576 (5189442.47 per second)
+
+1024.00 MiB transferred (5067.81 MiB/sec)
+
+
+General statistics:
+    total time:                          0.1999s
+    total number of events:              1048576
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.00
+         max:                                   26.98
+         95th percentile:                        0.00
+         sum:                                  362.49
+
+Threads fairness:
+    events (avg/stddev):           262144.0000/0.00
+    execution time (avg/stddev):   0.0906/0.03
+</pre>
+
+<p><strong>Sysbench тест диска</strong></p>
+<pre>
+sysbench fileio --file-total-size=2G prepare
+-----------
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+128 files, 16384Kb each, 2048Mb total
+Creating files for the test...
+Extra file open flags: (none)
+Creating file test_file.0
+Creating file test_file.1
+...
+Creating file test_file.127
+2147483648 bytes written in 28.27 seconds (72.45 MiB/sec).
+sysbench fileio --file-total-size=2G --file-test-mode=rndrw --time=300 --max-requests=0 run
+-----------
+sysbench 1.0.15 (using bundled LuaJIT 2.1.0-beta2)
+
+Running the test with following options:
+Number of threads: 1
+Initializing random number generator from current time
+
+
+Extra file open flags: (none)
+128 files, 16MiB each
+2GiB total file size
+Block size 16KiB
+Number of IO requests: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Initializing worker threads...
+
+Threads started!
+
+
+File operations:
+    reads/s:                      1040.99
+    writes/s:                     693.99
+    fsyncs/s:                     2220.98
+
+Throughput:
+    read, MiB/s:                  16.27
+    written, MiB/s:               10.84
+
+General statistics:
+    total time:                          300.7482s
+    total number of events:              1189639
+
+Latency (ms):
+         min:                                    0.00
+         avg:                                    0.25
+         max:                                  441.57
+         95th percentile:                        0.53
+         sum:                               299063.31
+
+Threads fairness:
+    events (avg/stddev):           1189639.0000/0.00
+    execution time (avg/stddev):   299.0633/0.00
+</pre>
+
+<p><strong>SpeedTest</strong></p>
+
+<pre>
+speedtest-cli
+-----------
+Retrieving speedtest.net configuration...
+Testing from Beget LLC (193.200.74.100)...
+Retrieving speedtest.net server list...
+Selecting best server based on ping...
+Hosted by Orange Business Services, Russia &amp; CIS (Moscow) [1.61 km]: 14.475 ms
+Testing download speed................................................................................
+Download: 222.05 Mbit/s
+Testing upload speed....................................................................................................
+Upload: 259.95 Mbit/s
+</pre>
+
+<p><strong>Пинг из Ульяновска</strong></p>
+<pre>
+rail$ ping 193.200.74.100
+PING 193.200.74.100 (193.200.74.100): 56 data bytes
+64 bytes from 193.200.74.100: icmp_seq=0 ttl=59 time=28.651 ms
+64 bytes from 193.200.74.100: icmp_seq=1 ttl=59 time=28.821 ms
+64 bytes from 193.200.74.100: icmp_seq=2 ttl=59 time=28.824 ms
+64 bytes from 193.200.74.100: icmp_seq=3 ttl=59 time=28.911 ms
+64 bytes from 193.200.74.100: icmp_seq=4 ttl=59 time=30.160 ms
+64 bytes from 193.200.74.100: icmp_seq=5 ttl=59 time=28.371 ms
+64 bytes from 193.200.74.100: icmp_seq=6 ttl=59 time=28.656 ms
+64 bytes from 193.200.74.100: icmp_seq=7 ttl=59 time=28.800 ms
+64 bytes from 193.200.74.100: icmp_seq=8 ttl=59 time=28.770 ms
+64 bytes from 193.200.74.100: icmp_seq=9 ttl=59 time=28.007 ms
+64 bytes from 193.200.74.100: icmp_seq=10 ttl=59 time=28.656 ms
+^C
+--- 193.200.74.100 ping statistics ---
+11 packets transmitted, 11 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 28.007/28.784/30.160/0.499 ms
+</pre>
+
+<p><strong>7-zip benchmark</strong></p>
+<pre>
+7-Zip (a) [64] 16.02 : Copyright (c) 1999-2016 Igor Pavlov : 2016-05-21
+p7zip Version 16.02 (locale=en_US.UTF-8,Utf16=on,HugeFiles=on,64 bits,2 CPUs Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz (406F1),ASM,AES-NI)
+
+Intel(R) Xeon(R) CPU E5-2699 v4 @ 2.20GHz (406F1)
+CPU Freq:  2585  2659  2608  2681  2607  2639  2700  2652  2627
+
+RAM size:    1773 MB,  # CPU hardware threads:   2
+RAM usage:    441 MB,  # Benchmark threads:      2
+
+                       Compressing  |                  Decompressing
+Dict     Speed Usage    R/U Rating  |      Speed Usage    R/U Rating
+         KiB/s     %   MIPS   MIPS  |      KiB/s     %   MIPS   MIPS
+
+22:       5904   173   3317   5744  |      63939   198   2758   5459
+23:       5525   183   3070   5629  |      63969   199   2783   5537
+24:       5583   187   3210   6003  |      62725   199   2773   5507
+25:       5550   190   3344   6338  |      59460   198   2677   5292
+----------------------------------  | ------------------------------
+Avr:             183   3235   5929  |              198   2748   5449
+Tot:             191   2991   5689
+</pre>
+
+<h3 id="выводы">Выводы</h3>
+<p>Неплохая VPS за свои деньги. Чем то особенным не выделяется. Каких-то косяков тоже не замечено.
+Вот только памяти ОЗУ кажется выделяют чуть меньше чем надо. Из-за этого тест неправильно определяет
+объем доступной оперативной памяти и думает что здесь нету 2 гигабайт.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>

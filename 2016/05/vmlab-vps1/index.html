@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>Тест виртуального сервера от VMLAB | CLSTR - тест выделенных серверов, обзоры хостингов</title>
+	<meta name="description" content="Тест VPS от vmlab">
+	
+	<meta name="keywords" content="vmlab, vps">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<!-- Canonical -->
+	<link rel="canonical" href="https://clstr.ru/2016/05/vmlab-vps1/">
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="CLSTR - тест выделенных серверов, обзоры хостингов" href="https://clstr.ru/feed.xml" />
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+	<!-- Google Fonts -->
+	
+	<link href="//fonts.googleapis.com/css?family=Roboto:400,400i&amp;subset=cyrillic" rel="stylesheet" type="text/css">
+	
+	
+	
+    <!-- Spoiler script-->
+	<script>function spoilerPre(){var e=document.querySelectorAll("pre"),t=0;e.forEach(function(e){var s=document.createElement("a");t+=1,e.classList.add(`spoiled-pre-${t}`),s.innerText="Показать спойлер",s.classList.add("spoiler-pre"),s.dataset.spoiled_element=t,e.parentElement.insertBefore(s,e),e.style.display="none",s.addEventListener("click",function(){var e=document.querySelector(`.spoiled-pre-${this.dataset.spoiled_element}`);this.classList.contains("active")?(this.classList.remove("active"),this.innerText="Показать спойлер",e.style.display="none"):(this.classList.add("active"),this.innerText="Скрыть",e.style.display="block")})})}document.addEventListener("DOMContentLoaded",spoilerPre);</script>
+
+	<meta property="og:title" content="Тест виртуального сервера от VMLAB | CLSTR" />
+	<meta property="og:description" content="Тест VPS от vmlab" />
+	<meta property="og:url" content="https://clstr.ru/2016/05/vmlab-vps1/" />
+	
+	<meta property="og:image" content="https://clstr.ru/img/logo_og.jpg" />
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">CLSTR - все о хостинге</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/contacts/">
+					Контакты
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/give/">
+					Дать сервер на тест
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/list/">
+					Список обзоров
+				</a> |
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+<li>
+	<a href="https://clstr.ru/feed.xml" title="Читайте RSS фид!">
+		<i class="fa fa-fw fa-rss"></i>
+	</a>
+</li>
+
+
+
+<li>
+	<a href="mailto:server@clstr.ru" title="Электропочта">
+		<i class="fa fa-fw fa-envelope"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article >
+  <header style="background-image: url('/')">
+    <h1 class="title">Тест виртуального сервера от VMLAB</h1>
+    <p class="meta">
+    May 2, 2016
+     - laborant
+    </p>
+  </header>
+  <section class="post-content"><p><a href="http://u.hmdw.me/vmlab"><img src="/uploads/2016/vmlablogo.png" alt="vmlab_logo" class="alignnone size-full" /></a></p>
+
+<p>Привет!</p>
+
+<p>Еще в январе-феврале 2016 года я регал вируталки и запускал на них тесты. И только сейчас дошли руки запостить результаты.</p>
+
+<!--more-->
+
+<script async="" src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<!-- clstr banner -->
+<p><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3140541524320205" data-ad-slot="1616664118" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></p>
+
+<p>Сегодня у нас на тесте виртуалка на OpenVZ на самом минимальном тарифе за 249 руб. в месяц (1 ядро, 1Gb RAM, 20Gb SSD).</p>
+
+<p>Накатил CentOS 6.7</p>
+<pre>
+[root@vps5213 ~]# cat /etc/issue
+CentOS release 6.7 (Final)
+Kernel \r on an \m
+</pre>
+
+<p>Дали вот такое одно ядро от процессора E5-2620:</p>
+<pre>
+[root@vps5213 ~]# cat /proc/cpuinfo
+processor    : 0
+vendor_id    : GenuineIntel
+cpu family    : 6
+model        : 37
+model name    : Intel(R) Xeon(R) CPU E5-2620 0 @ 2.00GHz
+stepping    : 1
+microcode    : 1808
+cpu MHz        : 2000.000
+cache size    : 15360 KB
+physical id    : 0
+siblings    : 12
+core id        : 0
+cpu cores    : 12
+apicid        : 0
+initial apicid    : 0
+fpu        : yes
+fpu_exception    : yes
+cpuid level    : 11
+wp        : yes
+flags        : fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts mmx fxsr sse sse2 ss ht syscall nx rdtscp lm constant_tsc arch_perfmon pebs bts xtopology tsc_reliable nonstop_tsc aperfmperf unfair_spinlock pni pclmulqdq ssse3 cx16 sse4_1 sse4_2 popcnt aes hypervisor lahf_lm ida arat pln pts dtherm
+bogomips    : 4000.00
+clflush size    : 64
+cache_alignment    : 64
+address sizes    : 40 bits physical, 48 bits virtual
+power management:
+</pre>
+
+<p>1 гигабайт ОЗУ:</p>
+<pre>
+[root@vps5213 ~]# cat /proc/meminfo
+MemTotal:        1048576 kB
+MemFree:         1004424 kB
+Cached:            29248 kB
+Buffers:               0 kB
+Active:            10276 kB
+Inactive:          19612 kB
+Active(anon):       2688 kB
+Inactive(anon):      516 kB
+Active(file):       7588 kB
+Inactive(file):    19096 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       2097152 kB
+SwapFree:        2097152 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:          3204 kB
+Shmem:              2564 kB
+Slab:              14248 kB
+SReclaimable:      12364 kB
+SUnreclaim:         1884 kB
+</pre>
+
+<p>inxi -b</p>
+<pre>
+[root@vps5213 ~]# inxi -b
+System:    Host: vps5213.vmlab.ru Kernel: 2.6.32-042stab112.15 x86_64 (64 bit) Console: tty 0
+           Distro: CentOS release 6.7 (Final)
+Machine:   No /sys/class/dmi; using dmidecode: unknown error occured
+CPU:       Hexa core Intel Xeon E5-2620 0 (-HT-MCP-) speed: 2000 MHz (max)
+Graphics:  Card: Failed to Detect Video Card!
+           Display Server: N/A driver: N/A tty size: 182x27 Advanced Data: N/A for root out of X
+Network:   Card: Failed to Detect Network Card!
+Drives:    HDD Total Size: NA (-)
+Info:      Processes: 12 Uptime: 7 min Memory: 30.7/1024.0MB Init: Upstart runlevel: 3
+           Client: Shell (bash) inxi: 2.2.31
+</pre>
+
+<p>Тут openvz выдает старое ядро 2.6.32. Объем дискового пространства inxi почему то отказался показывать)</p>
+
+<p>Кстати вот и оно:</p>
+<pre>
+[root@vps5213 ~]# df -H
+Filesystem         Size  Used Avail Use% Mounted on
+/dev/ploop25105p1   22G  525M   20G   3% /
+none               537M  4,1k  537M   1% /dev
+none               537M     0  537M   0% /dev/shm
+</pre>
+
+<p>Пинги из Ульяновска:</p>
+<pre>
+[rail@localhost ~]$ ping 185.7.30.150
+PING 185.7.30.150 (185.7.30.150) 56(84) bytes of data.
+64 bytes from 185.7.30.150: icmp_seq=1 ttl=53 time=73.7 ms
+64 bytes from 185.7.30.150: icmp_seq=2 ttl=53 time=29.8 ms
+64 bytes from 185.7.30.150: icmp_seq=3 ttl=53 time=28.4 ms
+64 bytes from 185.7.30.150: icmp_seq=4 ttl=53 time=28.2 ms
+64 bytes from 185.7.30.150: icmp_seq=5 ttl=53 time=27.8 ms
+64 bytes from 185.7.30.150: icmp_seq=6 ttl=53 time=136 ms
+64 bytes from 185.7.30.150: icmp_seq=7 ttl=53 time=95.3 ms
+64 bytes from 185.7.30.150: icmp_seq=8 ttl=53 time=27.9 ms
+64 bytes from 185.7.30.150: icmp_seq=9 ttl=53 time=28.0 ms
+64 bytes from 185.7.30.150: icmp_seq=10 ttl=53 time=28.0 ms
+64 bytes from 185.7.30.150: icmp_seq=11 ttl=53 time=29.8 ms
+64 bytes from 185.7.30.150: icmp_seq=12 ttl=53 time=28.5 ms
+^C
+--- 185.7.30.150 ping statistics ---
+12 packets transmitted, 12 received, 0% packet loss, time 11014ms
+rtt min/avg/max/mdev = 27.815/46.841/136.084/34.234 ms
+</pre>
+
+<p>Да, сразу видно что это Москва. В среднем результат около 30мс, но не всегда стабильно почему то.</p>
+
+<p>dd показал какие то уж совсем космические скорости записи на диск. Интересно, что это? Хитрое кэширование? )</p>
+
+<pre>
+[root@vps5213 ~]#  dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей считано
+16384+0 записей написано
+ скопировано 1073741824 байта (1,1 GB), 1,29266 c, 831 MB/c
+[root@vps5213 ~]# rm -f test
+[root@vps5213 ~]#  dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей считано
+16384+0 записей написано
+ скопировано 1073741824 байта (1,1 GB), 1,23551 c, 869 MB/c
+[root@vps5213 ~]# rm -f test
+[root@vps5213 ~]#  dd if=/dev/zero of=test bs=64k count=16k conv=fdatasync
+16384+0 записей считано
+16384+0 записей написано
+ скопировано 1073741824 байта (1,1 GB), 1,22091 c, 879 MB/c
+[root@vps5213 ~]# rm -ftest
+</pre>
+
+<p>Sysbench, тест CPU:</p>
+<pre>
+[root@vps5213 ~]# sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Doing CPU performance benchmark
+
+Threads started!
+Done.
+
+Maximum prime number checked in CPU test: 20000
+
+Test execution summary:
+    total time:                          37.6854s
+    total number of events:              10000
+    total time taken by event execution: 37.6830
+    per-request statistics:
+         min:                                  3.69ms
+         avg:                                  3.77ms
+         max:                                279.25ms
+         approx.  95 percentile:               3.77ms
+
+Threads fairness:
+    events (avg/stddev):           10000.0000/0.00
+    execution time (avg/stddev):   37.6830/0.00
+</pre>
+
+<pre>
+[root@vps5213 ~]# sysbench --test=mutex --num-threads=64 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 64
+
+Doing mutex performance test
+Threads started!
+Done.
+
+
+Test execution summary:
+    total time:                          0.2029s
+    total number of events:              64
+    total time taken by event execution: 0.1991
+    per-request statistics:
+         min:                                  3.06ms
+         avg:                                  3.11ms
+         max:                                  3.29ms
+         approx.  95 percentile:               3.15ms
+
+Threads fairness:
+    events (avg/stddev):           1.0000/0.00
+    execution time (avg/stddev):   0.0031/0.00
+</pre>
+
+<p>Тестим ОЗУ:</p>
+<pre>
+[root@vps5213 ~]# sysbench --test=memory --num-threads=4 --memory-total-size=1G run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 4
+
+Doing memory operations speed test
+Memory block size: 1K
+
+Memory transfer size: 1024M
+
+Memory operations type: write
+Memory scope type: global
+Threads started!
+Done.
+
+Operations performed: 1048576 (1833242.26 ops/sec)
+
+1024.00 MB transferred (1790.28 MB/sec)
+
+
+Test execution summary:
+    total time:                          0.5720s
+    total number of events:              1048576
+    total time taken by event execution: 1.7117
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.00ms
+         max:                                 22.02ms
+         approx.  95 percentile:               0.00ms
+
+Threads fairness:
+    events (avg/stddev):           262144.0000/3211.03
+    execution time (avg/stddev):   0.4279/0.03
+</pre>
+
+<p>Тестим дисковое io - <strong>240.26Mb/sec</strong>
+Судя по всему здесь с диском все хорошо =)</p>
+
+<pre>
+[root@vps5213 ~]# sysbench --test=fileio --file-total-size=2G prepare
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+128 files, 16384Kb each, 2048Mb total
+Creating files for the test...
+[root@vps5213 ~]# sysbench --test=fileio --file-total-size=2G --file-test-mode=rndrw --max-time=300 --max-requests=0 run
+sysbench 0.4.12:  multi-threaded system evaluation benchmark
+
+Running the test with following options:
+Number of threads: 1
+
+Extra file open flags: 0
+128 files, 16Mb each
+2Gb total file size
+Block size 16Kb
+Number of random requests for random IO: 0
+Read/Write ratio for combined random IO test: 1.50
+Periodic FSYNC enabled, calling fsync() each 100 requests.
+Calling fsync() at the end of test, Enabled.
+Using synchronous I/O mode
+Doing random r/w test
+Threads started!
+Time limit exceeded, exiting...
+Done.
+
+Operations performed:  2767860 Read, 1845240 Write, 5904642 Other = 10517742 Total
+Read 42.234Gb  Written 28.156Gb  Total transferred 70.39Gb  (240.26Mb/sec)
+15376.72 Requests/sec executed
+
+Test execution summary:
+    total time:                          300.0054s
+    total number of events:              4613100
+    total time taken by event execution: 68.7576
+    per-request statistics:
+         min:                                  0.00ms
+         avg:                                  0.01ms
+         max:                                  9.95ms
+         approx.  95 percentile:               0.02ms
+
+Threads fairness:
+    events (avg/stddev):           4613100.0000/0.00
+    execution time (avg/stddev):   68.7576/0.00
+</pre>
+
+<p>Своя подсеть выглядит солидно:</p>
+
+<p><img src="https://i.imgur.com/5XxderE.png" alt="VMLAB Network" /></p>
+
+<h4 id="serverbear">Serverbear</h4>
+<p>Тесты <a href="http://serverbear.com/benchmark/2016/01/13/cW0vM79vpWbOsoee">Serverbear</a></p>
+
+<h3 id="выводы">Выводы</h3>
+
+<p>Вполне нормальное предложение с ценами средними по рынку. Если вам нужен недорогой виртуальный сервер с расположением в Москве то думаю стоит рассмотреть этот сервис.</p>
+</section>
+</article>
+
+<!-- Post navigation -->
+
+
+<!-- Disqus -->
+
+<div class="comments">
+  <div style="text-align:center;">
+    <a href="https://hmdw.me" target="_blank" style="text-decoration:underline;">Мой основной блог HMDW/me тут</a>
+</div>
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+	var disqus_shortname = 'hosterlab';
+	(function() {
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+</div>
+
+
+    </div>
+    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter32857152 = new Ya.Metrika({
+                    id:32857152,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/32857152" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+  </body>
+</html>
